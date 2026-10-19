@@ -33,11 +33,11 @@
 普通构建和验证不需要安装原版游戏、REA、IDA、Python、wwiser 或 FFmpeg：
 
 ```powershell
-npm.cmd ci
-npm.cmd run verify:audio
-npm.cmd run typecheck
-npm.cmd test
-npm.cmd run build
+pnpm.cmd install --frozen-lockfile
+pnpm.cmd run verify:audio
+pnpm.cmd run typecheck
+pnpm.cmd test
+pnpm.cmd run build
 ```
 
 只有重新生成素材时才需要还原研究包和解码工具。可通过 `SF6_AUDIO_RESEARCH` 指向 `sf6-audio` 目录、`SF6_COMBAT_RESEARCH` 指向包含 `combat-values.json` 与 `jamie-action-numerics.json` 的目录、`SF6_AUDIO_PYTHON` 指向可用的 Python 解释器，然后运行 `node scripts/sync-sf6-audio.mjs`。默认 Python 路径只是研究机器现有解释器的路径，不需要启动或自动分析 IDA。生成脚本不修改原版游戏。
@@ -288,7 +288,7 @@ useEffect(() => {
 
 最低验证集包含：所有引用素材都存在且可解码、输出散列与清单一致、采样计数一致、所有支持 variant 有行动映射、同一键只触发一次、两个角色互不去重、分支不漏零帧、打空没有假命中、intro 有声音、捕获时钟不混用、低血边界覆盖双方，以及已作废的异步解码不会播放。
 
-播放器回归测试位于 `src/view/audio/BattleAudio.test.ts`，可用 `npm exec -- vitest run src/view/audio/BattleAudio.test.ts` 单独执行。它覆盖解锁、BASE_URL、1×/4× 事件间隔、缓存去重、尾响与局部停止、未完成 decode 时的 stop 淡出、语音开关、reset/mute/dispose 竞态、失败与过期素材、暂停恢复、无可用 AudioContext、低血边界与 BGM 快速切回。不可取消的 `decodeAudioData` 通过 abort 竞态释放旧 warmup 等待；原生 decode 即使稍后完成，也不会写回失效缓存或启动声音。
+播放器回归测试位于 `src/view/audio/BattleAudio.test.ts`，可用 `pnpm exec vitest run src/view/audio/BattleAudio.test.ts` 单独执行。它覆盖解锁、BASE_URL、1×/4× 事件间隔、缓存去重、尾响与局部停止、未完成 decode 时的 stop 淡出、语音开关、reset/mute/dispose 竞态、失败与过期素材、暂停恢复、无可用 AudioContext、低血边界与 BGM 快速切回。不可取消的 `decodeAudioData` 通过 abort 竞态释放旧 warmup 等待；原生 decode 即使稍后完成，也不会写回失效缓存或启动声音。
 
 另外两组关键测试分别位于 `src/runtime/BattleRuntime.audio.test.ts` 与 `src/characters/jamie/__tests__/audio.test.ts`：前者验证真实战斗步、freeze 声音时钟、批量调度与预加载生命周期，后者验证杰米动作、接触和条件分支。后续角色要新增自己的角色适配测试，同时保留通用播放器和 runtime 的回归。
 

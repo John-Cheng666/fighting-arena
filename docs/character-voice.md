@@ -23,14 +23,14 @@
 当前项目只有杰米，默认预热全部短声音与所选BGM。扩展多角色阵容后，应利用 `warmup(clipIds)` 仅收集参战角色需要的效果音和语音，避免一次解码整个角色库。
 
 ```powershell
-npm.cmd ci
-npm.cmd run verify:audio
-npm.cmd run typecheck
-npm.cmd test
-npm.cmd run build
+pnpm.cmd install --frozen-lockfile
+pnpm.cmd run verify:audio
+pnpm.cmd run typecheck
+pnpm.cmd test
+pnpm.cmd run build
 ```
 
-Windows PowerShell可能优先解析到受执行策略限制的 `npm.ps1`；使用 `npm.cmd` 即可，不需要修改机器的执行策略。
+Windows PowerShell可能优先解析到受执行策略限制的 `pnpm.ps1`；使用 `pnpm.cmd` 即可，不需要修改机器的执行策略。
 
 ## 审阅意见是资产级约束
 
@@ -115,8 +115,8 @@ e442dabc2f246d2ad5d4cf4fc9532d16319ce2d946fbb898059791f6cac3c7c2
 
 ```powershell
 $env:SF6_AUDIO_RESEARCH = 'D:\research\sf6-audio'
-npm.cmd run sync:sf6-voices
-npm.cmd run verify:audio
+pnpm.cmd run sync:sf6-voices
+pnpm.cmd run verify:audio
 ```
 
 研究包保留 `voice-review-v1/reviewed/<SHA>/audio` 后可以迁移；生成器优先使用当前研究根目录的归档，不依赖manifest中研究机器的旧绝对路径。完整SE/BGM同步发现最终语音审阅后也会调用语音同步，防止再次生成已被拒绝的旧占位。

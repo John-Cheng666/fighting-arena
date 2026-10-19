@@ -67,4 +67,4 @@ target.capture = undefined;
 
 新增角色必须为普通前投、后投保存上述元数据，并在成功释放和取消路径调用公共函数。至少验证：前后投与换位、双席位和反向投向、贴墙及斜向、重复清理、拆投/空投/中断、PC，以及指令投和SA未套用普通投间距。核心回归使用两个非杰米测试角色，确保通用结算无需读取杰米状态。
 
-运行`npm.cmd test -- src/engine/__tests__/throws.test.ts src/characters/jamie/__tests__/throws.test.ts`。整套战斗回归与生产构建也应通过。
+运行`pnpm.cmd test src/engine/__tests__/throws.test.ts src/characters/jamie/__tests__/throws.test.ts`。整套战斗回归与生产构建也应通过。

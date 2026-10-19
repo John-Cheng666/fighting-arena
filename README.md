@@ -4,9 +4,11 @@ React + TypeScript + Vite + Phaser 的自动格斗实验场。默认 **1P 杰米
 
 ## 启动与使用
 
+请先安装 Node.js 和 pnpm 10.34.6（版本由 `package.json` 的 `packageManager` 字段固定）。
+
 ```powershell
-npm ci
-npm run dev
+pnpm.cmd install --frozen-lockfile
+pnpm.cmd run dev
 ```
 
 打开终端显示的本地地址。也可运行 `powershell -ExecutionPolicy Bypass -File scripts/dev.ps1`。
@@ -113,22 +115,22 @@ CPU 输入支持本地原版超必杀的 `23626`／`21424` 简化指令。Parry 
 
 已批准的 BGM、动作声、必杀技、超必杀、接触反馈和170段日语个人语音保存在 `public/assets/audio/`，来源与输出散列见其中的 `sources.json`。运行时语音覆盖P1/P2开场、行动喊声、受击、拆投及四档胜利；开场只播放P1开场白和P2回应，可暂停或跳过，战斗计时在演出结束后开始。入场素材保留供后续使用。杰米普通前投命中后，未满4酒时会自动派生喝一口，并播放完整收尾音效与语音。运行时根据实际行动帧、命中、防御和捕获分支触发独立声音，未使用假定全命中的整招试听混音。构建和部署不读取原游戏、REA 或研究目录。
 
-其他角色的资产取证、提取、时钟映射、接入接口、验证步骤及已知还原边界，见 [角色音频工程指南](docs/character-audio.md)。`npm.cmd run verify:audio` 可独立核验所有音频文件和引用；只有重新生成资产时才需准备指南列出的本地提取资料并运行 `npm.cmd run sync:sf6-audio`。
+其他角色的资产取证、提取、时钟映射、接入接口、验证步骤及已知还原边界，见 [角色音频工程指南](docs/character-audio.md)。`pnpm.cmd run verify:audio` 可独立核验所有音频文件和引用；只有重新生成资产时才需准备指南列出的本地提取资料并运行 `pnpm.cmd run sync:sf6-audio`。
 
-个人语音的审阅覆盖、独立随机数、优先级、动作中断、开场时钟和后续角色接入步骤，见 [角色个人语音接入经验](docs/character-voice.md)。`npm.cmd run sync:sf6-voices` 只同步已确认的个人语音，不重新编码或重新提取原版资源。
+个人语音的审阅覆盖、独立随机数、优先级、动作中断、开场时钟和后续角色接入步骤，见 [角色个人语音接入经验](docs/character-voice.md)。`pnpm.cmd run sync:sf6-voices` 只同步已确认的个人语音，不重新编码或重新提取原版资源。
 
 ## 验证
 
 ```powershell
-npm.cmd run typecheck
-npm.cmd run verify:audio
-npm.cmd test
-npm.cmd run inspect:jamie
-npm.cmd run inspect:jamie-variants
-npm.cmd run inspect:jamie-spacing
-npm.cmd run inspect:standard-ai
-npm.cmd run sync:jamie-numerics
-npm.cmd run build
+pnpm.cmd run typecheck
+pnpm.cmd run verify:audio
+pnpm.cmd test
+pnpm.cmd run inspect:jamie
+pnpm.cmd run inspect:jamie-variants
+pnpm.cmd run inspect:jamie-spacing
+pnpm.cmd run inspect:standard-ai
+pnpm.cmd run sync:jamie-numerics
+pnpm.cmd run build
 ```
 
 `inspect:jamie` 运行 30 场不同 CPU／酒级配置；`inspect:standard-ai` 运行八档 CPU × 三种初始酒级 × 两个种子的 48 场对局。检查终局、有限坐标、生命、资源、冷却和冻结边界，报告写入 `research/`。`inspect:jamie-variants` 执行 118 个变体的 354 个演练场景。它们是模拟器集成验证，不代表原游戏行为一致性验证。
