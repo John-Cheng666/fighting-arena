@@ -4,9 +4,11 @@ React + TypeScript + Vite + Phaser 的自动格斗实验场。默认 **1P 杰米
 
 ## 启动与使用
 
+请先安装 Node.js 和 pnpm 10.34.6（版本由 `package.json` 的 `packageManager` 字段固定）。
+
 ```powershell
-npm.cmd ci
-npm.cmd run dev
+pnpm.cmd install --frozen-lockfile
+pnpm.cmd run dev
 ```
 
 打开终端显示的本地地址。也可运行 `powershell -ExecutionPolicy Bypass -File scripts/dev.ps1`。
@@ -110,14 +112,14 @@ CPU 输入支持本地原版超必杀的 `23626`／`21424` 简化指令。Parry 
 ## 验证
 
 ```powershell
-npm.cmd run typecheck
-npm.cmd test
-npm.cmd run inspect:jamie
-npm.cmd run inspect:jamie-variants
-npm.cmd run inspect:jamie-spacing
-npm.cmd run inspect:standard-ai
-npm.cmd run sync:jamie-numerics
-npm.cmd run build
+pnpm.cmd run typecheck
+pnpm.cmd test
+pnpm.cmd run inspect:jamie
+pnpm.cmd run inspect:jamie-variants
+pnpm.cmd run inspect:jamie-spacing
+pnpm.cmd run inspect:standard-ai
+pnpm.cmd run sync:jamie-numerics
+pnpm.cmd run build
 ```
 
 `inspect:jamie` 运行 30 场不同 CPU／酒级配置；`inspect:standard-ai` 运行八档 CPU × 三种初始酒级 × 两个种子的 48 场对局。检查终局、有限坐标、生命、资源、冷却和冻结边界，报告写入 `research/`。`inspect:jamie-variants` 执行 118 个变体的 354 个演练场景。它们是模拟器集成验证，不代表原游戏行为一致性验证。
