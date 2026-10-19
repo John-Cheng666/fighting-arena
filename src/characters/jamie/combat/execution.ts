@@ -4,6 +4,8 @@ import { ARENA, type BattleEvent, type BattleState, type Fighter } from "../../.
 import type { JamieAction } from "../types";
 import { resetStandardAIProgram } from "../../../engine/ai/StandardAI";
 import { resetJamieCombo } from "./scaling";
+import { advanceJamieAudio, stopJamieAudio } from "../audio";
+import { releaseNormalThrow } from "../../../engine/systems/throws";
 
 // Local latch AttackData85 stops the source for 6 updates; captured actions720/724
 // expose THROW_ESCAPE on raw [0,3). PC/FOLLOW actions722/726 expose no such flag.
@@ -51,6 +53,7 @@ export function resolveJamieThrowTech(state: BattleState, source: Fighter, targe
   for (const fighter of [source, target]) {
     const jamie = getJamieState(fighter);
     if (jamie) {
+      stopJamieAudio(state, fighter, events);
       jamie.action = null;
       jamie.bufferedKeys = undefined;
       jamie.keyHistory = [];
@@ -65,14 +68,17 @@ export function resolveJamieThrowTech(state: BattleState, source: Fighter, targe
     fighter.vx = fighter.vy = 0;
   }
   events.push({ type: "block", tick: state.tick, fighterId: target.id, perfect: false, parry: false, x: target.x, y: target.y - 80 });
+  events.push({ type: "voice", tick: state.tick, fighterId: target.id, characterId: target.characterId, voiceId: 710 });
 }
 
 export function releaseJamieCapture(state: BattleState, source: Fighter, knockdown = false, events?: BattleEvent[]): void {
+  if (events) stopJamieAudio(state, source, events);
   const action = getJamieState(source)?.action;
   const target = state.fighters.find((fighter) => fighter.capture?.sourceId === source.id);
   if (target) {
     const capture = target.capture!;
     const pendingKnockout = target.capture?.pendingKnockout;
+    releaseNormalThrow(source, target, knockdown ? "complete" : "interrupted");
     target.capture = undefined;
     const launchFinish = action?.variantId === "row-89" && action.cinematicPhase === "finish";
     target.height = launchFinish ? 160 : 0;
@@ -133,7 +139,13 @@ export function beginJamieCapture(state: BattleState, source: Fighter, target: F
   }
   const end = nativeCapture ? action.frame + nativeCapture.releaseFrame
     : variant.capture === "cinematic" ? action.duration - variant.recovery : variant.capture === "throw" ? 30 : Math.max(...variant.active.map((window) => window[1]));
-  target.capture = { sourceId: source.id, moveId: variant.moveId, untilTick: action.startTick + end, phase: "combo" };
+  target.capture = {
+    sourceId: source.id, moveId: variant.moveId, untilTick: action.startTick + end, phase: "combo",
+    ...(variant.capture === "throw" ? { normalThrow: {
+      direction: variant.moveId === "T02" ? "back" as const : "forward" as const,
+      axis: { x: action.directionX, y: action.directionY },
+    } } : {}),
+  };
   target.juggleUntilTick = 0;
   target.juggleSourceId = undefined;
   target.pendingHardKnockdown = false;
@@ -141,9 +153,11 @@ export function beginJamieCapture(state: BattleState, source: Fighter, target: F
   target.stunUntilTick = Math.max(target.stunUntilTick, target.capture.untilTick);
   if (getJamieState(target)?.action) {
     releaseJamieCapture(state, target, false, events);
+    stopJamieAudio(state, target, events);
     getJamieState(target)!.action = null;
   }
   events.push({ type: "cinematic", tick: state.tick, sourceId: source.id, targetId: target.id, moveId: variant.moveId, phase: "combo", x: target.x, y: target.y - 70 });
+  advanceJamieAudio(state, source, events);
 }
 
 export function cumulativeDamage(budget: number, weights: number[], index: number): number {

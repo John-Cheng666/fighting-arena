@@ -55,6 +55,7 @@ h1 { font-size: clamp(28px, 3vw, 36px); font-weight: 750; letter-spacing: -1px; 
 .match-status.paused { color: var(--p1); background: var(--p1-soft); }
 .arena-controls { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding: 12px 16px; border-top: 1px solid var(--line); background: var(--surface); }
 .transport-controls, .utility-controls { display: flex; gap: 6px; align-items: center; }
+.transport-controls { flex-wrap: wrap; min-width: 0; }
 .primary-button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; gap: 9px; padding: 10px 18px; border-radius: var(--radius-sm); background: var(--accent); color: var(--on-accent); font-size: 14px; font-weight: 650; white-space: nowrap; }
 .primary-button:hover:not(:disabled), .apply-button:hover:not(:disabled) { background: var(--accent-hover); }
 .primary-button kbd { color: inherit; opacity: .8; border-color: currentColor; font-size: 10px; margin-left: 8px; }

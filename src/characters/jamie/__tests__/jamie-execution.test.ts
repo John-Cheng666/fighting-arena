@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import { Battle } from "../../../game/Battle";
 import { createDemonstration } from "../../../game/training";
 import { DEFAULT_CONFIG } from "../../../test/fixtures";
-import { JAMIE_VARIANT_BY_ID } from "../moves";
+import { JAMIE_THROW_DRINK, JAMIE_VARIANT_BY_ID } from "../moves";
 import { resolveHits } from "../../../game/combat";
 import { processJamieContactCancels } from "../combat/actions";
 import { jamieMoveScaling } from "../combat/scaling";
@@ -365,6 +365,64 @@ describe("confirmed supers and complete move execution", () => {
       expect(getJamieState(missed.state.fighters[0])!.drinkLevel).toBe(id === "row-87-drink" ? 1 : 0);
     }
     expect(getJamieState(demonstrate("row-87").battle.state.fighters[0])!.drinkLevel).toBe(0);
+  });
+
+  it.each([0, 1, 2, 3])("automatically drinks exactly once after a confirmed forward throw at drink level %s", level => {
+    const battle = practice();
+    const [source, target] = battle.state.fighters;
+    const jamie = getJamieState(source)!;
+    jamie.drinkLevel = level;
+    expect(battle.requestMove(source.id, "T01", "row-91")).toBe(true);
+    logicalFrames(battle, 5);
+    const confirmation = jamie.action!.confirmedAtFrame!;
+    expect(target.capture?.sourceId).toBe(source.id);
+    logicalFrames(battle, confirmation + JAMIE_THROW_DRINK.branchFrame - battle.state.tick);
+    expect(target.capture).toBeUndefined();
+    expect(jamie.action).toMatchObject({ variantId: "row-91-drink", pose: "drink", confirmedAtFrame: confirmation });
+    const drinkTick = confirmation + JAMIE_THROW_DRINK.branchFrame + JAMIE_THROW_DRINK.drinkFrame;
+    logicalFrames(battle, drinkTick - battle.state.tick - 1);
+    expect(jamie.drinkLevel).toBe(level);
+    logicalFrames(battle, 1);
+    expect(jamie.drinkLevel).toBe(level + 1);
+    expect(jamie.action?.drinksApplied).toBe(1);
+    logicalFrames(battle, 100);
+    expect(jamie.drinkLevel).toBe(level + 1);
+    expect(jamie.action).toBeNull();
+    expect(battle.takeEvents().filter(event => event.type === "drink" && event.fighterId === source.id)).toHaveLength(1);
+  });
+
+  it("does not drink after a missed or teched forward throw, a back throw, or a max-level forward throw", () => {
+    for (const scenario of ["whiff", "tech", "back", "full", "temporary-full"] as const) {
+      const battle = practice();
+      const [source, target] = battle.state.fighters;
+      const jamie = getJamieState(source)!;
+      if (scenario === "whiff") target.x = 600;
+      if (scenario === "full") jamie.drinkLevel = 4;
+      if (scenario === "temporary-full") { jamie.sa2UntilTick = 86; jamie.sa2OriginalDrinkLevel = 0; }
+      const level = jamie.drinkLevel;
+      const back = scenario === "back";
+      expect(battle.requestMove(source.id, back ? "T02" : "T01", back ? "row-92" : "row-91")).toBe(true);
+      logicalFrames(battle, 5);
+      if (scenario === "tech") expect(battle.requestMove(target.id, "T01", "row-91")).toBe(true);
+      logicalFrames(battle, 250);
+      expect(jamie.drinkLevel, scenario).toBe(level);
+      expect(battle.takeEvents().filter(event => event.type === "drink"), scenario).toHaveLength(0);
+    }
+  });
+
+  it("can interrupt the automatic drink after throw release before its resource frame", () => {
+    const battle = practice();
+    const [source, target] = battle.state.fighters;
+    const jamie = getJamieState(source)!;
+    battle.requestMove(source.id, "T01", "row-91");
+    logicalFrames(battle, 100);
+    expect(jamie.action?.pose).toBe("drink");
+    expect(target.capture).toBeUndefined();
+    resolveHits(battle.state, [{ sourceId: target.id, targetId: source.id, damage: 10, heal: 0 }], []);
+    expect(jamie.action).toBeNull();
+    logicalFrames(battle, 100);
+    expect(jamie.drinkLevel).toBe(0);
+    expect(battle.takeEvents().filter(event => event.type === "drink")).toHaveLength(0);
   });
 
   it("ends a held parry when Drive runs out without repeatedly extending recovery", () => {

@@ -439,6 +439,10 @@ describe("CPU reactive normal-throw tech", () => {
     expect(target.capture).toBeUndefined();
     expect(sourceJamie.action).not.toBeNull();
     frames(battle, confirmedAt + capture.duration - battle.state.tick);
+    expect(sourceJamie.action?.pose).toBe("drink");
+    expect(sourceJamie.drinkLevel).toBe(0);
+    frames(battle, sourceJamie.action!.startTick + sourceJamie.action!.duration - battle.state.tick);
+    expect(sourceJamie.drinkLevel).toBe(1);
     expect(sourceJamie.action).toBeNull();
   });
 

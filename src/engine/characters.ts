@@ -42,7 +42,6 @@ export interface CharacterModule {
   createState(settings: CharacterSettings): unknown;
   stats(settings: CharacterSettings): { maxHp: number; speed: number; radius: number };
   ownsElevation?: boolean;
-  audio?: { hitFrequency: number; hitWave: "sine" | "triangle" | "square" | "sawtooth" };
   step?(frame: CharacterFrame): void;
   afterContacts?(frame: CharacterFrame): void;
   endFrame?(frame: CharacterFrame): void;
@@ -53,6 +52,7 @@ export interface CharacterModule {
   setHold?(state: BattleState, fighter: Fighter, held: boolean): boolean;
   resolveIncomingHit?(context: HitContext): void;
   onContact?(context: HitContext): void;
+  /** Normal throws retain capture.normalThrow and call releaseNormalThrow before clearing capture. */
   releaseCapture?(state: BattleState, fighter: Fighter, knockdown: boolean, events?: BattleEvent[]): void;
   finishBattle?(fighter: Fighter): void;
   hasPendingCinematic?(state: BattleState, fighter: Fighter, maxTicks: number): boolean;

@@ -1,5 +1,5 @@
 import { getJamieState } from "../state";
-import { JAMIE_VARIANTS, JAMIE_VARIANT_BY_ID, type JamieVariant } from "../moves";
+import { JAMIE_THROW_DRINK, JAMIE_VARIANTS, JAMIE_VARIANT_BY_ID, type JamieVariant } from "../moves";
 import type { BattleConfig, BattleEvent, BattleState, Fighter, FighterId, PendingHit } from "../../../engine/types";
 import type { JamieState } from "../types";
 import { canJamieThrowTech, cumulativeDamage, getJamieNormalThrowSource, poseCapturedPair, releaseJamieCapture, resolveJamieThrowTech, setJamieActionHold } from "./execution";
@@ -10,6 +10,7 @@ import { updateJamieStandardAI } from "../ai/controller";
 import { nativeContactValues } from "./nativeDamage";
 import { nativeMoveEvents } from "./nativeData";
 import { advanceDriveRecovery, applyDriveChange, applySuperChange, JAMIE_RESOURCE_LIMITS, jamieOffensivePercent, jamieResourceStyleId } from "./resources";
+import { advanceJamieAudio, emitJamieDrinkAudio, stopJamieAudio, emitJamieVoice } from "../audio";
 
 export function createJamieState(level = 5, style = 0): JamieState {
   return {
@@ -156,6 +157,7 @@ export function requestJamieMove(
   const damageScale = scalingFromTenshin ? Math.max(variant.minimumScaling, scaling.multiplier) : scaling.scale;
   const rushEnhanced = jamie.rushUntilTick > state.tick && variant.row < 38 && variant.active.length > 0;
   if (rushEnhanced) jamie.rushUntilTick = 0;
+  stopJamieAudio(state, fighter, events);
   jamie.action = {
     moveId: variant.moveId, name: variant.name, pose: variant.pose, variantId: variant.id,
     frame: 0, duration, startTick: state.tick,
@@ -184,6 +186,7 @@ export function requestJamieMove(
     state.superFreezeSourceId = fighterId;
   }
   events.push({ type: "move", tick: state.tick, fighterId, moveId, variantId: variant.id, name: variant.name, category: variant.moveId.startsWith("A") ? "super" : variant.moveId.startsWith("S") ? "special" : variant.moveId.startsWith("D") ? "system" : "normal", x: fighter.x, y: fighter.y - fighter.height - 86 });
+  advanceJamieAudio(state, fighter, events);
   return true;
 }
 
@@ -192,7 +195,14 @@ export function setJamieHold(state: BattleState, fighterId: FighterId, held: boo
   const fighter = state.fighters.find((candidate) => candidate.id === fighterId);
   const action = getJamieState(fighter)?.action;
   if (!action || state.phase !== "running" || fighter?.capture) return false;
-  return setJamieActionHold(action, held);
+  const releasing = !held && action.held !== false;
+  const accepted = setJamieActionHold(action, held);
+  if (accepted && releasing && action.moveId === "S01") {
+    // An early release still completes the first drink in this host. Keep its
+    // native gulp at local24 (host47) before starting the release track.
+    action.audioExitFrame = Math.max(action.duration - 25, action.audioHoldEntered && !action.drinksApplied ? 48 : 0);
+  }
+  return accepted;
 }
 
 function applyDrink(state: BattleState, fighter: Fighter, variant: JamieVariant, events: BattleEvent[]): void {
@@ -205,6 +215,7 @@ function applyDrink(state: BattleState, fighter: Fighter, variant: JamieVariant,
   const level4Branch = variant.nativeLevel4DriveFrame !== undefined && (jamie.action?.nativeStyleAtStart ?? jamieResourceStyleId(jamie, state.tick)) >= 4;
   if (!hasNativeDriveEvent && !level4Branch) applyDriveChange(jamie, restore, { cause: "other" });
   events.push({ type: "drink", tick: state.tick, fighterId: fighter.id, level: effectiveDrinkLevel(fighter, state.tick), x: fighter.x, y: fighter.y - fighter.height - 110 });
+  emitJamieDrinkAudio(state, fighter, before, events);
 }
 
 function applyNativeEvents(state: BattleState, fighter: Fighter, authoredFrame: number, events: BattleEvent[]): void {
@@ -236,6 +247,7 @@ export function advanceJamieFreeze(state: BattleState, fighter: Fighter, events:
   const action = getJamieState(fighter)?.action;
   if (!action) return;
   action.introFrame = Math.min(action.introDuration ?? 0, (action.introFrame ?? 0) + 1);
+  advanceJamieAudio(state, fighter, events, true);
   applyNativeEvents(state, fighter, action.introFrame, events);
 }
 
@@ -266,11 +278,6 @@ function advanceNativeCapture(state: BattleState, fighter: Fighter, opponent: Fi
     const jamie = getJamieState(fighter)!;
     applySuperChange(jamie, capture.releaseSuperGain, { styleId: jamieResourceStyleId(jamie, state.tick) });
     applyDriveChange(jamie, capture.releaseDriveGain, { cause: "other" });
-    if (variant.moveId === "T02") {
-      const position = { x: fighter.x, y: fighter.y };
-      fighter.x = opponent.x; fighter.y = opponent.y;
-      opponent.x = position.x; opponent.y = position.y;
-    }
     releaseJamieCapture(state, fighter, variant.moveId !== "S08", events);
     if (variant.moveId === "S08") opponent.stunUntilTick = state.tick + Math.max(0, capture.releaseStun - 1);
     events.push({ type: "cinematic", tick: state.tick, sourceId: fighter.id, targetId: opponent.id, moveId: variant.moveId, phase: "finish", x: opponent.x, y: opponent.y - 70 });
@@ -281,10 +288,25 @@ function advanceAction(state: BattleState, _config: BattleConfig, fighter: Fight
   const jamie = getJamieState(fighter)!;
   const action = jamie.action;
   if (!action) return;
-  const variant = JAMIE_VARIANT_BY_ID[action.variantId];
+  let variant = JAMIE_VARIANT_BY_ID[action.variantId];
   action.frame = state.tick - action.startTick;
   action.visualFrame = action.frame;
   const frame = action.frame;
+  // Capture release precedes the drink branch. Keep the original confirmation
+  // clock and contact metadata instead of starting a new standalone S01 action.
+  const throwElapsed = action.confirmedAtFrame === undefined ? -1 : frame - action.confirmedAtFrame;
+  if (variant.id === "row-91" && action.connected && throwElapsed === JAMIE_THROW_DRINK.branchFrame && effectiveDrinkLevel(fighter, state.tick) < 4) {
+    variant = JAMIE_VARIANT_BY_ID["row-91-drink"];
+    action.variantId = variant.id;
+    action.name = variant.name;
+  }
+  const throwDrink = variant.id === "row-91-drink" && action.connected && throwElapsed >= JAMIE_THROW_DRINK.branchFrame;
+  if (throwDrink) {
+    action.pose = "drink";
+    action.duration = action.confirmedAtFrame! + JAMIE_THROW_DRINK.branchFrame + JAMIE_THROW_DRINK.recoveryFrame;
+    fighter.attackUntilTick = action.startTick + action.duration;
+    jamie.intent = "投技命中 · 饮酒";
+  }
   applyNativeEvents(state, fighter, frame + (action.introDuration ?? 0), events);
   if (!action.scalingRegistered) {
     const scaling = jamieMoveScaling(jamie, variant, state.tick, action.rushDamageMultiplier ?? 1);
@@ -297,6 +319,7 @@ function advanceAction(state: BattleState, _config: BattleConfig, fighter: Fight
   fighter.vx = 0;
   fighter.vy = 0;
   const captured = action.captureTargetId === opponent.id && opponent.capture?.sourceId === fighter.id;
+  advanceJamieAudio(state, fighter, events);
   if (captured) poseCapturedPair(state, fighter, opponent, action, variant);
   if (captured && variant.nativeCapture) advanceNativeCapture(state, fighter, opponent, action, variant, hits, events);
   if (captured && !variant.nativeCapture && variant.capture === "throw" && frame >= 30 && !action.finishApplied) {
@@ -342,6 +365,11 @@ function advanceAction(state: BattleState, _config: BattleConfig, fighter: Fight
     fighter.height = Math.max(0, Math.sin(progress * Math.PI) * 85);
   }
   const drinksApplied = action.drinksApplied ?? 0;
+  if (throwDrink && throwElapsed >= JAMIE_THROW_DRINK.branchFrame + JAMIE_THROW_DRINK.drinkFrame && !action.drinkApplied) {
+    applyDrink(state, fighter, variant, events);
+    action.drinksApplied = 1;
+    action.drinkApplied = true;
+  }
   const nativeDrinkEvent = !variant.held && variant.nativeMove && variant.id !== "row-87-drink" && nativeMoveEvents(variant.nativeMove, action.nativeStyleAtStart ?? 0).some(event => event.ID === 26 && event.Param01 === 1);
   if (!nativeDrinkEvent && variant.drinkFrames[drinksApplied] !== undefined && frame >= variant.drinkFrames[drinksApplied] && (!variant.held || action.held || drinksApplied === 0)) {
     applyDrink(state, fighter, variant, events);
@@ -424,6 +452,7 @@ function advanceAction(state: BattleState, _config: BattleConfig, fighter: Fight
   // The throw's last-frame hit still needs its confirmed PC/resource metadata.
   // onContact releases this action after resolving that hit, on this same tick.
   if (frame >= action.duration && !(captured && variant.capture === "throw" && action.finishApplied)) {
+    stopJamieAudio(state, fighter, events);
     releaseJamieCapture(state, fighter, true, events);
     jamie.action = null;
     fighter.crouching = false;
@@ -458,6 +487,7 @@ export function updateJamieFighters(state: BattleState, config: BattleConfig, ra
     // Host adapter: native routine/state bits are represented by stun, guard and
     // action state here; the unresolved command-state bit is conservatively gated
     // during attacks/Parry. A captured defender skips this invocation above.
+    const wasBurnout = jamie.burnout;
     advanceDriveRecovery(jamie, {
       eligible: !state.worldStopped,
       airborne: fighter.height > 0,
@@ -467,6 +497,7 @@ export function updateJamieFighters(state: BattleState, config: BattleConfig, ra
       canRegenerate: !holdingRecovery,
       canExitBurnout: !stunned && !knockedDown && !jamie.action,
     });
+    if (wasBurnout && !jamie.burnout) emitJamieVoice(state, fighter, events, jamie.guardLow ? 21941 : 21940);
     if (jamie.comboUntilTick < tick && !jamie.action?.captureTargetId) {
       resetJamieCombo(jamie);
     }

@@ -3,7 +3,7 @@ import { Battle } from "../Battle";
 import { DEFAULT_CONFIG } from "../../test/fixtures";
 import { resolveHits, resolveVictory } from "../combat";
 import { moveProjectiles, segmentHitsCircle } from "../../engine/systems/projectiles";
-import { ARENA, type BattleEvent, type PendingHit } from "../../engine/types";
+import { ARENA, TICK_RATE, type BattleEvent, type PendingHit } from "../../engine/types";
 
 function runBattle(seed = DEFAULT_CONFIG.seed): Battle {
   const battle = new Battle({ ...DEFAULT_CONFIG, seed });
@@ -24,7 +24,10 @@ describe("battle simulation", () => {
     for (const seed of [0, 1, 5, 42, 2026, 428003]) {
       const battle = runBattle(seed);
       expect(battle.state.phase).toBe("finished");
-      expect(battle.state.tick).toBeLessThanOrEqual(6000);
+      // TIMER_STOP pauses the round clock while captured actions still advance.
+      // Preserve the existing 600-frame allowance for a confirmed cinematic.
+      const roundTicks = battle.state.tick - (battle.state.roundStopTicks ?? 0);
+      expect(roundTicks).toBeLessThanOrEqual(battle.config.roundTimeSeconds * TICK_RATE + 600);
       for (const fighter of battle.state.fighters) {
         expect(fighter.hp).toBeGreaterThanOrEqual(0);
         expect(fighter.hp).toBeLessThanOrEqual(fighter.maxHp);
