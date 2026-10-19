@@ -1,0 +1,40 @@
+{
+  "version": 3,
+  "activeAssetSet": "sprites-v3/manifest.json",
+  "method": "built-in image_gen; transparent full-body sprites",
+  "generatedAt": "2026-10-18",
+  "atlasCount": 12,
+  "completeFigurePoseCount": 144,
+  "variants": {
+    "braided": 72,
+    "actualDrinkLevel4LooseHair": 72
+  },
+  "actualDimensions": {
+    "eachAtlas": {
+      "width": 1254,
+      "height": 1254
+    }
+  },
+  "reference": "official-jamie.png",
+  "referenceUrl": "https://www.streetfighter.com/6/zh-hant/character/jamie",
+  "promptRecord": "sprites-v3/PROMPTS.json",
+  "sourceHashesAndOriginalPaths": "sprites-v3/SOURCE.json",
+  "runtimeUse": "Complete figure textures selected by the existing 118-variant action timeline. Each figure is scaled uniformly; body parts are never stretched in the active renderer. True drink level 4 uses corresponding loose-hair figures; temporary SA2 keeps braided hair. Whole-sheet connected-component extraction preserves limbs crossing logical cells.",
+  "fidelityBoundary": "Generated 2D pose keyframes; not original CAPCOM 3D model or original motion data.",
+  "legacyFallback": {
+    "asset": "jamie-parts-v2.png",
+    "method": "built-in image_gen; transparent background",
+    "generatedAt": "2026-10-18",
+    "actualDimensions": {
+      "width": 1254,
+      "height": 1254
+    },
+    "reference": "official-jamie.png",
+    "referenceUrl": "https://www.streetfighter.com/6/zh-hant/character/jamie",
+    "referenceRole": "Jamie identity, clothing, colors and materials; CAPCOM original character reference",
+    "generationBrief": "Create a transparent 4 by 4 articulated character parts atlas for Jamie from Street Fighter 6, using the provided official portrait as the identity and costume reference. Preserve yellow cropped jacket and loose yellow pants, red waist cord, long black braid, blue gourd and black shoes. Detailed rendered materials and dimensional shading, consistent lighting. Each part isolated inside its own uniform cell with generous transparent padding, no labels or background. Row 1: head with topknot and neck; open jacket torso and abdomen; pelvis with red waist cord; long braid. Row 2: rear upper arm; front upper arm; rear forearm without hand; front forearm without hand. Row 3: rear thigh; front thigh; rear shin without shoe; front shin without shoe. Row 4: rear hand; front hand; blue gourd; black shoe. Limb parts vertical with proximal joint near center at 15 percent height and distal joint near center at 85 percent height. No complete posed character or extra limbs. Intended square 2048px atlas for an articulated 2D game character.",
+    "runtimeUse": "Individual atlas parts are cropped and attached to animated joints in Phaser. The atlas is a new generated game asset, not the original Street Fighter 6 model or animation data.",
+    "originalGeneratedPath": "C:/Users/ASUS/.codex/generated_images/01a14df1-c190-71b2-aae0-595f22fc2e5f/exec-12e57603-29ae-453a-9ede-6ce89acf8eec.png",
+    "preservation": "Original generated file and official portrait retained unchanged."
+  }
+}

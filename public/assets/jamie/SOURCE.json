@@ -1,0 +1,10 @@
+{
+  "asset": "official-jamie.png",
+  "character": "Jamie / 杰米",
+  "creator": "CAPCOM",
+  "sourcePage": "https://www.streetfighter.com/6/zh-hant/character/jamie",
+  "originalImage": "https://www.streetfighter.com/6/assets/images/character/jamie/jamie.png",
+  "downloadedOn": "2026-10-18",
+  "usage": "Original official character image for local prototype character selection and visual reference; game actions are rendered separately.",
+  "modifications": "None. Original PNG downloaded byte-for-byte."
+}

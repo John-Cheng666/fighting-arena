@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem("arena-lab-theme") === "dark" ? "dark" : "light";
+      } catch { /* Continue with the default light theme when storage is unavailable. */ }
+    </script>
+    <meta name="theme-color" content="#f4f5f7" />
+    <meta
+      name="description"
+      content="设定双方，观察交锋，复盘每一次出招。支持自动对战、招式演练与完整对局记录的格斗实验场。"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>斗蛐蛐实验室 · Fighting Arena</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+.vite/
+.vitest/
+.local/
+*.log
+.DS_Store
+research/

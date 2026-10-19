@@ -1,0 +1,92 @@
+@media (min-width: 1201px) { .playback-control > span { display: none; } }
+@media (max-width: 1200px) {
+  .app-shell { padding: 0 28px; }
+  .workspace { grid-template-columns: minmax(0,1fr) 332px; gap: 20px; }
+  .main-nav { gap: 0; } .main-nav a { padding: 0 12px; font-size: 13px; }
+  .local-badge { display: none; }
+  .arena-controls { gap: 9px; } .playback-control { order: 3; width: 100%; }
+  .playback-control button { flex: 1; min-height: 36px; } .primary-button { padding: 9px 13px; }
+  .arena-viewport { height: clamp(380px, calc(100svh - 400px), 600px); }
+  .arena-coordinate { display: none; } .match-stats > div { padding: 0 16px; }
+  .stage-card-copy > span { display: none; } .stage-selector { padding: 20px; }
+}
+@media (max-width: 960px) {
+  .app-shell { padding: 0 24px; } .workspace { grid-template-columns: minmax(0,1fr) 310px; gap: 18px; }
+  .brand { font-size: 17px; } .brand small { font-size: 10px; }
+  .main-nav a { padding: 0 10px; font-size: 12px; gap: 5px; } .topbar { gap: 12px; }
+  .main-nav a > svg { width: 16px; } .arena-topline { padding: 15px 13px; }
+  .arena-name { gap: 8px; } .arena-name h2 { font-size: 16px; }
+  .arena-name > div > span { font-size: 9px; letter-spacing: .3px; }
+  .arena-index { width: 28px; height: 32px; } .match-status { font-size: 11px; padding: 4px 7px; }
+  .arena-controls { padding: 10px; } .primary-button kbd { display: none; } .restart-button { padding: 8px; }
+  .match-stats > div { padding: 0 12px; } .match-stats strong { font-size: 22px; }
+  .match-stats strong small { display: none; } .stage-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .stage-card-copy > span { display: block; } .fighter-card { padding: 15px; }
+  .log-filters { grid-template-columns: 145px 145px minmax(0,1fr); }
+  .clear-filters { grid-column: 1 / -1; justify-self: start; min-height: 32px; padding: 0; }
+}
+@media (max-width: 800px) {
+  html { scroll-padding-top: 148px; } .app-shell { padding: 0 20px; }
+  .topbar { min-height: 116px; display: grid; grid-template-columns: 1fr auto; gap: 0; padding-top: 12px; }
+  .brand-mark { width: 36px; height: 36px; } .brand small { display: none; }
+  .main-nav { grid-row: 2; grid-column: 1 / -1; justify-content: space-between; margin-top: 8px; }
+  .main-nav a { justify-content: center; flex: 1; min-height: 46px; padding: 0 8px; font-size: 13px; }
+  .topbar-actions { grid-row: 1; grid-column: 2; } .theme-toggle { width: 44px; height: 44px; min-width: 44px; }
+  .workspace { grid-template-columns: minmax(0,1fr); gap: 26px; } .arena-viewport { height: auto; aspect-ratio: 1; }
+  .arena-controls { padding: 12px; } .primary-button kbd { display: block; }
+  .playback-control { order: initial; width: auto; } .playback-control > span { display: none; } .playback-control button { min-width: 34px; }
+  .arena-topline { padding: 16px 18px; } .arena-name > div > span { font-size: 10px; letter-spacing: 1px; }
+  .arena-name h2 { font-size: 18px; } .match-status { font-size: 12px; } .arena-index { width: 35px; height: 36px; }
+  .arena-panel, .configuration-panel, .battle-log { scroll-margin-top: 140px; }
+  .fighter-list { grid-template-columns: repeat(2,minmax(0,1fr)); align-items: start; }
+  .stage-grid { grid-template-columns: repeat(3,minmax(0,1fr)); } .match-stats > div { padding: 0 22px; }
+  .match-stats strong { font-size: 25px; } .match-stats strong small { display: inline; }
+  .with-training > .training-panel { grid-column: 1; grid-row: 1; }
+  .with-training .arena-column { grid-column: 1; grid-row: 2; }
+  .with-training > .sidebar { grid-column: 1; grid-row: 3; }
+  .reference-note { margin-top: 18px; }
+  .settings-form { padding: 24px; } .settings-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .settings-form .apply-button { width: auto; min-width: 200px; } .records-heading { padding: 24px; }
+  .log-toolbar, .complete-log-list { padding-left: 24px; padding-right: 24px; }
+}
+@media (max-width: 600px) {
+  .app-shell { padding: 0 16px; } .main-content { padding-top: 26px; }
+  .page-heading { align-items: flex-start; gap: 12px; margin-bottom: 16px; }
+  .page-heading p { font-size: 14px; line-height: 1.8; max-width: 28em; } .session-meta { display: none; }
+  .eyebrow { font-size: 10px; margin-bottom: 10px; } .version-tag { font-size: 9px; }
+  .quick-guide { margin-bottom: 20px; } .guide-steps { grid-template-columns: 1fr; gap: 16px; } .guide-shortcuts { font-size: 12px; }
+  .arena-controls { gap: 8px; } .transport-controls { gap: 3px; }
+  .primary-button { font-size: 13px; padding: 9px 14px; } .primary-button kbd { display: none; }
+  .restart-button { padding: 8px 10px; } .utility-controls { margin-left: auto; gap: 2px; }
+  .playback-control { width: 100%; order: 3; } .playback-control > span { display: block; }
+  .playback-control > button { min-height: 44px; flex: 1; } .arena-name h2 { font-size: 16px; }
+  .arena-topline { padding: 14px 12px; gap: 8px; } .arena-name > div > span { font-size: 9px; letter-spacing: .8px; }
+  .arena-index { width: 29px; height: 33px; font-size: 11px; } .match-status { font-size: 11px; padding: 5px 7px; gap: 5px; }
+  .arena-bottomline { padding: 12px; font-size: 11px; } .match-stats { margin-top: 12px; padding: 16px 0; }
+  .match-stats > div { padding: 0 12px; } .match-stats > div > span { font-size: 11px; gap: 4px; }
+  .match-stats > div > span > svg { width: 13px; } .match-stats strong { font-size: 22px; } .match-stats strong small { display: none; }
+  .winner-banner { padding: 15px; gap: 10px; } .winner-banner strong { font-size: 18px; } .winner-banner a { font-size: 11px; gap: 4px; }
+  .stage-selector { margin-top: 18px; padding: 18px; } .stage-selector h2, .section-heading h2, .records-heading h2 { font-size: 19px; }
+  .stage-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; } .stage-card { aspect-ratio: 1.5; }
+  .stage-card-copy { flex-direction: column; gap: 1px; bottom: 8px; left: 8px; } .stage-card-copy strong { font-size: 13px; }
+  .stage-selection-copy p { font-size: 13px; } .stage-selector-footnote { font-size: 12px; flex-wrap: wrap; } .stage-count { font-size: 15px; }
+  .fighter-list { grid-template-columns: 1fr; } .fighter-card { padding: 18px; } .fighter-identity p { font-size: 12px; }
+  .hp-line { font-size: 13px; } .hp-line strong { font-size: 16px; } .settings-grid { grid-template-columns: 1fr; }
+  .settings-form { padding: 20px; } .settings-form .apply-button { width: 100%; }
+  .roster-note, .reference-note p { font-size: 12px; } .reference-note > div { font-size: 13px; } .reference-note a { min-height: 44px; }
+  .battle-log { margin-top: 28px; } .records-heading { padding: 22px 18px 18px; } .records-heading p { font-size: 12px; }
+  .records-actions { width: 100%; gap: 8px; } .records-actions > button { flex: 1; font-size: 12px; padding: 8px; }
+  .log-toolbar { padding: 16px 18px; } .log-filters { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+  .log-search { grid-column: 1 / -1; } .log-filters input, .log-filters select { font-size: 16px; } .log-meta { font-size: 12px; }
+  .damage-sources { padding: 0 18px; } .damage-source-list { grid-template-columns: 1fr; } .complete-log-list { padding: 0 18px; }
+  .complete-log-list > li { grid-template-columns: 65px minmax(0,1fr); gap: 12px; padding: 16px 0; } .log-marker { display: none; }
+  .log-time { font-size: 12px; } .log-message { font-size: 14px; } .log-message .contact-detail { font-size: 12px; }
+  .log-pagination { padding: 16px 18px; gap: 7px; font-size: 10px; } .log-pagination button { padding: 7px 10px; font-size: 12px; }
+  .records-footnote { padding: 14px 18px; align-items: flex-start; font-size: 12px; } .records-footnote svg { margin-top: 3px; }
+  .empty-log { min-height: 245px; } .empty-log > strong { font-size: 15px; } .empty-log > p { font-size: 12px; }
+  .page-footer { font-size: 10px; gap: 8px; padding: 20px 0; } .page-footer > span:first-child { gap: 8px; }
+  .toast-region { bottom: 16px; right: 16px; left: 16px; } .toast { font-size: 13px; padding-left: 14px; gap: 9px; } .toast > span { flex: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

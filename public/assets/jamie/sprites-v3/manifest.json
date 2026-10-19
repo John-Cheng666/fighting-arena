@@ -1,0 +1,656 @@
+﻿{
+    "version":  3,
+    "worldHeight":  124,
+    "sheets":  [
+                   {
+                       "id":  "a-base",
+                       "image":  "/assets/jamie/sprites-v3/a-base.png",
+                       "columns":  3,
+                       "rows":  4,
+                       "referenceHeight":  287,
+                       "poses":  [
+                                     "idle",
+                                     "idle-b",
+                                     "walk-a",
+                                     "walk-b",
+                                     "crouch",
+                                     "guard-high",
+                                     "guard-low",
+                                     {
+                                         "id":  "jump-tuck",
+                                         "scale":  0.88
+                                     },
+                                     "landing",
+                                     "hit-recoil",
+                                     "hit-body",
+                                     "knockdown"
+                                 ]
+                   },
+                   {
+                       "id":  "b-normals",
+                       "image":  "/assets/jamie/sprites-v3/b-normals.png",
+                       "columns":  3,
+                       "rows":  4,
+                       "referenceHeight":  287,
+                       "poses":  [
+                                     {
+                                         "id":  "stand-lp",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "stand-lk",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "stand-mp",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "stand-mk",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "stand-hp",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "stand-hk",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "crouch-lp",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "crouch-lk",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "crouch-mp",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "crouch-mk",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "crouch-hp",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "crouch-hk",
+                                         "scale":  0.94
+                                     }
+                                 ]
+                   },
+                   {
+                       "id":  "c-air-unique",
+                       "image":  "/assets/jamie/sprites-v3/c-air-unique.png",
+                       "columns":  3,
+                       "rows":  4,
+                       "referenceHeight":  287,
+                       "poses":  [
+                                     {
+                                         "id":  "jump-lp",
+                                         "scale":  0.83
+                                     },
+                                     {
+                                         "id":  "jump-lk",
+                                         "scale":  0.85
+                                     },
+                                     {
+                                         "id":  "jump-mp",
+                                         "scale":  0.88
+                                     },
+                                     {
+                                         "id":  "jump-mk",
+                                         "scale":  0.88
+                                     },
+                                     {
+                                         "id":  "jump-hp",
+                                         "scale":  0.84
+                                     },
+                                     {
+                                         "id":  "jump-hk",
+                                         "scale":  0.88
+                                     },
+                                     {
+                                         "id":  "tensei-kick",
+                                         "scale":  0.93
+                                     },
+                                     {
+                                         "id":  "falling-star",
+                                         "scale":  0.93
+                                     },
+                                     {
+                                         "id":  "hermit-elbow",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "senei-kick",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "sway-back",
+                                         "scale":  1
+                                     },
+                                     {
+                                         "id":  "flying-side-kick",
+                                         "scale":  0.88
+                                     }
+                                 ]
+                   },
+                   {
+                       "id":  "d-specials",
+                       "image":  "/assets/jamie/sprites-v3/d-specials.png",
+                       "columns":  3,
+                       "rows":  4,
+                       "referenceHeight":  287,
+                       "poses":  [
+                                     {
+                                         "id":  "drink-reach",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "drink-pour",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "drink-wipe",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "freeflow-first",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "freeflow-upper",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "freeflow-finish",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "freeflow-roundhouse",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "swagger-palm",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "arrow-rise",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "dive-kick",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "bakkai-split-a",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "bakkai-split-b",
+                                         "scale":  0.96
+                                     }
+                                 ]
+                   },
+                   {
+                       "id":  "e-throws-drive",
+                       "image":  "/assets/jamie/sprites-v3/e-throws-drive.png",
+                       "columns":  3,
+                       "rows":  4,
+                       "referenceHeight":  287,
+                       "poses":  [
+                                     {
+                                         "id":  "tenshin",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "hermit-punch",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "throw-grab",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "throw-knee",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "throw-swing",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "throw-release",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "impact-palm",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "reversal-sweep",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "parry",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "drive-rush",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "backflip",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "landing-e",
+                                         "scale":  0.96
+                                     }
+                                 ]
+                   },
+                   {
+                       "id":  "f-supers",
+                       "image":  "/assets/jamie/sprites-v3/f-supers.png",
+                       "columns":  3,
+                       "rows":  4,
+                       "referenceHeight":  287,
+                       "poses":  [
+                                     {
+                                         "id":  "super-focus",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "sa1-handstand-a",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "sa1-handstand-b",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "sa3-beckon",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "sa3-wrist",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "sa3-coil",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "sa3-double-kick",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "ca-reach-neck",
+                                         "scale":  0.95,
+                                         "hand":  [
+                                                      370,
+                                                      72
+                                                  ]
+                                     },
+                                     {
+                                         "id":  "ca-neck-pull",
+                                         "scale":  0.95,
+                                         "hand":  [
+                                                      356,
+                                                      62
+                                                  ]
+                                     },
+                                     {
+                                         "id":  "ca-neck-release",
+                                         "scale":  0.95,
+                                         "hand":  [
+                                                      347,
+                                                      129.5
+                                                  ]
+                                     },
+                                     {
+                                         "id":  "victim-neck-arched",
+                                         "scale":  0.95,
+                                         "neck":  [
+                                                      159,
+                                                      40.5
+                                                  ]
+                                     },
+                                     {
+                                         "id":  "victim-airborne",
+                                         "scale":  0.95
+                                     }
+                                 ]
+                   },
+                   {
+                       "id":  "g-loose-base",
+                       "image":  "/assets/jamie/sprites-v3/g-loose-base.png",
+                       "columns":  3,
+                       "rows":  4,
+                       "referenceHeight":  287,
+                       "poses":  [
+                                     "loose-idle",
+                                     "loose-idle-b",
+                                     "loose-walk-a",
+                                     "loose-walk-b",
+                                     "loose-crouch",
+                                     "loose-guard-high",
+                                     "loose-guard-low",
+                                     {
+                                         "id":  "loose-jump-tuck",
+                                         "scale":  0.88
+                                     },
+                                     "loose-landing",
+                                     "loose-hit-recoil",
+                                     "loose-hit-body",
+                                     "loose-knockdown"
+                                 ]
+                   },
+                   {
+                       "id":  "h-loose-supers",
+                       "image":  "/assets/jamie/sprites-v3/h-loose-supers.png",
+                       "columns":  3,
+                       "rows":  4,
+                       "referenceHeight":  287,
+                       "poses":  [
+                                     {
+                                         "id":  "loose-super-focus",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "loose-sa1-handstand-a",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "loose-sa1-handstand-b",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "loose-sa3-beckon",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "loose-sa3-wrist",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "loose-sa3-coil",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "loose-sa3-double-kick",
+                                         "scale":  0.95
+                                     },
+                                     {
+                                         "id":  "loose-ca-reach-neck",
+                                         "scale":  0.95,
+                                         "hand":  [
+                                                      370,
+                                                      72
+                                                  ]
+                                     },
+                                     {
+                                         "id":  "loose-ca-neck-pull",
+                                         "scale":  0.95,
+                                         "hand":  [
+                                                      356,
+                                                      62
+                                                  ]
+                                     },
+                                     {
+                                         "id":  "loose-ca-neck-release",
+                                         "scale":  0.95,
+                                         "hand":  [
+                                                      347,
+                                                      129.5
+                                                  ]
+                                     },
+                                     {
+                                         "id":  "loose-victim-neck-arched",
+                                         "scale":  0.95,
+                                         "neck":  [
+                                                      161,
+                                                      39.5
+                                                  ]
+                                     },
+                                     {
+                                         "id":  "loose-victim-airborne",
+                                         "scale":  0.95
+                                     }
+                                 ]
+                   },
+                   {
+                       "id":  "i-loose-normals",
+                       "image":  "/assets/jamie/sprites-v3/i-loose-normals.png",
+                       "columns":  3,
+                       "rows":  4,
+                       "referenceHeight":  287,
+                       "poses":  [
+                                     {
+                                         "id":  "loose-stand-lp",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "loose-stand-lk",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "loose-stand-mp",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "loose-stand-mk",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "loose-stand-hp",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "loose-stand-hk",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "loose-crouch-lp",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "loose-crouch-lk",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "loose-crouch-mp",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "loose-crouch-mk",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "loose-crouch-hp",
+                                         "scale":  0.94
+                                     },
+                                     {
+                                         "id":  "loose-crouch-hk",
+                                         "scale":  0.94
+                                     }
+                                 ]
+                   },
+                   {
+                       "id":  "j-loose-air-unique",
+                       "image":  "/assets/jamie/sprites-v3/j-loose-air-unique.png",
+                       "columns":  3,
+                       "rows":  4,
+                       "referenceHeight":  287,
+                       "poses":  [
+                                     {
+                                         "id":  "loose-jump-lp",
+                                         "scale":  0.83
+                                     },
+                                     {
+                                         "id":  "loose-jump-lk",
+                                         "scale":  0.85
+                                     },
+                                     {
+                                         "id":  "loose-jump-mp",
+                                         "scale":  0.88
+                                     },
+                                     {
+                                         "id":  "loose-jump-mk",
+                                         "scale":  0.88
+                                     },
+                                     {
+                                         "id":  "loose-jump-hp",
+                                         "scale":  0.84
+                                     },
+                                     {
+                                         "id":  "loose-jump-hk",
+                                         "scale":  0.88
+                                     },
+                                     {
+                                         "id":  "loose-tensei-kick",
+                                         "scale":  0.93
+                                     },
+                                     {
+                                         "id":  "loose-falling-star",
+                                         "scale":  0.93
+                                     },
+                                     {
+                                         "id":  "loose-hermit-elbow",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-senei-kick",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-sway-back",
+                                         "scale":  1
+                                     },
+                                     {
+                                         "id":  "loose-flying-side-kick",
+                                         "scale":  0.88
+                                     }
+                                 ]
+                   },
+                   {
+                       "id":  "k-loose-specials",
+                       "image":  "/assets/jamie/sprites-v3/k-loose-specials.png",
+                       "columns":  3,
+                       "rows":  4,
+                       "referenceHeight":  287,
+                       "poses":  [
+                                     {
+                                         "id":  "loose-drink-reach",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-drink-pour",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-drink-wipe",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-freeflow-first",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-freeflow-upper",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-freeflow-finish",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-freeflow-roundhouse",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-swagger-palm",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-arrow-rise",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-dive-kick",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-bakkai-split-a",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-bakkai-split-b",
+                                         "scale":  0.96
+                                     }
+                                 ]
+                   },
+                   {
+                       "id":  "l-loose-throws-drive",
+                       "image":  "/assets/jamie/sprites-v3/l-loose-throws-drive.png",
+                       "columns":  3,
+                       "rows":  4,
+                       "referenceHeight":  287,
+                       "poses":  [
+                                     {
+                                         "id":  "loose-tenshin",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-hermit-punch",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-throw-grab",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-throw-knee",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-throw-swing",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-throw-release",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-impact-palm",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-reversal-sweep",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-parry",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-drive-rush",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-backflip",
+                                         "scale":  0.96
+                                     },
+                                     {
+                                         "id":  "loose-landing-e",
+                                         "scale":  0.96
+                                     }
+                                 ]
+                   }
+               ]
+}

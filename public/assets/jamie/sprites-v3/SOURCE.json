@@ -1,0 +1,168 @@
+{
+  "version": 3,
+  "character": "Jamie / 杰米, Street Fighter 6",
+  "generatedAt": "2026-10-18",
+  "method": "built-in image_gen; transparent background",
+  "reference": {
+    "file": "../official-jamie.png",
+    "url": "https://www.streetfighter.com/6/zh-hant/character/jamie",
+    "role": "CAPCOM official identity, costume and colors reference; original retained"
+  },
+  "promptRecord": "PROMPTS.json",
+  "runtimeManifest": "manifest.json",
+  "atlasCount": 12,
+  "completeFigurePoseCount": 144,
+  "coverage": {
+    "braided": 72,
+    "looseHair": 72,
+    "groups": [
+      "locomotion and reactions",
+      "18 normals",
+      "unique techniques",
+      "specials and drink",
+      "throws and Drive",
+      "Super Arts and Critical Art"
+    ]
+  },
+  "preservation": "Project PNGs are byte-identical copies of selected built-in generated outputs. Original generated files remain in CODEX_HOME/generated_images. Runtime extracts full figure textures without overwriting source PNGs.",
+  "copyHashesVerified": true,
+  "totalBytes": 19902899,
+  "assets": [
+    {
+      "file": "a-base.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1386385,
+      "sha256": "aeb4583ca7ca5cad0c58a02e26e092f02e2ddab9b59ef6a3e8ce628766250cd8",
+      "id": "A",
+      "originalGeneratedPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-964acd02-3fe6-4acd-b1b0-114bb644fbe6.png",
+      "promptId": "prompts.A",
+      "inputRole": "official identity/costume"
+    },
+    {
+      "file": "b-normals.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1584924,
+      "sha256": "6e275a3a046f795efa77ac9340cb01455f23e71309f2fae2ad4b84a76359a36d",
+      "id": "B",
+      "originalGeneratedPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-d6ff6592-aeb3-4e34-8ae9-b61bb67095d3.png",
+      "promptId": "prompts.B",
+      "inputRole": "official identity plus Sheet A rendering style"
+    },
+    {
+      "file": "c-air-unique.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1585651,
+      "sha256": "1b5e6091f434823a9e9868aa55a175bb9f3e0925c94d94110a4fdb20d266a963",
+      "id": "C",
+      "originalGeneratedPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-611fe363-1ab1-44ff-81f3-b8956406d127.png",
+      "promptId": "prompts.C",
+      "inputRole": "official identity plus Sheet A rendering style"
+    },
+    {
+      "file": "d-specials.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1618170,
+      "sha256": "29a1d9adaadd552330e38d1bb4afffae935ade32ddf8140412fe0b28b3ecbfd6",
+      "id": "D",
+      "originalGeneratedPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-aed7b81a-cbcd-4a29-9c39-e091b6a117f4.png",
+      "promptId": "corrections.D_removeDuplicateDrinkingGourd",
+      "inputRole": "official identity plus Sheet A rendering style"
+    },
+    {
+      "file": "e-throws-drive.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1703183,
+      "sha256": "46979ae2bdc87f8202828269f8a990451259857b3a90cf8829e997bdd68ddf8b",
+      "id": "E",
+      "originalGeneratedPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-9fb257e1-2abf-4aa4-a106-360102a5f9cf.png",
+      "promptId": "prompts.E",
+      "inputRole": "official identity plus Sheet A rendering style"
+    },
+    {
+      "file": "f-supers.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1677634,
+      "sha256": "2e50dae0d0e7eaa9efc52024d5488df3b55dc7f7de357276225e2a089520b359",
+      "id": "F",
+      "originalGeneratedPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-a77137cd-ecfa-4d28-a979-6b4deaf72c5f.png",
+      "promptId": "prompts.F",
+      "inputRole": "official identity plus Sheet A rendering style"
+    },
+    {
+      "file": "g-loose-base.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1527941,
+      "sha256": "7876dee3cebcfb1c7a0b7cd87c9e3fa390400d8cccdae16680cdc43f347665c7",
+      "id": "G",
+      "originalGeneratedPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-35e4e09c-feb0-43ae-8c37-8d87a7e9918b.png",
+      "promptId": "prompts.G",
+      "inputRole": "hair-only edit of matching full-body source"
+    },
+    {
+      "file": "h-loose-supers.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1811345,
+      "sha256": "e8aa1e68119b5531b336f080326a7d0325b3a20178b4a2eb46f84b703c1fd4a5",
+      "id": "H",
+      "originalGeneratedPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-c36a2305-91e6-4b17-8a11-9361e2936183.png",
+      "promptId": "prompts.H",
+      "inputRole": "hair-only edit of matching full-body source"
+    },
+    {
+      "file": "i-loose-normals.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1672391,
+      "sha256": "06cd08cf308106bbf1dcf6b58ff7b773b7f9d99bebeddc1f771e5a9f27eb9c8a",
+      "id": "I",
+      "originalGeneratedPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-f37a980e-e882-49d4-bce3-ad557fa3d573.png",
+      "promptId": "prompts.I",
+      "inputRole": "hair-only edit of matching full-body source"
+    },
+    {
+      "file": "j-loose-air-unique.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1715432,
+      "sha256": "6fcf307e68ddc72a38af78113651da969b0c0cd5939e29786759df5a33022f1f",
+      "id": "J",
+      "originalGeneratedPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-c2570e12-8909-4421-84be-d2102aa94b7c.png",
+      "promptId": "prompts.J",
+      "inputRole": "hair-only edit of matching full-body source"
+    },
+    {
+      "file": "k-loose-specials.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1823829,
+      "sha256": "07f26e23ff9b675f1063d6d125de93c050bbd8cb5b676f14093b412369c591f0",
+      "id": "K",
+      "originalGeneratedPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-49f3ccd8-b6c8-4b95-82ef-3d17e774cdd9.png",
+      "promptId": "prompts.K",
+      "inputRole": "hair-only edit of matching full-body source"
+    },
+    {
+      "file": "l-loose-throws-drive.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1796014,
+      "sha256": "f6e766bf54bac91a10a514a2bd4e064322bb167fcc9bafcfe25967aace1c58c3",
+      "id": "L",
+      "originalGeneratedPath": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-951c6dc6-8ad8-4311-b345-94ce236d53a0.png",
+      "promptId": "prompts.L",
+      "inputRole": "hair-only edit of matching full-body source"
+    }
+  ],
+  "retainedIntermediate": {
+    "D_beforeSingleCellGourdCorrection": "C:\\Users\\ASUS\\.codex\\generated_images\\01a14df1-c190-71b2-aae0-595f22fc2e5f\\exec-f8ecd366-557a-4871-9047-8badc6cdb294.png"
+  },
+  "fidelityBoundary": "Generated complete-person 2D keyframes reconstructed from character references; not CAPCOM's original 3D mesh, textures or motion data."
+}

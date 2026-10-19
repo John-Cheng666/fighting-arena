@@ -1,0 +1,232 @@
+﻿{
+    "capturedAtUtc":  "2026-10-18T08:31:44.1009790Z",
+    "owner":  "CAPCOM",
+    "purpose":  "Unmodified official move videos cached for local reference comparison",
+    "sourcePage":  "https://www.streetfighter.com/6/zh-hant/character/jamie/movelist",
+    "entries":  [
+                    {
+                        "moveId":  "S01",
+                        "name":  "The Devil Inside",
+                        "file":  "501.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/501.mp4",
+                        "bytes":  706497,
+                        "sha256":  "b19b6e841ce834f0a5f3535053519472bda0d863da9dbc2af0ee624c2770d699"
+                    },
+                    {
+                        "moveId":  "S02",
+                        "name":  "Freeflow Strikes",
+                        "file":  "502.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/502.mp4",
+                        "bytes":  416193,
+                        "sha256":  "b48c2c3775176110e52c7aef5d30baddad48e1cad7007e7be68ec5097b53d07a"
+                    },
+                    {
+                        "moveId":  "S03",
+                        "name":  "Freeflow Kicks",
+                        "file":  "503.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/503.mp4",
+                        "bytes":  458715,
+                        "sha256":  "d748b091d984b5346ccc8e712baf04c0439107023a08bc4905a42cde11791e6b"
+                    },
+                    {
+                        "moveId":  "S04",
+                        "name":  "Swagger Step",
+                        "file":  "504.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/504.mp4",
+                        "bytes":  382961,
+                        "sha256":  "98a06000903f15846bd5b05bc27926cbc121e3102344bbe588cf8a949b56c536"
+                    },
+                    {
+                        "moveId":  "S05",
+                        "name":  "Arrow Kick",
+                        "file":  "505.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/505.mp4",
+                        "bytes":  413659,
+                        "sha256":  "2f568bd4fda720217de236226b16fd81b075fbb936a8b8b87ab3443a6aa62918"
+                    },
+                    {
+                        "moveId":  "S06",
+                        "name":  "Luminous Dive Kick",
+                        "file":  "506.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/506.mp4",
+                        "bytes":  419839,
+                        "sha256":  "240d5524edd11d0e1109be3ccb3afd81a6d971de58e07b61e4fb4e4e3886005d"
+                    },
+                    {
+                        "moveId":  "S07",
+                        "name":  "Bakkai",
+                        "file":  "507.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/507.mp4",
+                        "bytes":  560176,
+                        "sha256":  "f68b291122a07e361f39ad8fe4c4b222e0d7470c2740dba910bbb9ffb2606893"
+                    },
+                    {
+                        "moveId":  "S08",
+                        "name":  "Tenshin",
+                        "file":  "508.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/508.mp4",
+                        "bytes":  522284,
+                        "sha256":  "a75abb8f80a78928e9de425a01f5377ad2e8ca71100a46a6ef162822f58869ec"
+                    },
+                    {
+                        "moveId":  "S09",
+                        "name":  "Swagger Hermit Punch",
+                        "file":  "509.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/509.mp4",
+                        "bytes":  484562,
+                        "sha256":  "b4eb34738df6a70e939eda563ab3049d6a32e8c0e4b9e6056ce1ff1d2d9ac86e"
+                    },
+                    {
+                        "moveId":  "A01",
+                        "name":  "Breakin\u0027",
+                        "file":  "601.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/601.mp4",
+                        "bytes":  473328,
+                        "sha256":  "5f7e45537c13bd5edba540df52d2109dbf08f8becf88ee0be25d3a17ee865145"
+                    },
+                    {
+                        "moveId":  "A02",
+                        "name":  "The Devil\u0027s Song",
+                        "file":  "602.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/602.mp4",
+                        "bytes":  330448,
+                        "sha256":  "915495b8b8dbcab4aafdea06cfbb8c1dfdec5ad477eed4ad5b5b71a64fc2d4ed"
+                    },
+                    {
+                        "moveId":  "A03",
+                        "name":  "Getsuga Saiho",
+                        "file":  "603.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/603.mp4",
+                        "bytes":  715953,
+                        "sha256":  "ef87428d12a30c1038024412f9b23a371d563f99228215478ebec95238b51d8b"
+                    },
+                    {
+                        "moveId":  "U01",
+                        "name":  "Tensei Kick",
+                        "file":  "401.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/401.mp4",
+                        "bytes":  163591,
+                        "sha256":  "bc1850f931bb82504a330083160e893b3cc85794199d46d6dca83b72d85fd51d"
+                    },
+                    {
+                        "moveId":  "U02",
+                        "name":  "Phantom Sway",
+                        "file":  "402.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/402.mp4",
+                        "bytes":  281205,
+                        "sha256":  "57f3cbca69dc294b5f0d3b6908baddbb1a9ae2c3e1e6a534e7d331899cb44dc1"
+                    },
+                    {
+                        "moveId":  "U03",
+                        "name":  "Falling Star Kick",
+                        "file":  "403.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/403.mp4",
+                        "bytes":  159618,
+                        "sha256":  "d62d15bda0ceafe3ae03719f92acbf50cf529c49db12121cb40d353190cb4c43"
+                    },
+                    {
+                        "moveId":  "U04",
+                        "name":  "Hermit\u0027s Elbow",
+                        "file":  "404.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/404.mp4",
+                        "bytes":  163741,
+                        "sha256":  "4ed2f7c66d0368a2be2e5e4083f689b3f233c13a5ee8b205e80d038a6fb57c69"
+                    },
+                    {
+                        "moveId":  "U05",
+                        "name":  "Senei Kick",
+                        "file":  "405.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/405.mp4",
+                        "bytes":  184928,
+                        "sha256":  "51ef8fe85af9f017fea0704430c40b49f8c45011abba82f8cdb25d7fd2874b45"
+                    },
+                    {
+                        "moveId":  "U06",
+                        "name":  "Bitter Strikes",
+                        "file":  "406.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/406.mp4",
+                        "bytes":  167262,
+                        "sha256":  "1267757f2949c7ff712dd188be3e9503a89330cff654974173529c83b3de86b8"
+                    },
+                    {
+                        "moveId":  "U07",
+                        "name":  "Full Moon Kick",
+                        "file":  "407.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/407.mp4",
+                        "bytes":  280613,
+                        "sha256":  "dee5606d01c3e81f141ecd7157cb415e570379bd202e6a26eace737cfcf6c1a8"
+                    },
+                    {
+                        "moveId":  "U08",
+                        "name":  "Intoxicated Assault",
+                        "file":  "408.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/408.mp4",
+                        "bytes":  261384,
+                        "sha256":  "fff3a64d2be1228b63ceea52635233ad522ce23e44383d8656a39649db9abab2"
+                    },
+                    {
+                        "moveId":  "U09",
+                        "name":  "Ransui Haze",
+                        "file":  "409.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/409.mp4",
+                        "bytes":  839560,
+                        "sha256":  "29dfd462d19664d6535d3f6335351c596fbd70d5c604e8ee1e204aa6c8bde236"
+                    },
+                    {
+                        "moveId":  "T01",
+                        "name":  "Back Shaver",
+                        "file":  "101.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/101.mp4",
+                        "bytes":  254683,
+                        "sha256":  "c37053d0721062f3ff3a95c6a0b610d7ecf88149f463b44a830b29863c0854a1"
+                    },
+                    {
+                        "moveId":  "T02",
+                        "name":  "Wheel Punch",
+                        "file":  "102.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/102.mp4",
+                        "bytes":  323524,
+                        "sha256":  "efee038bf4562f4077515d4f6f4b6c7c0614ce893d1693c9b5210dfc68316e1b"
+                    },
+                    {
+                        "moveId":  "D01",
+                        "name":  "Drive Impact: Vainglory Strike",
+                        "file":  "201.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/201.mp4",
+                        "bytes":  215071,
+                        "sha256":  "efea6b65c2d23a7074f55c9f41707c4d4373f1552577a703af4e3237e08c0466"
+                    },
+                    {
+                        "moveId":  "D02",
+                        "name":  "Drive Reversal: Leg Sweep",
+                        "file":  "301.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/301.mp4",
+                        "bytes":  195352,
+                        "sha256":  "2299fbf7e775c65171086d5527ca50581836b03ff03472ba519f70b1032c259d"
+                    },
+                    {
+                        "moveId":  "D03",
+                        "name":  "Drive Parry",
+                        "file":  "302.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/302.mp4",
+                        "bytes":  210496,
+                        "sha256":  "ecc5da9dc00533a593871cf97fb6be885246b379f039dcd83193430564ffd06a"
+                    },
+                    {
+                        "moveId":  "D04",
+                        "name":  "Parry Drive Rush",
+                        "file":  "303.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/303.mp4",
+                        "bytes":  171801,
+                        "sha256":  "f261000dbc8eabe7eb4289d26afe35337339e22d00f237715e1f3af297d4bc0e"
+                    },
+                    {
+                        "moveId":  "D05",
+                        "name":  "Cancel Drive Rush",
+                        "file":  "304.mp4",
+                        "source":  "https://www.streetfighter.com/6/assets/images/character/jamie/skill/movie/304.mp4",
+                        "bytes":  187195,
+                        "sha256":  "41c68631bcfa74f4b3e6e57189e634aae8d0e7c4c52129130472e021d796d4cd"
+                    }
+                ]
+}

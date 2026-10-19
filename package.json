@@ -1,0 +1,33 @@
+{
+  "name": "fighting-arena",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "inspect:jamie": "node scripts/inspect-jamie.mjs",
+    "inspect:jamie-variants": "node scripts/inspect-jamie-variants.mjs",
+    "inspect:jamie-spacing": "node scripts/inspect-jamie-spacing.mjs",
+    "inspect:standard-ai": "node scripts/inspect-standard-ai.mjs",
+    "sync:jamie-numerics": "node scripts/sync-jamie-numerics.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "phaser": "3.90.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.5"
+  }
+}
