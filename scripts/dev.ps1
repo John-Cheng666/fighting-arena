@@ -16,13 +16,17 @@ if ($taskNodeCommand) {
   $taskNodeRoot = (Get-Content -LiteralPath $taskRuntimeFile).Trim()
 }
 $env:Path = $taskNodeRoot + ';' + $env:Path
+$taskPnpmCommand = Get-Command pnpm.cmd -ErrorAction SilentlyContinue
+if (-not $taskPnpmCommand) {
+  throw 'Please install pnpm 10.34.6, then run this script again.'
+}
 Push-Location -LiteralPath $taskProjectRoot
 try {
   if (-not (Test-Path -LiteralPath 'node_modules')) {
-    & (Join-Path $taskNodeRoot 'npm.cmd') ci
+    & $taskPnpmCommand.Source install --frozen-lockfile
     if ($LASTEXITCODE -ne 0) { throw 'Dependency installation failed.' }
   }
-  & (Join-Path $taskNodeRoot 'npm.cmd') run $Command
+  & $taskPnpmCommand.Source run $Command
   if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 } finally {
   Pop-Location
