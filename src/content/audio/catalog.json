@@ -1,0 +1,5185 @@
+{
+  "schemaVersion": 1,
+  "clips": {
+    "bgm-jamie-normal": {
+      "url": "assets/audio/bgm-jamie-normal.ogg",
+      "seconds": 60.92308333333333,
+      "frames": 2924308,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 1.8461458333333334,
+        "end": 60.92308333333333
+      }
+    },
+    "bgm-jamie-danger": {
+      "url": "assets/audio/bgm-jamie-danger.ogg",
+      "seconds": 30.461520833333335,
+      "frames": 1462153,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0.9230625,
+        "end": 30.461520833333335
+      }
+    },
+    "bgm-jamie-intro": {
+      "url": "assets/audio/bgm-jamie-intro.ogg",
+      "seconds": 11.538458333333333,
+      "frames": 553846,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 4.153833333333333,
+        "end": 11.538458333333333
+      }
+    },
+    "bgm-jamie-outro": {
+      "url": "assets/audio/bgm-jamie-outro.ogg",
+      "seconds": 6,
+      "frames": 288000,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "bgm-jamie-varied": {
+      "url": "assets/audio/bgm-jamie-varied.ogg",
+      "seconds": 73.84614583333334,
+      "frames": 3544615,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 14.769229166666667,
+        "end": 73.84614583333334
+      }
+    },
+    "bgm-jamie-extended": {
+      "url": "assets/audio/bgm-jamie-extended.ogg",
+      "seconds": 29.538458333333335,
+      "frames": 1417846,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 29.538458333333335
+      }
+    },
+    "bgm-jamie-break": {
+      "url": "assets/audio/bgm-jamie-break.ogg",
+      "seconds": 7.384604166666667,
+      "frames": 354461,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 7.384604166666667
+      }
+    },
+    "bgm-training-normal": {
+      "url": "assets/audio/bgm-training-normal.ogg",
+      "seconds": 38.39997916666667,
+      "frames": 1843199,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 38.39997916666667
+      }
+    },
+    "bgm-training-danger": {
+      "url": "assets/audio/bgm-training-danger.ogg",
+      "seconds": 39.599979166666664,
+      "frames": 1900799,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 1.2,
+        "end": 39.599979166666664
+      }
+    },
+    "bgm-training-intro": {
+      "url": "assets/audio/bgm-training-intro.ogg",
+      "seconds": 14.399979166666666,
+      "frames": 691199,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 4.799979166666667,
+        "end": 14.399979166666666
+      }
+    },
+    "bgm-training-outro": {
+      "url": "assets/audio/bgm-training-outro.ogg",
+      "seconds": 9.6,
+      "frames": 460800,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "bgm-training-varied": {
+      "url": "assets/audio/bgm-training-varied.ogg",
+      "seconds": 39,
+      "frames": 1872000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0.6,
+        "end": 39
+      }
+    },
+    "bgm-training-extended": {
+      "url": "assets/audio/bgm-training-extended.ogg",
+      "seconds": 76.8,
+      "frames": 3686400,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 38.39997916666667,
+        "end": 76.8
+      }
+    },
+    "bgm-training-break": {
+      "url": "assets/audio/bgm-training-break.ogg",
+      "seconds": 9.6,
+      "frames": 460800,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 9.6
+      }
+    },
+    "bgm-metro-normal": {
+      "url": "assets/audio/bgm-metro-normal.ogg",
+      "seconds": 64.516125,
+      "frames": 3096774,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 2.580625,
+        "end": 64.516125
+      }
+    },
+    "bgm-metro-danger": {
+      "url": "assets/audio/bgm-metro-danger.ogg",
+      "seconds": 43.8709375,
+      "frames": 2105805,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 2.580625,
+        "end": 43.8709375
+      }
+    },
+    "bgm-metro-intro": {
+      "url": "assets/audio/bgm-metro-intro.ogg",
+      "seconds": 20.645145833333334,
+      "frames": 990967,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 20.645145833333334
+      }
+    },
+    "bgm-metro-outro": {
+      "url": "assets/audio/bgm-metro-outro.ogg",
+      "seconds": 7.741916666666667,
+      "frames": 371612,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "bgm-metro-varied": {
+      "url": "assets/audio/bgm-metro-varied.ogg",
+      "seconds": 126.451625,
+      "frames": 6069678,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 64.516125,
+        "end": 126.451625
+      }
+    },
+    "bgm-metro-extended": {
+      "url": "assets/audio/bgm-metro-extended.ogg",
+      "seconds": 103.22579166666667,
+      "frames": 4954838,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 30.96772916666667,
+        "end": 103.22579166666667
+      }
+    },
+    "bgm-metro-break": {
+      "url": "assets/audio/bgm-metro-break.ogg",
+      "seconds": 44.516125,
+      "frames": 2136774,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 13.548395833333334,
+        "end": 44.516125
+      }
+    },
+    "bgm-temple-normal": {
+      "url": "assets/audio/bgm-temple-normal.ogg",
+      "seconds": 56.571416666666664,
+      "frames": 2715428,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 1.7142916666666668,
+        "end": 56.571416666666664
+      }
+    },
+    "bgm-temple-danger": {
+      "url": "assets/audio/bgm-temple-danger.ogg",
+      "seconds": 29.142854166666666,
+      "frames": 1398857,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 1.7142916666666668,
+        "end": 29.142854166666666
+      }
+    },
+    "bgm-temple-intro": {
+      "url": "assets/audio/bgm-temple-intro.ogg",
+      "seconds": 7.071416666666667,
+      "frames": 339428,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0.21427083333333333,
+        "end": 7.071416666666667
+      }
+    },
+    "bgm-temple-outro": {
+      "url": "assets/audio/bgm-temple-outro.ogg",
+      "seconds": 8.5714375,
+      "frames": 411429,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "bgm-temple-varied": {
+      "url": "assets/audio/bgm-temple-varied.ogg",
+      "seconds": 82.28572916666667,
+      "frames": 3949715,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 27.428583333333332,
+        "end": 82.28572916666667
+      }
+    },
+    "bgm-temple-extended": {
+      "url": "assets/audio/bgm-temple-extended.ogg",
+      "seconds": 27.428583333333332,
+      "frames": 1316572,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 27.428583333333332
+      }
+    },
+    "bgm-temple-break": {
+      "url": "assets/audio/bgm-temple-break.ogg",
+      "seconds": 13.714291666666666,
+      "frames": 658286,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 13.714291666666666
+      }
+    },
+    "bgm-market-normal": {
+      "url": "assets/audio/bgm-market-normal.ogg",
+      "seconds": 61.276583333333335,
+      "frames": 2941276,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 61.276583333333335
+      }
+    },
+    "bgm-market-danger": {
+      "url": "assets/audio/bgm-market-danger.ogg",
+      "seconds": 42.127625,
+      "frames": 2022126,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 1.2765833333333334,
+        "end": 42.127625
+      }
+    },
+    "bgm-market-intro": {
+      "url": "assets/audio/bgm-market-intro.ogg",
+      "seconds": 20.585104166666667,
+      "frames": 988085,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 10.372333333333334,
+        "end": 20.585104166666667
+      }
+    },
+    "bgm-market-outro": {
+      "url": "assets/audio/bgm-market-outro.ogg",
+      "seconds": 12.147916666666667,
+      "frames": 583100,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "bgm-market-varied": {
+      "url": "assets/audio/bgm-market-varied.ogg",
+      "seconds": 66.38295833333333,
+      "frames": 3186382,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 5.106375,
+        "end": 66.38295833333333
+      }
+    },
+    "bgm-market-extended": {
+      "url": "assets/audio/bgm-market-extended.ogg",
+      "seconds": 63.829770833333335,
+      "frames": 3063829,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 2.5531875,
+        "end": 63.829770833333335
+      }
+    },
+    "bgm-market-break": {
+      "url": "assets/audio/bgm-market-break.ogg",
+      "seconds": 10.21275,
+      "frames": 490212,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 10.21275
+      }
+    },
+    "bgm-foundry-normal": {
+      "url": "assets/audio/bgm-foundry-normal.ogg",
+      "seconds": 52.90322916666667,
+      "frames": 2539355,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 1.2903333333333333,
+        "end": 52.90322916666667
+      }
+    },
+    "bgm-foundry-danger": {
+      "url": "assets/audio/bgm-foundry-danger.ogg",
+      "seconds": 42.580625,
+      "frames": 2043870,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 1.2903125,
+        "end": 42.580625
+      }
+    },
+    "bgm-foundry-intro": {
+      "url": "assets/audio/bgm-foundry-intro.ogg",
+      "seconds": 10.967729166666667,
+      "frames": 526451,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0.6451666666666667,
+        "end": 10.967729166666667
+      }
+    },
+    "bgm-foundry-outro": {
+      "url": "assets/audio/bgm-foundry-outro.ogg",
+      "seconds": 12.903229166666666,
+      "frames": 619355,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "bgm-foundry-varied": {
+      "url": "assets/audio/bgm-foundry-varied.ogg",
+      "seconds": 72.2580625,
+      "frames": 3468387,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 20.645145833333334,
+        "end": 72.2580625
+      }
+    },
+    "bgm-foundry-extended": {
+      "url": "assets/audio/bgm-foundry-extended.ogg",
+      "seconds": 43.870958333333334,
+      "frames": 2105806,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 43.870958333333334
+      }
+    },
+    "bgm-foundry-break": {
+      "url": "assets/audio/bgm-foundry-break.ogg",
+      "seconds": 5.161270833333333,
+      "frames": 247741,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 5.161270833333333
+      }
+    },
+    "bgm-beach-normal": {
+      "url": "assets/audio/bgm-beach-normal.ogg",
+      "seconds": 59.99997916666667,
+      "frames": 2879999,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 2.857125,
+        "end": 59.99997916666667
+      }
+    },
+    "bgm-beach-danger": {
+      "url": "assets/audio/bgm-beach-danger.ogg",
+      "seconds": 38.571416666666664,
+      "frames": 1851428,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 4.285708333333333,
+        "end": 38.571416666666664
+      }
+    },
+    "bgm-beach-intro": {
+      "url": "assets/audio/bgm-beach-intro.ogg",
+      "seconds": 12.321416666666666,
+      "frames": 591428,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 6.607145833333333,
+        "end": 12.321416666666666
+      }
+    },
+    "bgm-beach-outro": {
+      "url": "assets/audio/bgm-beach-outro.ogg",
+      "seconds": 11.428541666666666,
+      "frames": 548570,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "bgm-beach-varied": {
+      "url": "assets/audio/bgm-beach-varied.ogg",
+      "seconds": 82.857125,
+      "frames": 3977142,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 25.714270833333334,
+        "end": 82.857125
+      }
+    },
+    "bgm-beach-extended": {
+      "url": "assets/audio/bgm-beach-extended.ogg",
+      "seconds": 48.571416666666664,
+      "frames": 2331428,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 2.857125,
+        "end": 48.571416666666664
+      }
+    },
+    "bgm-beach-break": {
+      "url": "assets/audio/bgm-beach-break.ogg",
+      "seconds": 11.4285625,
+      "frames": 548571,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 11.4285625
+      }
+    },
+    "bgm-colosseum-normal": {
+      "url": "assets/audio/bgm-colosseum-normal.ogg",
+      "seconds": 54.392520833333336,
+      "frames": 2610841,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0.56075,
+        "end": 54.392520833333336
+      }
+    },
+    "bgm-colosseum-danger": {
+      "url": "assets/audio/bgm-colosseum-danger.ogg",
+      "seconds": 37.00935416666667,
+      "frames": 1776449,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 1.1215,
+        "end": 37.00935416666667
+      }
+    },
+    "bgm-colosseum-intro": {
+      "url": "assets/audio/bgm-colosseum-intro.ogg",
+      "seconds": 14.0186875,
+      "frames": 672897,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0.5607291666666666,
+        "end": 14.0186875
+      }
+    },
+    "bgm-colosseum-outro": {
+      "url": "assets/audio/bgm-colosseum-outro.ogg",
+      "seconds": 8.9719375,
+      "frames": 430653,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "bgm-colosseum-varied": {
+      "url": "assets/audio/bgm-colosseum-varied.ogg",
+      "seconds": 71.7756875,
+      "frames": 3445233,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 17.943916666666667,
+        "end": 71.7756875
+      }
+    },
+    "bgm-colosseum-extended": {
+      "url": "assets/audio/bgm-colosseum-extended.ogg",
+      "seconds": 35.88785416666666,
+      "frames": 1722617,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 35.88785416666666
+      }
+    },
+    "bgm-colosseum-break": {
+      "url": "assets/audio/bgm-colosseum-break.ogg",
+      "seconds": 8.9719375,
+      "frames": 430653,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 8.9719375
+      }
+    },
+    "bgm-oldtown-normal": {
+      "url": "assets/audio/bgm-oldtown-normal.ogg",
+      "seconds": 48,
+      "frames": 2304000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 48
+      }
+    },
+    "bgm-oldtown-danger": {
+      "url": "assets/audio/bgm-oldtown-danger.ogg",
+      "seconds": 33,
+      "frames": 1584000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 1,
+        "end": 33
+      }
+    },
+    "bgm-oldtown-intro": {
+      "url": "assets/audio/bgm-oldtown-intro.ogg",
+      "seconds": 16,
+      "frames": 768000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 16
+      }
+    },
+    "bgm-oldtown-outro": {
+      "url": "assets/audio/bgm-oldtown-outro.ogg",
+      "seconds": 16,
+      "frames": 768000,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "bgm-oldtown-varied": {
+      "url": "assets/audio/bgm-oldtown-varied.ogg",
+      "seconds": 48,
+      "frames": 2304000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 48
+      }
+    },
+    "bgm-oldtown-extended": {
+      "url": "assets/audio/bgm-oldtown-extended.ogg",
+      "seconds": 48,
+      "frames": 2304000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 48
+      }
+    },
+    "bgm-oldtown-break": {
+      "url": "assets/audio/bgm-oldtown-break.ogg",
+      "seconds": 16,
+      "frames": 768000,
+      "sampleRate": 48000,
+      "channels": 2,
+      "loop": {
+        "start": 0,
+        "end": 16
+      }
+    },
+    "event-939139072-db349760ae89": {
+      "url": "assets/audio/event-939139072-db349760ae89.ogg",
+      "seconds": 0.3895,
+      "frames": 18696,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4038701782-c4d9fd919ab4": {
+      "url": "assets/audio/event-4038701782-c4d9fd919ab4.ogg",
+      "seconds": 0.48772916666666666,
+      "frames": 23411,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-90020084-0b465d7d331b": {
+      "url": "assets/audio/event-90020084-0b465d7d331b.ogg",
+      "seconds": 0.3466875,
+      "frames": 16641,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1609556346-34f991709742": {
+      "url": "assets/audio/event-1609556346-34f991709742.ogg",
+      "seconds": 0.478375,
+      "frames": 22962,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2988131074-35c347a590a5": {
+      "url": "assets/audio/event-2988131074-35c347a590a5.ogg",
+      "seconds": 0.3466875,
+      "frames": 16641,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2951643437-59575608803a": {
+      "url": "assets/audio/event-2951643437-59575608803a.ogg",
+      "seconds": 0.2078125,
+      "frames": 9975,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3535608141-2959aecac834": {
+      "url": "assets/audio/event-3535608141-2959aecac834.ogg",
+      "seconds": 0.6698333333333333,
+      "frames": 32152,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-574352076-4e706ba189c7": {
+      "url": "assets/audio/event-574352076-4e706ba189c7.ogg",
+      "seconds": 0.1489375,
+      "frames": 7149,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-347664580-4cf9eea25203": {
+      "url": "assets/audio/event-347664580-4cf9eea25203.ogg",
+      "seconds": 0.568125,
+      "frames": 27270,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-913302634-67eb82ca48c1": {
+      "url": "assets/audio/event-913302634-67eb82ca48c1.ogg",
+      "seconds": 0.7476875,
+      "frames": 35889,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-75989473-2812d9cd2d9c": {
+      "url": "assets/audio/event-75989473-2812d9cd2d9c.ogg",
+      "seconds": 0.5563125,
+      "frames": 26703,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3777061864-4d11ef188b99": {
+      "url": "assets/audio/event-3777061864-4d11ef188b99.ogg",
+      "seconds": 0.5563125,
+      "frames": 26703,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2529144258-de1275ce7216": {
+      "url": "assets/audio/event-2529144258-de1275ce7216.ogg",
+      "seconds": 0.5511875,
+      "frames": 26457,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4272462895-2e4c917bc1c9": {
+      "url": "assets/audio/event-4272462895-2e4c917bc1c9.ogg",
+      "seconds": 0.21127083333333332,
+      "frames": 10141,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1103953912-c5e411f32190": {
+      "url": "assets/audio/event-1103953912-c5e411f32190.ogg",
+      "seconds": 0.5341666666666667,
+      "frames": 25640,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-460482850-079f0fd6d650": {
+      "url": "assets/audio/event-460482850-079f0fd6d650.ogg",
+      "seconds": 0.3010625,
+      "frames": 14451,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-736131947-ad82ac8bbc1d": {
+      "url": "assets/audio/event-736131947-ad82ac8bbc1d.ogg",
+      "seconds": 0.4454166666666667,
+      "frames": 21380,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-736131946-5c2906220c10": {
+      "url": "assets/audio/event-736131946-5c2906220c10.ogg",
+      "seconds": 0.5021666666666667,
+      "frames": 24104,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-736131951-c1271731735e": {
+      "url": "assets/audio/event-736131951-c1271731735e.ogg",
+      "seconds": 0.4688333333333333,
+      "frames": 22504,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1156439737-405432d4d60b": {
+      "url": "assets/audio/event-1156439737-405432d4d60b.ogg",
+      "seconds": 0.42133333333333334,
+      "frames": 20224,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1156439736-eee105723480": {
+      "url": "assets/audio/event-1156439736-eee105723480.ogg",
+      "seconds": 0.9467708333333333,
+      "frames": 45445,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2814720808-4bac738f113b": {
+      "url": "assets/audio/event-2814720808-4bac738f113b.ogg",
+      "seconds": 0.7241666666666666,
+      "frames": 34760,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1156439741-898f3f8139de": {
+      "url": "assets/audio/event-1156439741-898f3f8139de.ogg",
+      "seconds": 0.714125,
+      "frames": 34278,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2929650732-74abade81cfc": {
+      "url": "assets/audio/event-2929650732-74abade81cfc.ogg",
+      "seconds": 0.84,
+      "frames": 40320,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3941005035-310979e4d0b9": {
+      "url": "assets/audio/event-3941005035-310979e4d0b9.ogg",
+      "seconds": 0.5133333333333333,
+      "frames": 24640,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4228362968-a27442d16343": {
+      "url": "assets/audio/event-4228362968-a27442d16343.ogg",
+      "seconds": 0.5573333333333333,
+      "frames": 26752,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-867955051-ef948282723a": {
+      "url": "assets/audio/event-867955051-ef948282723a.ogg",
+      "seconds": 0.2078125,
+      "frames": 9975,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1850587088-d738fd989316": {
+      "url": "assets/audio/event-1850587088-d738fd989316.ogg",
+      "seconds": 0.3769166666666667,
+      "frames": 18092,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4057930188-7e78b9a3ccc6": {
+      "url": "assets/audio/event-4057930188-7e78b9a3ccc6.ogg",
+      "seconds": 0.31733333333333336,
+      "frames": 15232,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-75989472-210ef577a9a7": {
+      "url": "assets/audio/event-75989472-210ef577a9a7.ogg",
+      "seconds": 0.48772916666666666,
+      "frames": 23411,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3439034713-90b23f260942": {
+      "url": "assets/audio/event-3439034713-90b23f260942.ogg",
+      "seconds": 0.6266666666666667,
+      "frames": 30080,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-935936976-77a61f15e18d": {
+      "url": "assets/audio/event-935936976-77a61f15e18d.ogg",
+      "seconds": 0.30133333333333334,
+      "frames": 14464,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-808493962-e2b338eb04c5": {
+      "url": "assets/audio/event-808493962-e2b338eb04c5.ogg",
+      "seconds": 0.08772916666666666,
+      "frames": 4211,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-75989477-1c8fd968aa30": {
+      "url": "assets/audio/event-75989477-1c8fd968aa30.ogg",
+      "seconds": 0.6513333333333333,
+      "frames": 31264,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1559135306-ba8f5b10ba36": {
+      "url": "assets/audio/event-1559135306-ba8f5b10ba36.ogg",
+      "seconds": 0.5649375,
+      "frames": 27117,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3313522178-28ab30cd6326": {
+      "url": "assets/audio/event-3313522178-28ab30cd6326.ogg",
+      "seconds": 0.4731666666666667,
+      "frames": 22712,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-437643250-5ead9df83db0": {
+      "url": "assets/audio/event-437643250-5ead9df83db0.ogg",
+      "seconds": 0.8686666666666667,
+      "frames": 41696,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1771390621-0efccf863847": {
+      "url": "assets/audio/event-1771390621-0efccf863847.ogg",
+      "seconds": 0.6039583333333334,
+      "frames": 28990,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1103022761-51e6f449ab24": {
+      "url": "assets/audio/event-1103022761-51e6f449ab24.ogg",
+      "seconds": 1.81375,
+      "frames": 87060,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-804407946-5992c591f6fd": {
+      "url": "assets/audio/event-804407946-5992c591f6fd.ogg",
+      "seconds": 0.9531458333333334,
+      "frames": 45751,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-804407951-1a46037ff796": {
+      "url": "assets/audio/event-804407951-1a46037ff796.ogg",
+      "seconds": 0.6914791666666666,
+      "frames": 33191,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-804407945-c9518a3ab0bf": {
+      "url": "assets/audio/event-804407945-c9518a3ab0bf.ogg",
+      "seconds": 0.800875,
+      "frames": 38442,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-804407944-2facf1277039": {
+      "url": "assets/audio/event-804407944-2facf1277039.ogg",
+      "seconds": 0.7570416666666666,
+      "frames": 36338,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-804407950-1204eabbd3c3": {
+      "url": "assets/audio/event-804407950-1204eabbd3c3.ogg",
+      "seconds": 0.3836875,
+      "frames": 18417,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-804407949-93a2526ec682": {
+      "url": "assets/audio/event-804407949-93a2526ec682.ogg",
+      "seconds": 0.7379166666666667,
+      "frames": 35420,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-804407948-c16b7c590d14": {
+      "url": "assets/audio/event-804407948-c16b7c590d14.ogg",
+      "seconds": 0.8804166666666666,
+      "frames": 42260,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-804407939-4e62197ddf68": {
+      "url": "assets/audio/event-804407939-4e62197ddf68.ogg",
+      "seconds": 1.3136666666666668,
+      "frames": 63056,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-618683607-707474d7edbe": {
+      "url": "assets/audio/event-618683607-707474d7edbe.ogg",
+      "seconds": 1.2675208333333334,
+      "frames": 60841,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3028067187-826ed8b0a077": {
+      "url": "assets/audio/event-3028067187-826ed8b0a077.ogg",
+      "seconds": 0.5796875,
+      "frames": 27825,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3810979097-b7d3102f4480": {
+      "url": "assets/audio/event-3810979097-b7d3102f4480.ogg",
+      "seconds": 0.9093541666666667,
+      "frames": 43649,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-943309822-1718cb464832": {
+      "url": "assets/audio/event-943309822-1718cb464832.ogg",
+      "seconds": 5.341479166666667,
+      "frames": 256391,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3961116945-3851a9ad8cbf": {
+      "url": "assets/audio/event-3961116945-3851a9ad8cbf.ogg",
+      "seconds": 6.018208333333333,
+      "frames": 288874,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-3262354087-01fd730b8c8b": {
+      "url": "assets/audio/event-3262354087-01fd730b8c8b.ogg",
+      "seconds": 1.1473958333333334,
+      "frames": 55075,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1268718358-2ae99347e84b": {
+      "url": "assets/audio/event-1268718358-2ae99347e84b.ogg",
+      "seconds": 1.69775,
+      "frames": 81492,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2174318761-c6f4a0a0a682": {
+      "url": "assets/audio/event-2174318761-c6f4a0a0a682.ogg",
+      "seconds": 2.1765,
+      "frames": 104472,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1895969873-f9f4fce76b88": {
+      "url": "assets/audio/event-1895969873-f9f4fce76b88.ogg",
+      "seconds": 1.8985,
+      "frames": 91128,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1289648902-6a02160aeb93": {
+      "url": "assets/audio/event-1289648902-6a02160aeb93.ogg",
+      "seconds": 1.0320625,
+      "frames": 49539,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-213600717-127bbc780c71": {
+      "url": "assets/audio/event-213600717-127bbc780c71.ogg",
+      "seconds": 3.424,
+      "frames": 164352,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-50428389-1cf9e49b3063": {
+      "url": "assets/audio/event-50428389-1cf9e49b3063.ogg",
+      "seconds": 3.424,
+      "frames": 164352,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3190383685-b70b698f3a5d": {
+      "url": "assets/audio/event-3190383685-b70b698f3a5d.ogg",
+      "seconds": 0.84,
+      "frames": 40320,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-16540445-a8e228ab69da": {
+      "url": "assets/audio/event-16540445-a8e228ab69da.ogg",
+      "seconds": 2.9021875,
+      "frames": 139305,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-1345279104-e17a51d235f1": {
+      "url": "assets/audio/event-1345279104-e17a51d235f1.ogg",
+      "seconds": 2.8870833333333334,
+      "frames": 138580,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-189818784-b7422ca4556c": {
+      "url": "assets/audio/event-189818784-b7422ca4556c.ogg",
+      "seconds": 1.099,
+      "frames": 52752,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3698425214-0d9b718b9f1a": {
+      "url": "assets/audio/event-3698425214-0d9b718b9f1a.ogg",
+      "seconds": 1.1473958333333334,
+      "frames": 55075,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-899022870-47d84db28f40": {
+      "url": "assets/audio/event-899022870-47d84db28f40.ogg",
+      "seconds": 3.5843541666666665,
+      "frames": 172049,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-3898302994-f60f71245cc1": {
+      "url": "assets/audio/event-3898302994-f60f71245cc1.ogg",
+      "seconds": 0.738,
+      "frames": 35424,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4152790619-c1265350e577": {
+      "url": "assets/audio/event-4152790619-c1265350e577.ogg",
+      "seconds": 1.1206875,
+      "frames": 53793,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4152790622-ae67cc3324d8": {
+      "url": "assets/audio/event-4152790622-ae67cc3324d8.ogg",
+      "seconds": 1.5569583333333334,
+      "frames": 74734,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1654551850-92bec3f084d9": {
+      "url": "assets/audio/event-1654551850-92bec3f084d9.ogg",
+      "seconds": 0.5436875,
+      "frames": 26097,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1032805048-e6485dd328b9": {
+      "url": "assets/audio/event-1032805048-e6485dd328b9.ogg",
+      "seconds": 0.6062916666666667,
+      "frames": 29102,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4269227709-316645752331": {
+      "url": "assets/audio/event-4269227709-316645752331.ogg",
+      "seconds": 0.9111458333333333,
+      "frames": 43735,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-410242735-ffcd4bc805fa": {
+      "url": "assets/audio/event-410242735-ffcd4bc805fa.ogg",
+      "seconds": 1.0673333333333332,
+      "frames": 51232,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2515809417-31d71777dc5a": {
+      "url": "assets/audio/event-2515809417-31d71777dc5a.ogg",
+      "seconds": 1.6090416666666667,
+      "frames": 77234,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4152790618-7e1fe43933e2": {
+      "url": "assets/audio/event-4152790618-7e1fe43933e2.ogg",
+      "seconds": 0.9527708333333333,
+      "frames": 45733,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1768924865-60dc6ed3589b": {
+      "url": "assets/audio/event-1768924865-60dc6ed3589b.ogg",
+      "seconds": 1.2374583333333333,
+      "frames": 59398,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3362608941-217afef48b6b": {
+      "url": "assets/audio/event-3362608941-217afef48b6b.ogg",
+      "seconds": 0.42933333333333334,
+      "frames": 20608,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-489109737-940e5ec882bb": {
+      "url": "assets/audio/event-489109737-940e5ec882bb.ogg",
+      "seconds": 0.33189583333333333,
+      "frames": 15931,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3675804599-af5b5d5758ab": {
+      "url": "assets/audio/event-3675804599-af5b5d5758ab.ogg",
+      "seconds": 1.1162916666666667,
+      "frames": 53582,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3731352173-a675c036ec6e": {
+      "url": "assets/audio/event-3731352173-a675c036ec6e.ogg",
+      "seconds": 0.5824166666666667,
+      "frames": 27956,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2657509636-53bbda62e198": {
+      "url": "assets/audio/event-2657509636-53bbda62e198.ogg",
+      "seconds": 1.2618958333333334,
+      "frames": 60571,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3839364551-537be7e12eb7": {
+      "url": "assets/audio/event-3839364551-537be7e12eb7.ogg",
+      "seconds": 0.8269791666666667,
+      "frames": 39695,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3930915497-a0d50ba4ecd0": {
+      "url": "assets/audio/event-3930915497-a0d50ba4ecd0.ogg",
+      "seconds": 0.8269791666666667,
+      "frames": 39695,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1057708721-9361eed29a23": {
+      "url": "assets/audio/event-1057708721-9361eed29a23.ogg",
+      "seconds": 0.4936875,
+      "frames": 23697,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-890197542-ea9e83b12d10": {
+      "url": "assets/audio/event-890197542-ea9e83b12d10.ogg",
+      "seconds": 0.942,
+      "frames": 45216,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-722568575-36839ad67032": {
+      "url": "assets/audio/event-722568575-36839ad67032.ogg",
+      "seconds": 1.198,
+      "frames": 57504,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1771390620-e44c32255681": {
+      "url": "assets/audio/event-1771390620-e44c32255681.ogg",
+      "seconds": 0.8071875,
+      "frames": 38745,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3287021609-138ffc53f992": {
+      "url": "assets/audio/event-3287021609-138ffc53f992.ogg",
+      "seconds": 0.7375833333333334,
+      "frames": 35404,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3186208800-a32306be3e13": {
+      "url": "assets/audio/event-3186208800-a32306be3e13.ogg",
+      "seconds": 0.7826666666666666,
+      "frames": 37568,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2281958975-042e84c1c22d": {
+      "url": "assets/audio/event-2281958975-042e84c1c22d.ogg",
+      "seconds": 1.0320625,
+      "frames": 49539,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2927592376-daac1074177a": {
+      "url": "assets/audio/event-2927592376-daac1074177a.ogg",
+      "seconds": 1.9466666666666668,
+      "frames": 93440,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2206058637-1fcaceecf373": {
+      "url": "assets/audio/event-2206058637-1fcaceecf373.ogg",
+      "seconds": 0.5420833333333334,
+      "frames": 26020,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1759985394-003e6bab9631": {
+      "url": "assets/audio/event-1759985394-003e6bab9631.ogg",
+      "seconds": 0.44527083333333334,
+      "frames": 21373,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3934397263-b62c8e1a9cda": {
+      "url": "assets/audio/event-3934397263-b62c8e1a9cda.ogg",
+      "seconds": 1.0320625,
+      "frames": 49539,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1719186850-1852c48cab8e": {
+      "url": "assets/audio/event-1719186850-1852c48cab8e.ogg",
+      "seconds": 0.6146666666666667,
+      "frames": 29504,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2352996906-dd56b91452b2": {
+      "url": "assets/audio/event-2352996906-dd56b91452b2.ogg",
+      "seconds": 0.7850208333333333,
+      "frames": 37681,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2352996905-5b703e4d12c9": {
+      "url": "assets/audio/event-2352996905-5b703e4d12c9.ogg",
+      "seconds": 0.897875,
+      "frames": 43098,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1724436129-d072e5d74a58": {
+      "url": "assets/audio/event-1724436129-d072e5d74a58.ogg",
+      "seconds": 0.6968125,
+      "frames": 33447,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1724436130-1f13b4f7facb": {
+      "url": "assets/audio/event-1724436130-1f13b4f7facb.ogg",
+      "seconds": 0.710875,
+      "frames": 34122,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1724436131-835ca0cd2ad6": {
+      "url": "assets/audio/event-1724436131-835ca0cd2ad6.ogg",
+      "seconds": 1.0913333333333333,
+      "frames": 52384,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1646143542-482fe7d6f823": {
+      "url": "assets/audio/event-1646143542-482fe7d6f823.ogg",
+      "seconds": 0.7891666666666667,
+      "frames": 37880,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1646143541-094cadda39e4": {
+      "url": "assets/audio/event-1646143541-094cadda39e4.ogg",
+      "seconds": 0.7409583333333334,
+      "frames": 35566,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1646143540-7f299c531891": {
+      "url": "assets/audio/event-1646143540-7f299c531891.ogg",
+      "seconds": 1.2530208333333333,
+      "frames": 60145,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1646143539-4cd558854519": {
+      "url": "assets/audio/event-1646143539-4cd558854519.ogg",
+      "seconds": 0.6389583333333333,
+      "frames": 30670,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4148657107-9d3dbabd0e1a": {
+      "url": "assets/audio/event-4148657107-9d3dbabd0e1a.ogg",
+      "seconds": 1.0429583333333334,
+      "frames": 50062,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4148657104-9c0c62518e63": {
+      "url": "assets/audio/event-4148657104-9c0c62518e63.ogg",
+      "seconds": 0.44483333333333336,
+      "frames": 21352,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4148657105-5e850ed3916f": {
+      "url": "assets/audio/event-4148657105-5e850ed3916f.ogg",
+      "seconds": 0.5105208333333333,
+      "frames": 24505,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4148657110-cb7e4041bb74": {
+      "url": "assets/audio/event-4148657110-cb7e4041bb74.ogg",
+      "seconds": 0.5549791666666667,
+      "frames": 26639,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4148657111-ff2870a02cfd": {
+      "url": "assets/audio/event-4148657111-ff2870a02cfd.ogg",
+      "seconds": 1.0101666666666667,
+      "frames": 48488,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4148657108-8cc6cfddc2d3": {
+      "url": "assets/audio/event-4148657108-8cc6cfddc2d3.ogg",
+      "seconds": 0.4142708333333333,
+      "frames": 19885,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4148657109-5b9d35b334e0": {
+      "url": "assets/audio/event-4148657109-5b9d35b334e0.ogg",
+      "seconds": 1.2233333333333334,
+      "frames": 58720,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2563584166-3b10f95aeb25": {
+      "url": "assets/audio/event-2563584166-3b10f95aeb25.ogg",
+      "seconds": 0.9193541666666667,
+      "frames": 44129,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2728452399-c5c2dee724d4": {
+      "url": "assets/audio/event-2728452399-c5c2dee724d4.ogg",
+      "seconds": 0.4176666666666667,
+      "frames": 20048,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1137825700-ae91b0205eee": {
+      "url": "assets/audio/event-1137825700-ae91b0205eee.ogg",
+      "seconds": 0.96,
+      "frames": 46080,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3490681498-5a1374138d70": {
+      "url": "assets/audio/event-3490681498-5a1374138d70.ogg",
+      "seconds": 1.372,
+      "frames": 65856,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2135316339-71fb1fe64d75": {
+      "url": "assets/audio/event-2135316339-71fb1fe64d75.ogg",
+      "seconds": 0.6062916666666667,
+      "frames": 29102,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-441621263-15c57104ec05": {
+      "url": "assets/audio/event-441621263-15c57104ec05.ogg",
+      "seconds": 0.8054166666666667,
+      "frames": 38660,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3686495693-20cf57c65d0a": {
+      "url": "assets/audio/event-3686495693-20cf57c65d0a.ogg",
+      "seconds": 0.648,
+      "frames": 31104,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3191039331-e6630aaf8a94": {
+      "url": "assets/audio/event-3191039331-e6630aaf8a94.ogg",
+      "seconds": 1.0320625,
+      "frames": 49539,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1571644414-a93249e7f30d": {
+      "url": "assets/audio/event-1571644414-a93249e7f30d.ogg",
+      "seconds": 0.8209791666666667,
+      "frames": 39407,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3847207252-563a80ea981f": {
+      "url": "assets/audio/event-3847207252-563a80ea981f.ogg",
+      "seconds": 0.6208125,
+      "frames": 29799,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1786261899-82ef5516d98f": {
+      "url": "assets/audio/event-1786261899-82ef5516d98f.ogg",
+      "seconds": 2.7733333333333334,
+      "frames": 133120,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-655530466-2dab8f7e4a66": {
+      "url": "assets/audio/event-655530466-2dab8f7e4a66.ogg",
+      "seconds": 0.788,
+      "frames": 37824,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3025932618-2107a32dc747": {
+      "url": "assets/audio/event-3025932618-2107a32dc747.ogg",
+      "seconds": 1.4426666666666668,
+      "frames": 69248,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3268072637-f93e0e87a8da": {
+      "url": "assets/audio/event-3268072637-f93e0e87a8da.ogg",
+      "seconds": 0.332125,
+      "frames": 15942,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3755064913-b004e31fe11b": {
+      "url": "assets/audio/event-3755064913-b004e31fe11b.ogg",
+      "seconds": 0.2660625,
+      "frames": 12771,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3385810072-f5eee8754f18": {
+      "url": "assets/audio/event-3385810072-f5eee8754f18.ogg",
+      "seconds": 0.3571875,
+      "frames": 17145,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1724137334-a36fdd3579fd": {
+      "url": "assets/audio/event-1724137334-a36fdd3579fd.ogg",
+      "seconds": 0.6127083333333333,
+      "frames": 29410,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1724137335-f64fe7d3fc49": {
+      "url": "assets/audio/event-1724137335-f64fe7d3fc49.ogg",
+      "seconds": 0.37614583333333335,
+      "frames": 18055,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1699163119-2c0f0b0fe79f": {
+      "url": "assets/audio/event-1699163119-2c0f0b0fe79f.ogg",
+      "seconds": 2.304,
+      "frames": 110592,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-152716659-6b9b5ef996f1": {
+      "url": "assets/audio/event-152716659-6b9b5ef996f1.ogg",
+      "seconds": 0.7935416666666667,
+      "frames": 38090,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4176305992-5927f7cbe6a3": {
+      "url": "assets/audio/event-4176305992-5927f7cbe6a3.ogg",
+      "seconds": 0.7782291666666666,
+      "frames": 37355,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4010682757-b76fa8a99d3c": {
+      "url": "assets/audio/event-4010682757-b76fa8a99d3c.ogg",
+      "seconds": 1.0320625,
+      "frames": 49539,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2684795317-6690827f36c5": {
+      "url": "assets/audio/event-2684795317-6690827f36c5.ogg",
+      "seconds": 0.532875,
+      "frames": 25578,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1947851514-035c8c688e33": {
+      "url": "assets/audio/event-1947851514-035c8c688e33.ogg",
+      "seconds": 0.29791666666666666,
+      "frames": 14300,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2983207341-1fba7178e10f": {
+      "url": "assets/audio/event-2983207341-1fba7178e10f.ogg",
+      "seconds": 0.6039583333333334,
+      "frames": 28990,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2983207340-d1b64099efc5": {
+      "url": "assets/audio/event-2983207340-d1b64099efc5.ogg",
+      "seconds": 0.8071875,
+      "frames": 38745,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3264194406-aad5c3f53afc": {
+      "url": "assets/audio/event-3264194406-aad5c3f53afc.ogg",
+      "seconds": 0.3821041666666667,
+      "frames": 18341,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1999681047-d38e1c52d03a": {
+      "url": "assets/audio/event-1999681047-d38e1c52d03a.ogg",
+      "seconds": 0.28025,
+      "frames": 13452,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3098453511-9d9e57b434f5": {
+      "url": "assets/audio/event-3098453511-9d9e57b434f5.ogg",
+      "seconds": 0.4711875,
+      "frames": 22617,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2983207337-a64253769323": {
+      "url": "assets/audio/event-2983207337-a64253769323.ogg",
+      "seconds": 1.1464375,
+      "frames": 55029,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2983968251-a94240c6620f": {
+      "url": "assets/audio/event-2983968251-a94240c6620f.ogg",
+      "seconds": 0.5754166666666667,
+      "frames": 27620,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3156413154-df85d4e2db3e": {
+      "url": "assets/audio/event-3156413154-df85d4e2db3e.ogg",
+      "seconds": 0.5503541666666667,
+      "frames": 26417,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2762939680-ad59167a408f": {
+      "url": "assets/audio/event-2762939680-ad59167a408f.ogg",
+      "seconds": 2.1280625,
+      "frames": 102147,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-3780402862-6fc0daf8166f": {
+      "url": "assets/audio/event-3780402862-6fc0daf8166f.ogg",
+      "seconds": 1.128,
+      "frames": 54144,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-442764187-f8ac68027144": {
+      "url": "assets/audio/event-442764187-f8ac68027144.ogg",
+      "seconds": 0.5020833333333333,
+      "frames": 24100,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-857040015-40c2b2f264b1": {
+      "url": "assets/audio/event-857040015-40c2b2f264b1.ogg",
+      "seconds": 0.35833333333333334,
+      "frames": 17200,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4232587651-dc1a6e38c7b1": {
+      "url": "assets/audio/event-4232587651-dc1a6e38c7b1.ogg",
+      "seconds": 10.8151875,
+      "frames": 519129,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-1950806571-a9190a3d8fbd": {
+      "url": "assets/audio/event-1950806571-a9190a3d8fbd.ogg",
+      "seconds": 10.784666666666666,
+      "frames": 517664,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3514415866-d563160ad880": {
+      "url": "assets/audio/event-3514415866-d563160ad880.ogg",
+      "seconds": 1.1473958333333334,
+      "frames": 55075,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2025988730-ee773ca995d4": {
+      "url": "assets/audio/event-2025988730-ee773ca995d4.ogg",
+      "seconds": 9.717333333333332,
+      "frames": 466432,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-2597635264-d9d7459bda7d": {
+      "url": "assets/audio/event-2597635264-d9d7459bda7d.ogg",
+      "seconds": 9.717333333333332,
+      "frames": 466432,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-882245283-ce8e7960d4e7": {
+      "url": "assets/audio/event-882245283-ce8e7960d4e7.ogg",
+      "seconds": 3.05825,
+      "frames": 146796,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-3250283991-edfcf0238511": {
+      "url": "assets/audio/event-3250283991-edfcf0238511.ogg",
+      "seconds": 0.16529166666666667,
+      "frames": 7934,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3474803475-d78eacacd6d2": {
+      "url": "assets/audio/event-3474803475-d78eacacd6d2.ogg",
+      "seconds": 1.5010208333333332,
+      "frames": 72049,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-3082910416-96ad5813d0cd": {
+      "url": "assets/audio/event-3082910416-96ad5813d0cd.ogg",
+      "seconds": 2.282583333333333,
+      "frames": 109564,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-717946907-4d687be218bb": {
+      "url": "assets/audio/event-717946907-4d687be218bb.ogg",
+      "seconds": 0.268,
+      "frames": 12864,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-4292069574-562277653901": {
+      "url": "assets/audio/event-4292069574-562277653901.ogg",
+      "seconds": 0.4498333333333333,
+      "frames": 21592,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3113330486-ca7a2d8ae88d": {
+      "url": "assets/audio/event-3113330486-ca7a2d8ae88d.ogg",
+      "seconds": 0.5005,
+      "frames": 24024,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1212187257-8e6b4eb830c4": {
+      "url": "assets/audio/event-1212187257-8e6b4eb830c4.ogg",
+      "seconds": 0.5698125,
+      "frames": 27351,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1770177706-0960022693e1": {
+      "url": "assets/audio/event-1770177706-0960022693e1.ogg",
+      "seconds": 1.0320625,
+      "frames": 49539,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-61664471-7656027c3b28": {
+      "url": "assets/audio/event-61664471-7656027c3b28.ogg",
+      "seconds": 0.3970208333333333,
+      "frames": 19057,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2542837440-33335db88d93": {
+      "url": "assets/audio/event-2542837440-33335db88d93.ogg",
+      "seconds": 1.0211666666666666,
+      "frames": 49016,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2301214134-d22ff769ab20": {
+      "url": "assets/audio/event-2301214134-d22ff769ab20.ogg",
+      "seconds": 0.2841875,
+      "frames": 13641,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-61664471-ddab2ea37e61": {
+      "url": "assets/audio/event-61664471-ddab2ea37e61.ogg",
+      "seconds": 0.5920208333333333,
+      "frames": 28417,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2542837440-83ce5b41146d": {
+      "url": "assets/audio/event-2542837440-83ce5b41146d.ogg",
+      "seconds": 1.1823541666666666,
+      "frames": 56753,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2301214134-7406cdf6978d": {
+      "url": "assets/audio/event-2301214134-7406cdf6978d.ogg",
+      "seconds": 0.30545833333333333,
+      "frames": 14662,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1045401635-e36b167211c6": {
+      "url": "assets/audio/event-1045401635-e36b167211c6.ogg",
+      "seconds": 0.5059375,
+      "frames": 24285,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-648148178-240b9c4ec42f": {
+      "url": "assets/audio/event-648148178-240b9c4ec42f.ogg",
+      "seconds": 1.0211666666666666,
+      "frames": 49016,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1045401635-de7f3cce7720": {
+      "url": "assets/audio/event-1045401635-de7f3cce7720.ogg",
+      "seconds": 0.9866666666666667,
+      "frames": 47360,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-648148178-58d4e8532570": {
+      "url": "assets/audio/event-648148178-58d4e8532570.ogg",
+      "seconds": 1.1823541666666666,
+      "frames": 56753,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-61664471-b68998ee367f": {
+      "url": "assets/audio/event-61664471-b68998ee367f.ogg",
+      "seconds": 0.9217083333333334,
+      "frames": 44242,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2542837440-5a85a6a017d0": {
+      "url": "assets/audio/event-2542837440-5a85a6a017d0.ogg",
+      "seconds": 1.3261666666666667,
+      "frames": 63656,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2301214134-6581c1ea6e1b": {
+      "url": "assets/audio/event-2301214134-6581c1ea6e1b.ogg",
+      "seconds": 0.438375,
+      "frames": 21042,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1045401635-9053fed787da": {
+      "url": "assets/audio/event-1045401635-9053fed787da.ogg",
+      "seconds": 1.1892708333333333,
+      "frames": 57085,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-648148178-976b03723886": {
+      "url": "assets/audio/event-648148178-976b03723886.ogg",
+      "seconds": 1.3261666666666667,
+      "frames": 63656,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-61664471-92faf5c17800": {
+      "url": "assets/audio/event-61664471-92faf5c17800.ogg",
+      "seconds": 1.5884583333333333,
+      "frames": 76246,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2542837440-e0f9983d008c": {
+      "url": "assets/audio/event-2542837440-e0f9983d008c.ogg",
+      "seconds": 1.5884583333333333,
+      "frames": 76246,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2301214134-f48c9242b2cb": {
+      "url": "assets/audio/event-2301214134-f48c9242b2cb.ogg",
+      "seconds": 0.5390416666666666,
+      "frames": 25874,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1045401635-bbeb0d31b37c": {
+      "url": "assets/audio/event-1045401635-bbeb0d31b37c.ogg",
+      "seconds": 1.5884583333333333,
+      "frames": 76246,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-648148178-14802ab0f675": {
+      "url": "assets/audio/event-648148178-14802ab0f675.ogg",
+      "seconds": 1.5884583333333333,
+      "frames": 76246,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2868938745-528aceab33e9": {
+      "url": "assets/audio/event-2868938745-528aceab33e9.ogg",
+      "seconds": 1.4952708333333333,
+      "frames": 71773,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-1045401635-b4e62ede2afb": {
+      "url": "assets/audio/event-1045401635-b4e62ede2afb.ogg",
+      "seconds": 1.5967291666666668,
+      "frames": 76643,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-648148178-5fff009f62d7": {
+      "url": "assets/audio/event-648148178-5fff009f62d7.ogg",
+      "seconds": 1.5967291666666668,
+      "frames": 76643,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2301214134-2bc34db07389": {
+      "url": "assets/audio/event-2301214134-2bc34db07389.ogg",
+      "seconds": 2.157979166666667,
+      "frames": 103583,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-61664471-55732ddc42bb": {
+      "url": "assets/audio/event-61664471-55732ddc42bb.ogg",
+      "seconds": 1.2866666666666666,
+      "frames": 61760,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-2542837440-4743697d1518": {
+      "url": "assets/audio/event-2542837440-4743697d1518.ogg",
+      "seconds": 1.2866666666666666,
+      "frames": 61760,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-2301214134-a8eb1e8699c8": {
+      "url": "assets/audio/event-2301214134-a8eb1e8699c8.ogg",
+      "seconds": 2.157979166666667,
+      "frames": 103583,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-459210530-1d0b122e95f0": {
+      "url": "assets/audio/event-459210530-1d0b122e95f0.ogg",
+      "seconds": 1.8312083333333333,
+      "frames": 87898,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-3446074231-28c8322ccf64": {
+      "url": "assets/audio/event-3446074231-28c8322ccf64.ogg",
+      "seconds": 2.8903125,
+      "frames": 138735,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-3679532752-85e6b3e787d3": {
+      "url": "assets/audio/event-3679532752-85e6b3e787d3.ogg",
+      "seconds": 1.8208958333333334,
+      "frames": 87403,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2796266357-4fbc44530ad3": {
+      "url": "assets/audio/event-2796266357-4fbc44530ad3.ogg",
+      "seconds": 1.6533333333333333,
+      "frames": 79360,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2848791423-9f5442f85320": {
+      "url": "assets/audio/event-2848791423-9f5442f85320.ogg",
+      "seconds": 2.3715208333333333,
+      "frames": 113833,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-922171501-b5598febacb2": {
+      "url": "assets/audio/event-922171501-b5598febacb2.ogg",
+      "seconds": 2.474666666666667,
+      "frames": 118784,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "event-2912773661-e7572635cec1": {
+      "url": "assets/audio/event-2912773661-e7572635cec1.ogg",
+      "seconds": 2.1142708333333333,
+      "frames": 101485,
+      "sampleRate": 48000,
+      "channels": 2
+    },
+    "event-1401491186-865abb823349": {
+      "url": "assets/audio/event-1401491186-865abb823349.ogg",
+      "seconds": 0.9772291666666667,
+      "frames": 46907,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-4f07bfab2e430c4954": {
+      "url": "assets/audio/jamie-voice-ja-4f07bfab2e430c4954.ogg",
+      "seconds": 3.2298541666666667,
+      "frames": 155033,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-979f6f6c1cc5a2666b": {
+      "url": "assets/audio/jamie-voice-ja-979f6f6c1cc5a2666b.ogg",
+      "seconds": 1.5807291666666667,
+      "frames": 75875,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-681f66675a50385112": {
+      "url": "assets/audio/jamie-voice-ja-681f66675a50385112.ogg",
+      "seconds": 1.4095833333333334,
+      "frames": 67660,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-dd95ea8277e15a93d9": {
+      "url": "assets/audio/jamie-voice-ja-dd95ea8277e15a93d9.ogg",
+      "seconds": 3.8443541666666667,
+      "frames": 184529,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-339fadde51da83ae10": {
+      "url": "assets/audio/jamie-voice-ja-339fadde51da83ae10.ogg",
+      "seconds": 2.916541666666667,
+      "frames": 139994,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-cd15dc9f4d003ef7ad": {
+      "url": "assets/audio/jamie-voice-ja-cd15dc9f4d003ef7ad.ogg",
+      "seconds": 4.0948125,
+      "frames": 196551,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-47668d597436dfb4af": {
+      "url": "assets/audio/jamie-voice-ja-47668d597436dfb4af.ogg",
+      "seconds": 4.772625,
+      "frames": 229086,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-d1ff0ece433153e5d4": {
+      "url": "assets/audio/jamie-voice-ja-d1ff0ece433153e5d4.ogg",
+      "seconds": 0.38208333333333333,
+      "frames": 18340,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-1308728bd3119815ff": {
+      "url": "assets/audio/jamie-voice-ja-1308728bd3119815ff.ogg",
+      "seconds": 0.29229166666666667,
+      "frames": 14030,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-e6226267e002ef4574": {
+      "url": "assets/audio/jamie-voice-ja-e6226267e002ef4574.ogg",
+      "seconds": 0.7770416666666666,
+      "frames": 37298,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-995cb2e0d8868ed8c0": {
+      "url": "assets/audio/jamie-voice-ja-995cb2e0d8868ed8c0.ogg",
+      "seconds": 0.4804791666666667,
+      "frames": 23063,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-fb53ec9f1b4d40b950": {
+      "url": "assets/audio/jamie-voice-ja-fb53ec9f1b4d40b950.ogg",
+      "seconds": 0.37772916666666667,
+      "frames": 18131,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-de472ee843f5a72e49": {
+      "url": "assets/audio/jamie-voice-ja-de472ee843f5a72e49.ogg",
+      "seconds": 0.9496666666666667,
+      "frames": 45584,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-1ed155b93509b50329": {
+      "url": "assets/audio/jamie-voice-ja-1ed155b93509b50329.ogg",
+      "seconds": 0.22758333333333333,
+      "frames": 10924,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-55ef2cffdaee870ae5": {
+      "url": "assets/audio/jamie-voice-ja-55ef2cffdaee870ae5.ogg",
+      "seconds": 0.20908333333333334,
+      "frames": 10036,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-4dc815eb6760905a06": {
+      "url": "assets/audio/jamie-voice-ja-4dc815eb6760905a06.ogg",
+      "seconds": 0.48072916666666665,
+      "frames": 23075,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-a0d99a3e31de69e686": {
+      "url": "assets/audio/jamie-voice-ja-a0d99a3e31de69e686.ogg",
+      "seconds": 0.20025,
+      "frames": 9612,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-1208608ecdb7efa1c4": {
+      "url": "assets/audio/jamie-voice-ja-1208608ecdb7efa1c4.ogg",
+      "seconds": 0.3712708333333333,
+      "frames": 17821,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-32590c37d9eb2377b5": {
+      "url": "assets/audio/jamie-voice-ja-32590c37d9eb2377b5.ogg",
+      "seconds": 0.474,
+      "frames": 22752,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-ba30d2fcbaa2cfcbdf": {
+      "url": "assets/audio/jamie-voice-ja-ba30d2fcbaa2cfcbdf.ogg",
+      "seconds": 0.658,
+      "frames": 31584,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-16d7600f794311c0cc": {
+      "url": "assets/audio/jamie-voice-ja-16d7600f794311c0cc.ogg",
+      "seconds": 0.36983333333333335,
+      "frames": 17752,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-87ed877bb0c47ab9db": {
+      "url": "assets/audio/jamie-voice-ja-87ed877bb0c47ab9db.ogg",
+      "seconds": 0.20804166666666668,
+      "frames": 9986,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-359f26c6f75d40ed41": {
+      "url": "assets/audio/jamie-voice-ja-359f26c6f75d40ed41.ogg",
+      "seconds": 0.5370416666666666,
+      "frames": 25778,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-f8ad04656e5ae144c8": {
+      "url": "assets/audio/jamie-voice-ja-f8ad04656e5ae144c8.ogg",
+      "seconds": 0.16070833333333334,
+      "frames": 7714,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-d282e8ed6497e90a69": {
+      "url": "assets/audio/jamie-voice-ja-d282e8ed6497e90a69.ogg",
+      "seconds": 0.4429375,
+      "frames": 21261,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-e885f7a3a86b58c2ca": {
+      "url": "assets/audio/jamie-voice-ja-e885f7a3a86b58c2ca.ogg",
+      "seconds": 0.4558333333333333,
+      "frames": 21880,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-d306ad7f1463a75f01": {
+      "url": "assets/audio/jamie-voice-ja-d306ad7f1463a75f01.ogg",
+      "seconds": 0.5085833333333334,
+      "frames": 24412,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-69e09a16ff3779f500": {
+      "url": "assets/audio/jamie-voice-ja-69e09a16ff3779f500.ogg",
+      "seconds": 0.5263541666666667,
+      "frames": 25265,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-577c9f14cd38c8438b": {
+      "url": "assets/audio/jamie-voice-ja-577c9f14cd38c8438b.ogg",
+      "seconds": 0.7892708333333334,
+      "frames": 37885,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-d2a77bb5a2302bc721": {
+      "url": "assets/audio/jamie-voice-ja-d2a77bb5a2302bc721.ogg",
+      "seconds": 0.4705416666666667,
+      "frames": 22586,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-abf9c2416d81f2d897": {
+      "url": "assets/audio/jamie-voice-ja-abf9c2416d81f2d897.ogg",
+      "seconds": 0.32535416666666667,
+      "frames": 15617,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-aeaf1dc864681f4ded": {
+      "url": "assets/audio/jamie-voice-ja-aeaf1dc864681f4ded.ogg",
+      "seconds": 0.43727083333333333,
+      "frames": 20989,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-6543327d3b953146f4": {
+      "url": "assets/audio/jamie-voice-ja-6543327d3b953146f4.ogg",
+      "seconds": 0.313375,
+      "frames": 15042,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-65504617ed054ae340": {
+      "url": "assets/audio/jamie-voice-ja-65504617ed054ae340.ogg",
+      "seconds": 0.45489583333333333,
+      "frames": 21835,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-b821c2e7fbd9e47271": {
+      "url": "assets/audio/jamie-voice-ja-b821c2e7fbd9e47271.ogg",
+      "seconds": 0.5280625,
+      "frames": 25347,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-467c409823cb5f9570": {
+      "url": "assets/audio/jamie-voice-ja-467c409823cb5f9570.ogg",
+      "seconds": 0.3050833333333333,
+      "frames": 14644,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-d8e413c2356aa9894f": {
+      "url": "assets/audio/jamie-voice-ja-d8e413c2356aa9894f.ogg",
+      "seconds": 0.7721666666666667,
+      "frames": 37064,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-2c921824101f6184da": {
+      "url": "assets/audio/jamie-voice-ja-2c921824101f6184da.ogg",
+      "seconds": 0.43452083333333336,
+      "frames": 20857,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-0c1581f8d97b0f3c02": {
+      "url": "assets/audio/jamie-voice-ja-0c1581f8d97b0f3c02.ogg",
+      "seconds": 0.47120833333333334,
+      "frames": 22618,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-a1011e57b1207e15c3": {
+      "url": "assets/audio/jamie-voice-ja-a1011e57b1207e15c3.ogg",
+      "seconds": 0.9305833333333333,
+      "frames": 44668,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-592c6015ab0560866e": {
+      "url": "assets/audio/jamie-voice-ja-592c6015ab0560866e.ogg",
+      "seconds": 0.9313333333333333,
+      "frames": 44704,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-22ba8d97132b958626": {
+      "url": "assets/audio/jamie-voice-ja-22ba8d97132b958626.ogg",
+      "seconds": 0.3431875,
+      "frames": 16473,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-e6386ba1f8bd31a1a7": {
+      "url": "assets/audio/jamie-voice-ja-e6386ba1f8bd31a1a7.ogg",
+      "seconds": 0.2639166666666667,
+      "frames": 12668,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-94486e1c9a80f2c612": {
+      "url": "assets/audio/jamie-voice-ja-94486e1c9a80f2c612.ogg",
+      "seconds": 0.6929375,
+      "frames": 33261,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-01f247d61b464b21cb": {
+      "url": "assets/audio/jamie-voice-ja-01f247d61b464b21cb.ogg",
+      "seconds": 0.8621458333333333,
+      "frames": 41383,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-2473fdf92b34fc8ff6": {
+      "url": "assets/audio/jamie-voice-ja-2473fdf92b34fc8ff6.ogg",
+      "seconds": 0.8159375,
+      "frames": 39165,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-f56e8ac7b8e3eb68b9": {
+      "url": "assets/audio/jamie-voice-ja-f56e8ac7b8e3eb68b9.ogg",
+      "seconds": 0.8804791666666667,
+      "frames": 42263,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-a8e1d8bab7c94b042e": {
+      "url": "assets/audio/jamie-voice-ja-a8e1d8bab7c94b042e.ogg",
+      "seconds": 1.3876875,
+      "frames": 66609,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-211042c592ee750ba9": {
+      "url": "assets/audio/jamie-voice-ja-211042c592ee750ba9.ogg",
+      "seconds": 1.22075,
+      "frames": 58596,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-0d8acb8cdc0b7548b9": {
+      "url": "assets/audio/jamie-voice-ja-0d8acb8cdc0b7548b9.ogg",
+      "seconds": 0.7384166666666667,
+      "frames": 35444,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-f1313870783455abaf": {
+      "url": "assets/audio/jamie-voice-ja-f1313870783455abaf.ogg",
+      "seconds": 0.10666666666666667,
+      "frames": 5120,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-bdd4b9486fb1d7131e": {
+      "url": "assets/audio/jamie-voice-ja-bdd4b9486fb1d7131e.ogg",
+      "seconds": 0.15933333333333333,
+      "frames": 7648,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-54e3aae4a92e096916": {
+      "url": "assets/audio/jamie-voice-ja-54e3aae4a92e096916.ogg",
+      "seconds": 0.325375,
+      "frames": 15618,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-67f5c2fd0b89cd398f": {
+      "url": "assets/audio/jamie-voice-ja-67f5c2fd0b89cd398f.ogg",
+      "seconds": 0.12091666666666667,
+      "frames": 5804,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-146f79501117b89487": {
+      "url": "assets/audio/jamie-voice-ja-146f79501117b89487.ogg",
+      "seconds": 0.6562291666666666,
+      "frames": 31499,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-8054c2750bc9da159c": {
+      "url": "assets/audio/jamie-voice-ja-8054c2750bc9da159c.ogg",
+      "seconds": 0.9025,
+      "frames": 43320,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-5359577069f79e9761": {
+      "url": "assets/audio/jamie-voice-ja-5359577069f79e9761.ogg",
+      "seconds": 1.1832291666666668,
+      "frames": 56795,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-5b77eca1155854bd27": {
+      "url": "assets/audio/jamie-voice-ja-5b77eca1155854bd27.ogg",
+      "seconds": 1.9128958333333332,
+      "frames": 91819,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-b84576933c9071b361": {
+      "url": "assets/audio/jamie-voice-ja-b84576933c9071b361.ogg",
+      "seconds": 0.9978541666666667,
+      "frames": 47897,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-0e36d11e1d3f018c5f": {
+      "url": "assets/audio/jamie-voice-ja-0e36d11e1d3f018c5f.ogg",
+      "seconds": 0.31202083333333336,
+      "frames": 14977,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-a95ad4ec097858a947": {
+      "url": "assets/audio/jamie-voice-ja-a95ad4ec097858a947.ogg",
+      "seconds": 0.5975,
+      "frames": 28680,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-b1a992d947f0a01b70": {
+      "url": "assets/audio/jamie-voice-ja-b1a992d947f0a01b70.ogg",
+      "seconds": 0.7150416666666667,
+      "frames": 34322,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-ed8fbb559a5b401ab7": {
+      "url": "assets/audio/jamie-voice-ja-ed8fbb559a5b401ab7.ogg",
+      "seconds": 0.5526666666666666,
+      "frames": 26528,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-fdc08e0b3e5582e9d9": {
+      "url": "assets/audio/jamie-voice-ja-fdc08e0b3e5582e9d9.ogg",
+      "seconds": 0.7049375,
+      "frames": 33837,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-a747492a54de7b357a": {
+      "url": "assets/audio/jamie-voice-ja-a747492a54de7b357a.ogg",
+      "seconds": 0.9138541666666666,
+      "frames": 43865,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-315aba5bfaf9735ac3": {
+      "url": "assets/audio/jamie-voice-ja-315aba5bfaf9735ac3.ogg",
+      "seconds": 0.9216666666666666,
+      "frames": 44240,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-ca3ffcfc5d2f22bff7": {
+      "url": "assets/audio/jamie-voice-ja-ca3ffcfc5d2f22bff7.ogg",
+      "seconds": 0.1941875,
+      "frames": 9321,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-6c43f96fc081cb0cc1": {
+      "url": "assets/audio/jamie-voice-ja-6c43f96fc081cb0cc1.ogg",
+      "seconds": 2.1470208333333334,
+      "frames": 103057,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-2da2904f2ec7d7af6d": {
+      "url": "assets/audio/jamie-voice-ja-2da2904f2ec7d7af6d.ogg",
+      "seconds": 1.1203541666666668,
+      "frames": 53777,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-ba4dc14aa5443450fd": {
+      "url": "assets/audio/jamie-voice-ja-ba4dc14aa5443450fd.ogg",
+      "seconds": 1.48,
+      "frames": 71040,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-d18904ed5d7941ec87": {
+      "url": "assets/audio/jamie-voice-ja-d18904ed5d7941ec87.ogg",
+      "seconds": 0.9306666666666666,
+      "frames": 44672,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-88c3fa72e45320d133": {
+      "url": "assets/audio/jamie-voice-ja-88c3fa72e45320d133.ogg",
+      "seconds": 0.9066666666666666,
+      "frames": 43520,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-24c011ae6aac166245": {
+      "url": "assets/audio/jamie-voice-ja-24c011ae6aac166245.ogg",
+      "seconds": 0.21654166666666666,
+      "frames": 10394,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-3547e23e7d6461f8b5": {
+      "url": "assets/audio/jamie-voice-ja-3547e23e7d6461f8b5.ogg",
+      "seconds": 1.1876666666666666,
+      "frames": 57008,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-fd8302eb956e4ff226": {
+      "url": "assets/audio/jamie-voice-ja-fd8302eb956e4ff226.ogg",
+      "seconds": 1.2891875,
+      "frames": 61881,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-55e9b5d39da50de848": {
+      "url": "assets/audio/jamie-voice-ja-55e9b5d39da50de848.ogg",
+      "seconds": 0.8148333333333333,
+      "frames": 39112,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-52254aea02cb03095d": {
+      "url": "assets/audio/jamie-voice-ja-52254aea02cb03095d.ogg",
+      "seconds": 1.7120208333333333,
+      "frames": 82177,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-d62bb326eeea82092a": {
+      "url": "assets/audio/jamie-voice-ja-d62bb326eeea82092a.ogg",
+      "seconds": 0.916125,
+      "frames": 43974,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-e5d173838f408efaa1": {
+      "url": "assets/audio/jamie-voice-ja-e5d173838f408efaa1.ogg",
+      "seconds": 0.22202083333333333,
+      "frames": 10657,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-50d31e9d4936057cfd": {
+      "url": "assets/audio/jamie-voice-ja-50d31e9d4936057cfd.ogg",
+      "seconds": 0.19675,
+      "frames": 9444,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-812dc2ec81abca2928": {
+      "url": "assets/audio/jamie-voice-ja-812dc2ec81abca2928.ogg",
+      "seconds": 0.27245833333333336,
+      "frames": 13078,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-27765f39c2785d4efc": {
+      "url": "assets/audio/jamie-voice-ja-27765f39c2785d4efc.ogg",
+      "seconds": 0.3473333333333333,
+      "frames": 16672,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-2d66258dd3160ac4da": {
+      "url": "assets/audio/jamie-voice-ja-2d66258dd3160ac4da.ogg",
+      "seconds": 0.3118125,
+      "frames": 14967,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-f34928cf17bee91572": {
+      "url": "assets/audio/jamie-voice-ja-f34928cf17bee91572.ogg",
+      "seconds": 0.6870208333333333,
+      "frames": 32977,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-427a053b3710e40fb8": {
+      "url": "assets/audio/jamie-voice-ja-427a053b3710e40fb8.ogg",
+      "seconds": 1.3775625,
+      "frames": 66123,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-1dc71749d59dbc9bb9": {
+      "url": "assets/audio/jamie-voice-ja-1dc71749d59dbc9bb9.ogg",
+      "seconds": 0.7301666666666666,
+      "frames": 35048,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-0275fa2aa53ef79c95": {
+      "url": "assets/audio/jamie-voice-ja-0275fa2aa53ef79c95.ogg",
+      "seconds": 0.8253958333333333,
+      "frames": 39619,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-3467b99532f19534ac": {
+      "url": "assets/audio/jamie-voice-ja-3467b99532f19534ac.ogg",
+      "seconds": 0.4010208333333333,
+      "frames": 19249,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-b51298a85f35418075": {
+      "url": "assets/audio/jamie-voice-ja-b51298a85f35418075.ogg",
+      "seconds": 0.30233333333333334,
+      "frames": 14512,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-7c45adfd8ae252f6a1": {
+      "url": "assets/audio/jamie-voice-ja-7c45adfd8ae252f6a1.ogg",
+      "seconds": 0.1835,
+      "frames": 8808,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-64c960a5e562e83c00": {
+      "url": "assets/audio/jamie-voice-ja-64c960a5e562e83c00.ogg",
+      "seconds": 0.3855208333333333,
+      "frames": 18505,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-129f8d0cf781b0bbb4": {
+      "url": "assets/audio/jamie-voice-ja-129f8d0cf781b0bbb4.ogg",
+      "seconds": 0.32658333333333334,
+      "frames": 15676,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-b33d22380f4f8cfa26": {
+      "url": "assets/audio/jamie-voice-ja-b33d22380f4f8cfa26.ogg",
+      "seconds": 0.49222916666666666,
+      "frames": 23627,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-befab26b0cc4c156e0": {
+      "url": "assets/audio/jamie-voice-ja-befab26b0cc4c156e0.ogg",
+      "seconds": 0.6406666666666667,
+      "frames": 30752,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-db85277c983ef87e52": {
+      "url": "assets/audio/jamie-voice-ja-db85277c983ef87e52.ogg",
+      "seconds": 0.2995833333333333,
+      "frames": 14380,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-dab542d762be451dde": {
+      "url": "assets/audio/jamie-voice-ja-dab542d762be451dde.ogg",
+      "seconds": 0.35202083333333334,
+      "frames": 16897,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-ae0503cf8329e28a79": {
+      "url": "assets/audio/jamie-voice-ja-ae0503cf8329e28a79.ogg",
+      "seconds": 0.422,
+      "frames": 20256,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-616d068e8365c1b52a": {
+      "url": "assets/audio/jamie-voice-ja-616d068e8365c1b52a.ogg",
+      "seconds": 0.42222916666666666,
+      "frames": 20267,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-e14075b06ddec7eeed": {
+      "url": "assets/audio/jamie-voice-ja-e14075b06ddec7eeed.ogg",
+      "seconds": 0.3672916666666667,
+      "frames": 17630,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-73ccf3cd12d2e35ff9": {
+      "url": "assets/audio/jamie-voice-ja-73ccf3cd12d2e35ff9.ogg",
+      "seconds": 0.424,
+      "frames": 20352,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-2e9aacdacdef2e9121": {
+      "url": "assets/audio/jamie-voice-ja-2e9aacdacdef2e9121.ogg",
+      "seconds": 0.24685416666666668,
+      "frames": 11849,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-5442a451ff0ea265d0": {
+      "url": "assets/audio/jamie-voice-ja-5442a451ff0ea265d0.ogg",
+      "seconds": 0.36,
+      "frames": 17280,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-16ec0bb6921619f190": {
+      "url": "assets/audio/jamie-voice-ja-16ec0bb6921619f190.ogg",
+      "seconds": 0.42904166666666665,
+      "frames": 20594,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-f617abe7781e6e7132": {
+      "url": "assets/audio/jamie-voice-ja-f617abe7781e6e7132.ogg",
+      "seconds": 0.2773541666666667,
+      "frames": 13313,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-3b178152af01dd629e": {
+      "url": "assets/audio/jamie-voice-ja-3b178152af01dd629e.ogg",
+      "seconds": 1.107125,
+      "frames": 53142,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-7166bb3e4150ebb583": {
+      "url": "assets/audio/jamie-voice-ja-7166bb3e4150ebb583.ogg",
+      "seconds": 0.43220833333333336,
+      "frames": 20746,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-3b559842d3d1cce55e": {
+      "url": "assets/audio/jamie-voice-ja-3b559842d3d1cce55e.ogg",
+      "seconds": 1.1715416666666667,
+      "frames": 56234,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-518214bd86a58181e9": {
+      "url": "assets/audio/jamie-voice-ja-518214bd86a58181e9.ogg",
+      "seconds": 1.3418333333333334,
+      "frames": 64408,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-3c11a0cfa73590b2ce": {
+      "url": "assets/audio/jamie-voice-ja-3c11a0cfa73590b2ce.ogg",
+      "seconds": 0.657125,
+      "frames": 31542,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-433a1cf5338781900a": {
+      "url": "assets/audio/jamie-voice-ja-433a1cf5338781900a.ogg",
+      "seconds": 0.1858125,
+      "frames": 8919,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-e2b6b44dbd6aceadbb": {
+      "url": "assets/audio/jamie-voice-ja-e2b6b44dbd6aceadbb.ogg",
+      "seconds": 0.20385416666666667,
+      "frames": 9785,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-6c835a411cc0a1803d": {
+      "url": "assets/audio/jamie-voice-ja-6c835a411cc0a1803d.ogg",
+      "seconds": 0.6716458333333334,
+      "frames": 32239,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-694398bf3f1b5ccfe0": {
+      "url": "assets/audio/jamie-voice-ja-694398bf3f1b5ccfe0.ogg",
+      "seconds": 0.20979166666666665,
+      "frames": 10070,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-842fd2ef70a07f018a": {
+      "url": "assets/audio/jamie-voice-ja-842fd2ef70a07f018a.ogg",
+      "seconds": 0.33347916666666666,
+      "frames": 16007,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-b535e3d260868bb729": {
+      "url": "assets/audio/jamie-voice-ja-b535e3d260868bb729.ogg",
+      "seconds": 0.2999583333333333,
+      "frames": 14398,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-6eff7a062a2a0ff718": {
+      "url": "assets/audio/jamie-voice-ja-6eff7a062a2a0ff718.ogg",
+      "seconds": 0.33027083333333335,
+      "frames": 15853,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-bc85fcc09faac16481": {
+      "url": "assets/audio/jamie-voice-ja-bc85fcc09faac16481.ogg",
+      "seconds": 0.5370833333333334,
+      "frames": 25780,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-518a8ea91d708e6989": {
+      "url": "assets/audio/jamie-voice-ja-518a8ea91d708e6989.ogg",
+      "seconds": 0.5269166666666667,
+      "frames": 25292,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-0d2ca4fe10ce9f4be8": {
+      "url": "assets/audio/jamie-voice-ja-0d2ca4fe10ce9f4be8.ogg",
+      "seconds": 0.4226875,
+      "frames": 20289,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-2b1e627d2ac51d5c76": {
+      "url": "assets/audio/jamie-voice-ja-2b1e627d2ac51d5c76.ogg",
+      "seconds": 0.5786041666666667,
+      "frames": 27773,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-d2f45a58c4e6473ac4": {
+      "url": "assets/audio/jamie-voice-ja-d2f45a58c4e6473ac4.ogg",
+      "seconds": 0.5548958333333334,
+      "frames": 26635,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-a9dfc4f5d736baf204": {
+      "url": "assets/audio/jamie-voice-ja-a9dfc4f5d736baf204.ogg",
+      "seconds": 0.433875,
+      "frames": 20826,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-1ccc8d784c6219356e": {
+      "url": "assets/audio/jamie-voice-ja-1ccc8d784c6219356e.ogg",
+      "seconds": 0.7260208333333333,
+      "frames": 34849,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-8a110e0acc1c4daa0c": {
+      "url": "assets/audio/jamie-voice-ja-8a110e0acc1c4daa0c.ogg",
+      "seconds": 0.4491041666666667,
+      "frames": 21557,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-853c85f56cd1a9a941": {
+      "url": "assets/audio/jamie-voice-ja-853c85f56cd1a9a941.ogg",
+      "seconds": 0.6642916666666666,
+      "frames": 31886,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-90c74d977e00307b5e": {
+      "url": "assets/audio/jamie-voice-ja-90c74d977e00307b5e.ogg",
+      "seconds": 0.6146875,
+      "frames": 29505,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-24109ce98437a76ccd": {
+      "url": "assets/audio/jamie-voice-ja-24109ce98437a76ccd.ogg",
+      "seconds": 0.48225,
+      "frames": 23148,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-554bb79ffacf4342c6": {
+      "url": "assets/audio/jamie-voice-ja-554bb79ffacf4342c6.ogg",
+      "seconds": 0.5834791666666667,
+      "frames": 28007,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-6200edf4195384199b": {
+      "url": "assets/audio/jamie-voice-ja-6200edf4195384199b.ogg",
+      "seconds": 0.383875,
+      "frames": 18426,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-4353f844b3a705c0a8": {
+      "url": "assets/audio/jamie-voice-ja-4353f844b3a705c0a8.ogg",
+      "seconds": 0.6536041666666667,
+      "frames": 31373,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-a3f447f8599a032cd9": {
+      "url": "assets/audio/jamie-voice-ja-a3f447f8599a032cd9.ogg",
+      "seconds": 0.62425,
+      "frames": 29964,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-62b93d1250ed41b1d2": {
+      "url": "assets/audio/jamie-voice-ja-62b93d1250ed41b1d2.ogg",
+      "seconds": 0.4230833333333333,
+      "frames": 20308,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-4ff778fa2c947538f3": {
+      "url": "assets/audio/jamie-voice-ja-4ff778fa2c947538f3.ogg",
+      "seconds": 0.6444166666666666,
+      "frames": 30932,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-62fd7646379ec030f3": {
+      "url": "assets/audio/jamie-voice-ja-62fd7646379ec030f3.ogg",
+      "seconds": 0.5127083333333333,
+      "frames": 24610,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-d3ad2f4ffa7a927e17": {
+      "url": "assets/audio/jamie-voice-ja-d3ad2f4ffa7a927e17.ogg",
+      "seconds": 0.5109583333333333,
+      "frames": 24526,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-78f66e7437be6d7025": {
+      "url": "assets/audio/jamie-voice-ja-78f66e7437be6d7025.ogg",
+      "seconds": 0.5048958333333333,
+      "frames": 24235,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-dbd4fa494be0ad7b3c": {
+      "url": "assets/audio/jamie-voice-ja-dbd4fa494be0ad7b3c.ogg",
+      "seconds": 0.4620208333333333,
+      "frames": 22177,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-ceb760ca59484f4ad3": {
+      "url": "assets/audio/jamie-voice-ja-ceb760ca59484f4ad3.ogg",
+      "seconds": 0.7036041666666667,
+      "frames": 33773,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-844f0f4830441df9da": {
+      "url": "assets/audio/jamie-voice-ja-844f0f4830441df9da.ogg",
+      "seconds": 0.67425,
+      "frames": 32364,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-9ec3c0af9a2e5310c0": {
+      "url": "assets/audio/jamie-voice-ja-9ec3c0af9a2e5310c0.ogg",
+      "seconds": 0.5609583333333333,
+      "frames": 26926,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-ebaba00f3ed2bf7f9a": {
+      "url": "assets/audio/jamie-voice-ja-ebaba00f3ed2bf7f9a.ogg",
+      "seconds": 0.5627083333333334,
+      "frames": 27010,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-3410d72b1ab014bff2": {
+      "url": "assets/audio/jamie-voice-ja-3410d72b1ab014bff2.ogg",
+      "seconds": 1.07425,
+      "frames": 51564,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-fd55445e7f80851242": {
+      "url": "assets/audio/jamie-voice-ja-fd55445e7f80851242.ogg",
+      "seconds": 0.5610208333333333,
+      "frames": 26929,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-ef0bd69a258c5fd026": {
+      "url": "assets/audio/jamie-voice-ja-ef0bd69a258c5fd026.ogg",
+      "seconds": 1.0438333333333334,
+      "frames": 50104,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-bf08bf3651c014586d": {
+      "url": "assets/audio/jamie-voice-ja-bf08bf3651c014586d.ogg",
+      "seconds": 1.0145833333333334,
+      "frames": 48700,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-6e158ad355a87a7e44": {
+      "url": "assets/audio/jamie-voice-ja-6e158ad355a87a7e44.ogg",
+      "seconds": 1.3838541666666666,
+      "frames": 66425,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-5ee52067e963bd2692": {
+      "url": "assets/audio/jamie-voice-ja-5ee52067e963bd2692.ogg",
+      "seconds": 1.1757708333333334,
+      "frames": 56437,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-dd21ed993f1becbbd7": {
+      "url": "assets/audio/jamie-voice-ja-dd21ed993f1becbbd7.ogg",
+      "seconds": 2.654729166666667,
+      "frames": 127427,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-9a3535b91289b54dc5": {
+      "url": "assets/audio/jamie-voice-ja-9a3535b91289b54dc5.ogg",
+      "seconds": 2.3621458333333334,
+      "frames": 113383,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-67a08a365571e31de3": {
+      "url": "assets/audio/jamie-voice-ja-67a08a365571e31de3.ogg",
+      "seconds": 1.6694583333333333,
+      "frames": 80134,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-ba8f114d9b6c5ec942": {
+      "url": "assets/audio/jamie-voice-ja-ba8f114d9b6c5ec942.ogg",
+      "seconds": 1.2631041666666667,
+      "frames": 60629,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-ed2b2616e7c566c318": {
+      "url": "assets/audio/jamie-voice-ja-ed2b2616e7c566c318.ogg",
+      "seconds": 2.815354166666667,
+      "frames": 135137,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-93610f2337873df4b0": {
+      "url": "assets/audio/jamie-voice-ja-93610f2337873df4b0.ogg",
+      "seconds": 2.342625,
+      "frames": 112446,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-77dc9415cc840daad0": {
+      "url": "assets/audio/jamie-voice-ja-77dc9415cc840daad0.ogg",
+      "seconds": 0.6066875,
+      "frames": 29121,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-f2684b853941540257": {
+      "url": "assets/audio/jamie-voice-ja-f2684b853941540257.ogg",
+      "seconds": 0.5703125,
+      "frames": 27375,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-48b1752b6140ed825b": {
+      "url": "assets/audio/jamie-voice-ja-48b1752b6140ed825b.ogg",
+      "seconds": 1.88,
+      "frames": 90240,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-6cbadd654f5fbed559": {
+      "url": "assets/audio/jamie-voice-ja-6cbadd654f5fbed559.ogg",
+      "seconds": 1.8027708333333334,
+      "frames": 86533,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-1cf03619cb3a2eb053": {
+      "url": "assets/audio/jamie-voice-ja-1cf03619cb3a2eb053.ogg",
+      "seconds": 0.6372083333333334,
+      "frames": 30586,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-7ee972b5f23db4f25e": {
+      "url": "assets/audio/jamie-voice-ja-7ee972b5f23db4f25e.ogg",
+      "seconds": 1.3924375,
+      "frames": 66837,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-c48d7994bf07e3cf40": {
+      "url": "assets/audio/jamie-voice-ja-c48d7994bf07e3cf40.ogg",
+      "seconds": 1.1985208333333333,
+      "frames": 57529,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-e21db959a578d5a16d": {
+      "url": "assets/audio/jamie-voice-ja-e21db959a578d5a16d.ogg",
+      "seconds": 0.9618541666666667,
+      "frames": 46169,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-2b45f592ba7036b4dc": {
+      "url": "assets/audio/jamie-voice-ja-2b45f592ba7036b4dc.ogg",
+      "seconds": 0.6463541666666667,
+      "frames": 31025,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-58fc62fef581f0e45e": {
+      "url": "assets/audio/jamie-voice-ja-58fc62fef581f0e45e.ogg",
+      "seconds": 0.3897083333333333,
+      "frames": 18706,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-086aa68720ba7e594b": {
+      "url": "assets/audio/jamie-voice-ja-086aa68720ba7e594b.ogg",
+      "seconds": 0.7317708333333334,
+      "frames": 35125,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-529dd971c06f4b1635": {
+      "url": "assets/audio/jamie-voice-ja-529dd971c06f4b1635.ogg",
+      "seconds": 0.8024166666666667,
+      "frames": 38516,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-1f722cb31abe4b1b75": {
+      "url": "assets/audio/jamie-voice-ja-1f722cb31abe4b1b75.ogg",
+      "seconds": 0.7644583333333334,
+      "frames": 36694,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-76a9c7515abe455880": {
+      "url": "assets/audio/jamie-voice-ja-76a9c7515abe455880.ogg",
+      "seconds": 0.8765833333333334,
+      "frames": 42076,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-9a83b9fd9f7684ee80": {
+      "url": "assets/audio/jamie-voice-ja-9a83b9fd9f7684ee80.ogg",
+      "seconds": 1.019625,
+      "frames": 48942,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-cffd36225abeb334af": {
+      "url": "assets/audio/jamie-voice-ja-cffd36225abeb334af.ogg",
+      "seconds": 0.3961875,
+      "frames": 19017,
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    "jamie-voice-ja-84ebd78dc918e6e3f1": {
+      "url": "assets/audio/jamie-voice-ja-84ebd78dc918e6e3f1.ogg",
+      "seconds": 0.5199583333333333,
+      "frames": 24958,
+      "sampleRate": 48000,
+      "channels": 1
+    }
+  },
+  "bgm": {
+    "jamie": {
+      "title": "杰米 · Mr. Top Player",
+      "normal": "bgm-jamie-normal",
+      "danger": "bgm-jamie-danger",
+      "intro": "bgm-jamie-intro",
+      "outro": "bgm-jamie-outro",
+      "varied": "bgm-jamie-varied",
+      "extended": "bgm-jamie-extended",
+      "break": "bgm-jamie-break"
+    },
+    "training": {
+      "title": "训练场 · Training Room",
+      "normal": "bgm-training-normal",
+      "danger": "bgm-training-danger",
+      "intro": "bgm-training-intro",
+      "outro": "bgm-training-outro",
+      "varied": "bgm-training-varied",
+      "extended": "bgm-training-extended",
+      "break": "bgm-training-break"
+    },
+    "metro": {
+      "title": "霓虹街区 ← Metro City Downtown",
+      "normal": "bgm-metro-normal",
+      "danger": "bgm-metro-danger",
+      "intro": "bgm-metro-intro",
+      "outro": "bgm-metro-outro",
+      "varied": "bgm-metro-varied",
+      "extended": "bgm-metro-extended",
+      "break": "bgm-metro-break"
+    },
+    "temple": {
+      "title": "朱枫古寺 ← Genbu Temple",
+      "normal": "bgm-temple-normal",
+      "danger": "bgm-temple-danger",
+      "intro": "bgm-temple-intro",
+      "outro": "bgm-temple-outro",
+      "varied": "bgm-temple-varied",
+      "extended": "bgm-temple-extended",
+      "break": "bgm-temple-break"
+    },
+    "market": {
+      "title": "龙灯夜市 ← Tian Hong Yuan",
+      "normal": "bgm-market-normal",
+      "danger": "bgm-market-danger",
+      "intro": "bgm-market-intro",
+      "outro": "bgm-market-outro",
+      "varied": "bgm-market-varied",
+      "extended": "bgm-market-extended",
+      "break": "bgm-market-break"
+    },
+    "foundry": {
+      "title": "熔炉码头 ← Barmaley Steelworks",
+      "normal": "bgm-foundry-normal",
+      "danger": "bgm-foundry-danger",
+      "intro": "bgm-foundry-intro",
+      "outro": "bgm-foundry-outro",
+      "varied": "bgm-foundry-varied",
+      "extended": "bgm-foundry-extended",
+      "break": "bgm-foundry-break"
+    },
+    "beach": {
+      "title": "落日海湾 ← Bathers Beach",
+      "normal": "bgm-beach-normal",
+      "danger": "bgm-beach-danger",
+      "intro": "bgm-beach-intro",
+      "outro": "bgm-beach-outro",
+      "varied": "bgm-beach-varied",
+      "extended": "bgm-beach-extended",
+      "break": "bgm-beach-break"
+    },
+    "colosseum": {
+      "title": "日曜斗场 ← Colosseo",
+      "normal": "bgm-colosseum-normal",
+      "danger": "bgm-colosseum-danger",
+      "intro": "bgm-colosseum-intro",
+      "outro": "bgm-colosseum-outro",
+      "varied": "bgm-colosseum-varied",
+      "extended": "bgm-colosseum-extended",
+      "break": "bgm-colosseum-break"
+    },
+    "oldtown": {
+      "title": "备选 · Old Town Market",
+      "normal": "bgm-oldtown-normal",
+      "danger": "bgm-oldtown-danger",
+      "intro": "bgm-oldtown-intro",
+      "outro": "bgm-oldtown-outro",
+      "varied": "bgm-oldtown-varied",
+      "extended": "bgm-oldtown-extended",
+      "break": "bgm-oldtown-break"
+    }
+  },
+  "feedback": {
+    "parry": [
+      "event-459210530-1d0b122e95f0"
+    ],
+    "perfect-parry": [
+      "event-3446074231-28c8322ccf64"
+    ],
+    "perfect-shell": [
+      "event-3679532752-85e6b3e787d3"
+    ],
+    "armor-break": [
+      "event-2796266357-4fbc44530ad3"
+    ],
+    "guard-break": [
+      "event-2848791423-9f5442f85320"
+    ],
+    "drive-rush-hit": [
+      "event-922171501-b5598febacb2"
+    ],
+    "stun": [
+      "event-2912773661-e7572635cec1"
+    ],
+    "drive-impact": [
+      "event-3190383685-b70b698f3a5d"
+    ],
+    "drive-charge": [
+      "event-618683607-707474d7edbe"
+    ],
+    "drive-reversal": [
+      "event-1156439741-898f3f8139de"
+    ],
+    "drive-guard": [
+      "event-1401491186-865abb823349"
+    ]
+  },
+  "voices": {
+    "jamie": {
+      "language": "ja",
+      "requests": {
+        "500": {
+          "clips": [
+            "jamie-voice-ja-e5d173838f408efaa1",
+            "jamie-voice-ja-50d31e9d4936057cfd",
+            "jamie-voice-ja-812dc2ec81abca2928"
+          ],
+          "randomGroup": 875130072,
+          "priority": 50,
+          "prioritizeFirst": true,
+          "skipRate": 0.33000001311302185,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "501": {
+          "clips": [
+            "jamie-voice-ja-27765f39c2785d4efc",
+            "jamie-voice-ja-f617abe7781e6e7132",
+            "jamie-voice-ja-e2b6b44dbd6aceadbb",
+            "jamie-voice-ja-694398bf3f1b5ccfe0"
+          ],
+          "randomGroup": 929348978,
+          "priority": 52,
+          "prioritizeFirst": true,
+          "skipRate": 0.33000001311302185,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "502": {
+          "clips": [
+            "jamie-voice-ja-2d66258dd3160ac4da",
+            "jamie-voice-ja-ae0503cf8329e28a79",
+            "jamie-voice-ja-616d068e8365c1b52a"
+          ],
+          "randomGroup": 264840117,
+          "priority": 55,
+          "prioritizeFirst": true,
+          "skipRate": 0.33000001311302185,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "510": {
+          "clips": [
+            "jamie-voice-ja-e5d173838f408efaa1",
+            "jamie-voice-ja-50d31e9d4936057cfd",
+            "jamie-voice-ja-812dc2ec81abca2928"
+          ],
+          "randomGroup": 875130072,
+          "priority": 50,
+          "prioritizeFirst": true,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "511": {
+          "clips": [
+            "jamie-voice-ja-27765f39c2785d4efc",
+            "jamie-voice-ja-f617abe7781e6e7132",
+            "jamie-voice-ja-e2b6b44dbd6aceadbb",
+            "jamie-voice-ja-694398bf3f1b5ccfe0"
+          ],
+          "randomGroup": 929348978,
+          "priority": 52,
+          "prioritizeFirst": true,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "512": {
+          "clips": [
+            "jamie-voice-ja-2d66258dd3160ac4da",
+            "jamie-voice-ja-ae0503cf8329e28a79",
+            "jamie-voice-ja-616d068e8365c1b52a"
+          ],
+          "randomGroup": 264840117,
+          "priority": 55,
+          "prioritizeFirst": true,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "520": {
+          "clips": [
+            "jamie-voice-ja-1cf03619cb3a2eb053"
+          ],
+          "randomGroup": 717432671,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "521": {
+          "clips": [
+            "jamie-voice-ja-7ee972b5f23db4f25e",
+            "jamie-voice-ja-c48d7994bf07e3cf40",
+            "jamie-voice-ja-e21db959a578d5a16d"
+          ],
+          "randomGroup": 969478757,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "522": {
+          "clips": [
+            "jamie-voice-ja-2b45f592ba7036b4dc"
+          ],
+          "randomGroup": 426209465,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "564": {
+          "clips": [
+            "jamie-voice-ja-f34928cf17bee91572",
+            "jamie-voice-ja-427a053b3710e40fb8",
+            "jamie-voice-ja-1dc71749d59dbc9bb9"
+          ],
+          "randomGroup": 271837134,
+          "priority": 57,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "566": {
+          "clips": [
+            "jamie-voice-ja-427a053b3710e40fb8",
+            "jamie-voice-ja-1dc71749d59dbc9bb9",
+            "jamie-voice-ja-0275fa2aa53ef79c95"
+          ],
+          "randomGroup": 793563992,
+          "priority": 57,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "600": {
+          "clips": [
+            "jamie-voice-ja-b535e3d260868bb729",
+            "jamie-voice-ja-6eff7a062a2a0ff718",
+            "jamie-voice-ja-bc85fcc09faac16481",
+            "jamie-voice-ja-518a8ea91d708e6989"
+          ],
+          "randomGroup": 425714750,
+          "priority": 70,
+          "prioritizeFirst": true,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "601": {
+          "clips": [
+            "jamie-voice-ja-0d2ca4fe10ce9f4be8",
+            "jamie-voice-ja-2b1e627d2ac51d5c76",
+            "jamie-voice-ja-d2f45a58c4e6473ac4",
+            "jamie-voice-ja-a9dfc4f5d736baf204"
+          ],
+          "randomGroup": 168673500,
+          "priority": 72,
+          "prioritizeFirst": true,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "602": {
+          "clips": [
+            "jamie-voice-ja-1ccc8d784c6219356e",
+            "jamie-voice-ja-ceb760ca59484f4ad3",
+            "jamie-voice-ja-844f0f4830441df9da",
+            "jamie-voice-ja-9ec3c0af9a2e5310c0",
+            "jamie-voice-ja-ebaba00f3ed2bf7f9a"
+          ],
+          "randomGroup": 1057671670,
+          "priority": 75,
+          "prioritizeFirst": true,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "605": {
+          "clips": [
+            "jamie-voice-ja-1ccc8d784c6219356e",
+            "jamie-voice-ja-ceb760ca59484f4ad3",
+            "jamie-voice-ja-844f0f4830441df9da",
+            "jamie-voice-ja-9ec3c0af9a2e5310c0",
+            "jamie-voice-ja-ebaba00f3ed2bf7f9a"
+          ],
+          "randomGroup": 1057671670,
+          "priority": 75,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "606": {
+          "clips": [
+            "jamie-voice-ja-0d2ca4fe10ce9f4be8",
+            "jamie-voice-ja-2b1e627d2ac51d5c76",
+            "jamie-voice-ja-d2f45a58c4e6473ac4",
+            "jamie-voice-ja-a9dfc4f5d736baf204"
+          ],
+          "randomGroup": 168673500,
+          "priority": 75,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "607": {
+          "clips": [
+            "jamie-voice-ja-1ccc8d784c6219356e",
+            "jamie-voice-ja-ceb760ca59484f4ad3",
+            "jamie-voice-ja-844f0f4830441df9da",
+            "jamie-voice-ja-9ec3c0af9a2e5310c0",
+            "jamie-voice-ja-ebaba00f3ed2bf7f9a"
+          ],
+          "randomGroup": 1057671670,
+          "priority": 75,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "608": {
+          "clips": [
+            "jamie-voice-ja-8a110e0acc1c4daa0c",
+            "jamie-voice-ja-853c85f56cd1a9a941",
+            "jamie-voice-ja-90c74d977e00307b5e",
+            "jamie-voice-ja-24109ce98437a76ccd"
+          ],
+          "randomGroup": 209814560,
+          "priority": 70,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "609": {
+          "clips": [
+            "jamie-voice-ja-554bb79ffacf4342c6",
+            "jamie-voice-ja-62b93d1250ed41b1d2",
+            "jamie-voice-ja-dbd4fa494be0ad7b3c"
+          ],
+          "randomGroup": 420499367,
+          "priority": 75,
+          "prioritizeFirst": true,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "610": {
+          "clips": [
+            "jamie-voice-ja-6200edf4195384199b",
+            "jamie-voice-ja-4353f844b3a705c0a8",
+            "jamie-voice-ja-a3f447f8599a032cd9",
+            "jamie-voice-ja-62b93d1250ed41b1d2"
+          ],
+          "randomGroup": 617550158,
+          "priority": 75,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "611": {
+          "clips": [
+            "jamie-voice-ja-4ff778fa2c947538f3",
+            "jamie-voice-ja-62fd7646379ec030f3",
+            "jamie-voice-ja-d3ad2f4ffa7a927e17"
+          ],
+          "randomGroup": 517117118,
+          "priority": 75,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "612": {
+          "clips": [
+            "jamie-voice-ja-62b93d1250ed41b1d2",
+            "jamie-voice-ja-78f66e7437be6d7025",
+            "jamie-voice-ja-dbd4fa494be0ad7b3c"
+          ],
+          "randomGroup": 380110929,
+          "priority": 75,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "615": {
+          "clips": [
+            "jamie-voice-ja-ceb760ca59484f4ad3",
+            "jamie-voice-ja-844f0f4830441df9da",
+            "jamie-voice-ja-9ec3c0af9a2e5310c0",
+            "jamie-voice-ja-ebaba00f3ed2bf7f9a"
+          ],
+          "randomGroup": 691617347,
+          "priority": 75,
+          "prioritizeFirst": true,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "620": {
+          "clips": [
+            "jamie-voice-ja-3410d72b1ab014bff2",
+            "jamie-voice-ja-fd55445e7f80851242",
+            "jamie-voice-ja-ef0bd69a258c5fd026",
+            "jamie-voice-ja-bf08bf3651c014586d"
+          ],
+          "randomGroup": 538447090,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "690": {
+          "clips": [
+            "jamie-voice-ja-6e158ad355a87a7e44",
+            "jamie-voice-ja-5ee52067e963bd2692"
+          ],
+          "randomGroup": 242124725,
+          "priority": 100,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "691": {
+          "clips": [
+            "jamie-voice-ja-dd21ed993f1becbbd7",
+            "jamie-voice-ja-9a3535b91289b54dc5"
+          ],
+          "randomGroup": 763242143,
+          "priority": 100,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "692": {
+          "clips": [
+            "jamie-voice-ja-67a08a365571e31de3",
+            "jamie-voice-ja-ba8f114d9b6c5ec942"
+          ],
+          "randomGroup": 764502514,
+          "priority": 100,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "693": {
+          "clips": [
+            "jamie-voice-ja-ed2b2616e7c566c318",
+            "jamie-voice-ja-93610f2337873df4b0"
+          ],
+          "randomGroup": 1056776798,
+          "priority": 100,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "694": {
+          "clips": [
+            "jamie-voice-ja-77dc9415cc840daad0",
+            "jamie-voice-ja-f2684b853941540257"
+          ],
+          "randomGroup": 66546972,
+          "priority": 100,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "695": {
+          "clips": [
+            "jamie-voice-ja-48b1752b6140ed825b",
+            "jamie-voice-ja-6cbadd654f5fbed559"
+          ],
+          "randomGroup": 846570575,
+          "priority": 100,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "700": {
+          "clips": [
+            "jamie-voice-ja-3467b99532f19534ac",
+            "jamie-voice-ja-b51298a85f35418075"
+          ],
+          "randomGroup": 341239586,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "710": {
+          "clips": [
+            "jamie-voice-ja-cffd36225abeb334af",
+            "jamie-voice-ja-84ebd78dc918e6e3f1"
+          ],
+          "randomGroup": 441621424,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "725": {
+          "clips": [
+            "jamie-voice-ja-58fc62fef581f0e45e",
+            "jamie-voice-ja-086aa68720ba7e594b"
+          ],
+          "randomGroup": 617032297,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "726": {
+          "clips": [
+            "jamie-voice-ja-529dd971c06f4b1635",
+            "jamie-voice-ja-1f722cb31abe4b1b75"
+          ],
+          "randomGroup": 884008554,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21100": {
+          "clips": [
+            "jamie-voice-ja-7c45adfd8ae252f6a1",
+            "jamie-voice-ja-64c960a5e562e83c00"
+          ],
+          "randomGroup": 437478572,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21106": {
+          "clips": [
+            "jamie-voice-ja-129f8d0cf781b0bbb4",
+            "jamie-voice-ja-b33d22380f4f8cfa26"
+          ],
+          "randomGroup": 441662718,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21107": {
+          "clips": [
+            "jamie-voice-ja-befab26b0cc4c156e0"
+          ],
+          "randomGroup": 628363278,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21116": {
+          "clips": [
+            "jamie-voice-ja-db85277c983ef87e52",
+            "jamie-voice-ja-dab542d762be451dde"
+          ],
+          "randomGroup": 528288400,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21127": {
+          "clips": [
+            "jamie-voice-ja-ae0503cf8329e28a79",
+            "jamie-voice-ja-616d068e8365c1b52a"
+          ],
+          "randomGroup": 930400913,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21130": {
+          "clips": [
+            "jamie-voice-ja-e14075b06ddec7eeed",
+            "jamie-voice-ja-73ccf3cd12d2e35ff9"
+          ],
+          "randomGroup": 921639487,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21131": {
+          "clips": [
+            "jamie-voice-ja-616d068e8365c1b52a"
+          ],
+          "randomGroup": 1008372961,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21134": {
+          "clips": [
+            "jamie-voice-ja-2e9aacdacdef2e9121"
+          ],
+          "randomGroup": 308192492,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21135": {
+          "clips": [
+            "jamie-voice-ja-146f79501117b89487"
+          ],
+          "randomGroup": 1043003465,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21136": {
+          "clips": [
+            "jamie-voice-ja-5442a451ff0ea265d0"
+          ],
+          "randomGroup": 463431647,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21137": {
+          "clips": [
+            "jamie-voice-ja-b33d22380f4f8cfa26",
+            "jamie-voice-ja-616d068e8365c1b52a"
+          ],
+          "randomGroup": 918132950,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21140": {
+          "clips": [
+            "jamie-voice-ja-16ec0bb6921619f190",
+            "jamie-voice-ja-f617abe7781e6e7132"
+          ],
+          "randomGroup": 16634745,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21141": {
+          "clips": [
+            "jamie-voice-ja-3b178152af01dd629e"
+          ],
+          "randomGroup": 579637010,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21142": {
+          "clips": [
+            "jamie-voice-ja-7166bb3e4150ebb583"
+          ],
+          "randomGroup": 372086992,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21143": {
+          "clips": [
+            "jamie-voice-ja-3b559842d3d1cce55e"
+          ],
+          "randomGroup": 770832674,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21146": {
+          "clips": [
+            "jamie-voice-ja-518214bd86a58181e9"
+          ],
+          "randomGroup": 931431609,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21147": {
+          "clips": [
+            "jamie-voice-ja-3c11a0cfa73590b2ce"
+          ],
+          "randomGroup": 445473133,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21160": {
+          "clips": [
+            "jamie-voice-ja-433a1cf5338781900a"
+          ],
+          "randomGroup": 150937614,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21161": {
+          "clips": [
+            "jamie-voice-ja-e2b6b44dbd6aceadbb"
+          ],
+          "randomGroup": 787922031,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21162": {
+          "clips": [
+            "jamie-voice-ja-6c835a411cc0a1803d"
+          ],
+          "randomGroup": 615271706,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21165": {
+          "clips": [
+            "jamie-voice-ja-694398bf3f1b5ccfe0"
+          ],
+          "randomGroup": 964257581,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21166": {
+          "clips": [
+            "jamie-voice-ja-842fd2ef70a07f018a"
+          ],
+          "randomGroup": 1042206443,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21180": {
+          "clips": [
+            "jamie-voice-ja-d1ff0ece433153e5d4"
+          ],
+          "randomGroup": 2168630,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21182": {
+          "clips": [
+            "jamie-voice-ja-1308728bd3119815ff"
+          ],
+          "randomGroup": 119161285,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21184": {
+          "clips": [
+            "jamie-voice-ja-e6226267e002ef4574"
+          ],
+          "randomGroup": 1032522098,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21190": {
+          "clips": [
+            "jamie-voice-ja-995cb2e0d8868ed8c0"
+          ],
+          "randomGroup": 127745362,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21192": {
+          "clips": [
+            "jamie-voice-ja-fb53ec9f1b4d40b950"
+          ],
+          "randomGroup": 941149246,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21194": {
+          "clips": [
+            "jamie-voice-ja-de472ee843f5a72e49"
+          ],
+          "randomGroup": 418275520,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21200": {
+          "clips": [
+            "jamie-voice-ja-1ed155b93509b50329"
+          ],
+          "randomGroup": 307854231,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21202": {
+          "clips": [
+            "jamie-voice-ja-55ef2cffdaee870ae5"
+          ],
+          "randomGroup": 251599503,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21204": {
+          "clips": [
+            "jamie-voice-ja-4dc815eb6760905a06"
+          ],
+          "randomGroup": 1031960801,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21205": {
+          "clips": [
+            "jamie-voice-ja-a0d99a3e31de69e686"
+          ],
+          "randomGroup": 483942618,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21206": {
+          "clips": [
+            "jamie-voice-ja-1208608ecdb7efa1c4"
+          ],
+          "randomGroup": 563656502,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21207": {
+          "clips": [
+            "jamie-voice-ja-32590c37d9eb2377b5"
+          ],
+          "randomGroup": 310893948,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21208": {
+          "clips": [
+            "jamie-voice-ja-ba30d2fcbaa2cfcbdf"
+          ],
+          "randomGroup": 1026529355,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21210": {
+          "clips": [
+            "jamie-voice-ja-16d7600f794311c0cc"
+          ],
+          "randomGroup": 181135995,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21212": {
+          "clips": [
+            "jamie-voice-ja-87ed877bb0c47ab9db"
+          ],
+          "randomGroup": 610233749,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21214": {
+          "clips": [
+            "jamie-voice-ja-359f26c6f75d40ed41"
+          ],
+          "randomGroup": 718465392,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21215": {
+          "clips": [
+            "jamie-voice-ja-f8ad04656e5ae144c8"
+          ],
+          "randomGroup": 1046129985,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21216": {
+          "clips": [
+            "jamie-voice-ja-d282e8ed6497e90a69"
+          ],
+          "randomGroup": 506670801,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21217": {
+          "clips": [
+            "jamie-voice-ja-32590c37d9eb2377b5"
+          ],
+          "randomGroup": 310893948,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21218": {
+          "clips": [
+            "jamie-voice-ja-ba30d2fcbaa2cfcbdf"
+          ],
+          "randomGroup": 1026529355,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21220": {
+          "clips": [
+            "jamie-voice-ja-e885f7a3a86b58c2ca"
+          ],
+          "randomGroup": 148852794,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21223": {
+          "clips": [
+            "jamie-voice-ja-d306ad7f1463a75f01"
+          ],
+          "randomGroup": 604846742,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21225": {
+          "clips": [
+            "jamie-voice-ja-69e09a16ff3779f500"
+          ],
+          "randomGroup": 596304613,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21227": {
+          "clips": [
+            "jamie-voice-ja-577c9f14cd38c8438b"
+          ],
+          "randomGroup": 797289827,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21230": {
+          "clips": [
+            "jamie-voice-ja-d2a77bb5a2302bc721"
+          ],
+          "randomGroup": 450955124,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21231": {
+          "clips": [
+            "jamie-voice-ja-abf9c2416d81f2d897"
+          ],
+          "randomGroup": 582001836,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21232": {
+          "clips": [
+            "jamie-voice-ja-aeaf1dc864681f4ded"
+          ],
+          "randomGroup": 56665746,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21233": {
+          "clips": [
+            "jamie-voice-ja-6543327d3b953146f4"
+          ],
+          "randomGroup": 1048559725,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21234": {
+          "clips": [
+            "jamie-voice-ja-65504617ed054ae340"
+          ],
+          "randomGroup": 588120708,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21235": {
+          "clips": [
+            "jamie-voice-ja-b821c2e7fbd9e47271"
+          ],
+          "randomGroup": 402247264,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21236": {
+          "clips": [
+            "jamie-voice-ja-467c409823cb5f9570"
+          ],
+          "randomGroup": 52296453,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21237": {
+          "clips": [
+            "jamie-voice-ja-d8e413c2356aa9894f"
+          ],
+          "randomGroup": 275081216,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21240": {
+          "clips": [
+            "jamie-voice-ja-2c921824101f6184da"
+          ],
+          "randomGroup": 363409964,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21245": {
+          "clips": [
+            "jamie-voice-ja-0c1581f8d97b0f3c02"
+          ],
+          "randomGroup": 465856903,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21251": {
+          "clips": [
+            "jamie-voice-ja-a1011e57b1207e15c3"
+          ],
+          "randomGroup": 141172047,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21256": {
+          "clips": [
+            "jamie-voice-ja-592c6015ab0560866e"
+          ],
+          "randomGroup": 798592859,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21260": {
+          "clips": [
+            "jamie-voice-ja-22ba8d97132b958626"
+          ],
+          "randomGroup": 319421279,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21261": {
+          "clips": [
+            "jamie-voice-ja-e6386ba1f8bd31a1a7"
+          ],
+          "randomGroup": 142433568,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21262": {
+          "clips": [
+            "jamie-voice-ja-94486e1c9a80f2c612"
+          ],
+          "randomGroup": 930196940,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21263": {
+          "clips": [
+            "jamie-voice-ja-01f247d61b464b21cb"
+          ],
+          "randomGroup": 538135212,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21265": {
+          "clips": [
+            "jamie-voice-ja-22ba8d97132b958626"
+          ],
+          "randomGroup": 319421279,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21266": {
+          "clips": [
+            "jamie-voice-ja-e6386ba1f8bd31a1a7"
+          ],
+          "randomGroup": 142433568,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21267": {
+          "clips": [
+            "jamie-voice-ja-94486e1c9a80f2c612"
+          ],
+          "randomGroup": 930196940,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21268": {
+          "clips": [
+            "jamie-voice-ja-01f247d61b464b21cb"
+          ],
+          "randomGroup": 538135212,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21270": {
+          "clips": [
+            "jamie-voice-ja-2473fdf92b34fc8ff6"
+          ],
+          "randomGroup": 1931934,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21271": {
+          "clips": [
+            "jamie-voice-ja-f56e8ac7b8e3eb68b9"
+          ],
+          "randomGroup": 884061235,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21272": {
+          "clips": [
+            "jamie-voice-ja-a8e1d8bab7c94b042e"
+          ],
+          "randomGroup": 638228895,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21280": {
+          "clips": [
+            "jamie-voice-ja-211042c592ee750ba9"
+          ],
+          "randomGroup": 898793371,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21284": {
+          "clips": [
+            "jamie-voice-ja-0d8acb8cdc0b7548b9"
+          ],
+          "randomGroup": 394502632,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21291": {
+          "clips": [
+            "jamie-voice-ja-f1313870783455abaf",
+            "jamie-voice-ja-bdd4b9486fb1d7131e",
+            "jamie-voice-ja-54e3aae4a92e096916",
+            "jamie-voice-ja-67f5c2fd0b89cd398f"
+          ],
+          "randomGroup": 623357622,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21294": {
+          "clips": [
+            "jamie-voice-ja-146f79501117b89487"
+          ],
+          "randomGroup": 270290815,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21299": {
+          "clips": [
+            "jamie-voice-ja-8054c2750bc9da159c"
+          ],
+          "randomGroup": 733692635,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21300": {
+          "clips": [
+            "jamie-voice-ja-5359577069f79e9761"
+          ],
+          "randomGroup": 735449938,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21301": {
+          "clips": [
+            "jamie-voice-ja-5b77eca1155854bd27"
+          ],
+          "randomGroup": 165123322,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21304": {
+          "clips": [
+            "jamie-voice-ja-b84576933c9071b361"
+          ],
+          "randomGroup": 384046623,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21315": {
+          "clips": [
+            "jamie-voice-ja-0e36d11e1d3f018c5f"
+          ],
+          "randomGroup": 858625247,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21316": {
+          "clips": [
+            "jamie-voice-ja-a95ad4ec097858a947"
+          ],
+          "randomGroup": 1031955957,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21320": {
+          "clips": [
+            "jamie-voice-ja-b1a992d947f0a01b70"
+          ],
+          "randomGroup": 184962554,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21321": {
+          "clips": [
+            "jamie-voice-ja-ed8fbb559a5b401ab7"
+          ],
+          "randomGroup": 707145456,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21322": {
+          "clips": [
+            "jamie-voice-ja-fdc08e0b3e5582e9d9"
+          ],
+          "randomGroup": 819672312,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21323": {
+          "clips": [
+            "jamie-voice-ja-a747492a54de7b357a"
+          ],
+          "randomGroup": 24311506,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21324": {
+          "clips": [
+            "jamie-voice-ja-a747492a54de7b357a"
+          ],
+          "randomGroup": 417865804,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21330": {
+          "clips": [
+            "jamie-voice-ja-315aba5bfaf9735ac3"
+          ],
+          "randomGroup": 314027645,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21331": {
+          "clips": [
+            "jamie-voice-ja-ca3ffcfc5d2f22bff7"
+          ],
+          "randomGroup": 476079977,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21332": {
+          "clips": [
+            "jamie-voice-ja-24c011ae6aac166245"
+          ],
+          "randomGroup": 390525810,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21333": {
+          "clips": [
+            "jamie-voice-ja-24c011ae6aac166245"
+          ],
+          "randomGroup": 189411268,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21334": {
+          "clips": [
+            "jamie-voice-ja-6c43f96fc081cb0cc1"
+          ],
+          "randomGroup": 1012774074,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21335": {
+          "clips": [
+            "jamie-voice-ja-2da2904f2ec7d7af6d"
+          ],
+          "randomGroup": 758534283,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21336": {
+          "clips": [
+            "jamie-voice-ja-ba4dc14aa5443450fd"
+          ],
+          "randomGroup": 423692489,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21339": {
+          "clips": [
+            "jamie-voice-ja-d18904ed5d7941ec87"
+          ],
+          "randomGroup": 120802092,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21340": {
+          "clips": [
+            "jamie-voice-ja-88c3fa72e45320d133"
+          ],
+          "randomGroup": 327471877,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21343": {
+          "clips": [
+            "jamie-voice-ja-24c011ae6aac166245"
+          ],
+          "randomGroup": 348608516,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21344": {
+          "clips": [
+            "jamie-voice-ja-3547e23e7d6461f8b5"
+          ],
+          "randomGroup": 698071112,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21345": {
+          "clips": [
+            "jamie-voice-ja-fd8302eb956e4ff226"
+          ],
+          "randomGroup": 1070723625,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21346": {
+          "clips": [
+            "jamie-voice-ja-55e9b5d39da50de848"
+          ],
+          "randomGroup": 420841822,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21347": {
+          "clips": [
+            "jamie-voice-ja-52254aea02cb03095d"
+          ],
+          "randomGroup": 441141264,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21349": {
+          "clips": [
+            "jamie-voice-ja-d62bb326eeea82092a"
+          ],
+          "randomGroup": 932388253,
+          "priority": 55,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21900": {
+          "clips": [
+            "jamie-voice-ja-979f6f6c1cc5a2666b"
+          ],
+          "randomGroup": 6559895,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 0,
+          "releaseMs": 50,
+          "avoidRepeat": 0
+        },
+        "21901": {
+          "clips": [
+            "jamie-voice-ja-681f66675a50385112"
+          ],
+          "randomGroup": 7104424,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 0,
+          "releaseMs": 50,
+          "avoidRepeat": 0
+        },
+        "21911": {
+          "clips": [
+            "jamie-voice-ja-dd95ea8277e15a93d9"
+          ],
+          "randomGroup": 40816066,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21912": {
+          "clips": [
+            "jamie-voice-ja-339fadde51da83ae10"
+          ],
+          "randomGroup": 109473693,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21913": {
+          "clips": [
+            "jamie-voice-ja-cd15dc9f4d003ef7ad"
+          ],
+          "randomGroup": 623758219,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21914": {
+          "clips": [
+            "jamie-voice-ja-47668d597436dfb4af"
+          ],
+          "randomGroup": 391389942,
+          "priority": 80,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21940": {
+          "clips": [
+            "jamie-voice-ja-76a9c7515abe455880"
+          ],
+          "randomGroup": 562770252,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        },
+        "21941": {
+          "clips": [
+            "jamie-voice-ja-9a83b9fd9f7684ee80"
+          ],
+          "randomGroup": 103190726,
+          "priority": 50,
+          "prioritizeFirst": false,
+          "skipRate": 0,
+          "limit": 1,
+          "releaseMs": 50,
+          "avoidRepeat": 1
+        }
+      },
+      "scenes": {
+        "entrance": [
+          "jamie-voice-ja-4f07bfab2e430c4954"
+        ],
+        "prefight-p1": [
+          "jamie-voice-ja-979f6f6c1cc5a2666b"
+        ],
+        "prefight-p2": [
+          "jamie-voice-ja-681f66675a50385112"
+        ],
+        "victory-perfect": [
+          "jamie-voice-ja-dd95ea8277e15a93d9"
+        ],
+        "victory-dominant": [
+          "jamie-voice-ja-339fadde51da83ae10"
+        ],
+        "victory-close": [
+          "jamie-voice-ja-cd15dc9f4d003ef7ad"
+        ],
+        "victory-narrow": [
+          "jamie-voice-ja-47668d597436dfb4af"
+        ],
+        "throw-tech-1": [
+          "jamie-voice-ja-cffd36225abeb334af"
+        ],
+        "throw-tech-2": [
+          "jamie-voice-ja-84ebd78dc918e6e3f1"
+        ]
+      },
+      "victory": [
+        {
+          "scene": "victory-perfect",
+          "min": 1,
+          "max": 1,
+          "maxInclusive": true
+        },
+        {
+          "scene": "victory-dominant",
+          "min": 0.8,
+          "max": 1,
+          "maxInclusive": false
+        },
+        {
+          "scene": "victory-close",
+          "min": 0.25,
+          "max": 0.8,
+          "maxInclusive": false
+        },
+        {
+          "scene": "victory-narrow",
+          "min": 0,
+          "max": 0.25,
+          "maxInclusive": false
+        }
+      ],
+      "ko": {
+        "normal": 692,
+        "finish": 693,
+        "launched": 690,
+        "finishLaunched": 691,
+        "down": 694,
+        "finishDown": 695
+      }
+    }
+  }
+}

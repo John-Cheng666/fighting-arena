@@ -51,6 +51,16 @@ export interface JamieAction {
   nativeEventsApplied?: number[];
   nativeCaptureHits?: number[];
   nativeLevel4DriveApplied?: boolean;
+  /** Presentation-only cursor; no RNG or combat timer is changed by sound playback. */
+  audio?: {
+    key: string; actionId: number; frame: number; fired: number[]; scope: string;
+  };
+  audioVictim?: {
+    key: string; actionId: number; frame: number; fired: number[]; scope: string;
+  };
+  audioExitFrame?: number;
+  audioLevel4Played?: boolean;
+  audioHoldEntered?: boolean;
 }
 
 export interface JamieState {

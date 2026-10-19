@@ -1,0 +1,19 @@
+.audio-settings { border-top: 1px solid var(--line); color: var(--text); }
+.audio-settings > summary { display: flex; align-items: center; gap: 9px; min-height: 44px; padding: 10px 20px; cursor: pointer; list-style: none; font-size: 12px; }
+.audio-settings > summary::-webkit-details-marker { display: none; }
+.audio-settings > summary > svg:last-child { margin-left: 3px; transition: transform .15s; }
+.audio-settings[open] > summary > svg:last-child { transform: rotate(180deg); }
+.audio-state { margin-left: auto; color: var(--muted); font-size: 12px; }
+.audio-settings-content { padding: 4px 20px 18px; }
+.audio-music-mode { display: flex; align-items: center; gap: 14px; font-size: 13px; margin-bottom: 15px; }
+.audio-music-mode select { min-width: 0; min-height: 44px; flex: 1; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--text); padding: 8px 10px; font: inherit; }
+.audio-volumes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; }
+.audio-volumes label { display: grid; grid-template-columns: 1fr auto; align-items: center; font-size: 12px; gap: 3px 8px; }
+.audio-volumes output { color: var(--muted); font-variant-numeric: tabular-nums; }
+.audio-volumes input { grid-column: 1 / -1; width: 100%; min-height: 30px; margin: 0; accent-color: var(--accent); cursor: pointer; }
+.audio-voice { display: flex; align-items: center; gap: 9px; min-height: 44px; margin-top: 10px; font-size: 13px; cursor: pointer; }
+.audio-voice input { width: 17px; height: 17px; accent-color: var(--accent); }
+.audio-settings-content p { font-size: 12px; color: var(--muted); line-height: 1.6; margin: 3px 0 0; }
+.audio-settings-content .audio-notice { color: var(--accent); margin-top: 7px; }
+@media (max-width: 600px) { .audio-settings > summary { padding-inline: 14px; } .audio-settings-content { padding-inline: 14px; } .audio-volumes { gap: 12px 16px; } .audio-music-mode select { font-size: 16px; } }
+@media (prefers-reduced-motion: reduce) { .audio-settings > summary > svg:last-child { transition: none; } }

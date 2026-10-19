@@ -9,8 +9,9 @@ import { FighterCard } from "./FighterCard";
 import { MatchSettings } from "./MatchSettings";
 import { StageSelector } from "./StageSelector";
 import { Icon } from "./Icon";
+import { AudioSettings } from "./AudioSettings";
 
-const PHASE_LABELS: Record<RuntimePhase, string> = { ready: "准备就绪", running: "对战进行中", paused: "对战已暂停", finished: "对局已结束" };
+const PHASE_LABELS: Record<RuntimePhase, string> = { ready: "准备就绪", opening: "开场演出中", running: "对战进行中", paused: "对战已暂停", finished: "对局已结束" };
 type Theme = "light" | "dark";
 function readTheme(): Theme {
   try { const saved = localStorage.getItem("arena-lab-theme"); if (saved === "light" || saved === "dark") return saved; } catch { /* Storage is optional. */ }
@@ -19,6 +20,7 @@ function readTheme(): Theme {
 
 export function App() {
   const [runtime] = useState(() => new BattleRuntime(DEFAULT_MATCH_CONFIG));
+  const runtimeOwner = useRef<BattleRuntime | null>(null);
   const summary = useSyncExternalStore(runtime.subscribe, runtime.getSummary, runtime.getSummary);
   const [stageId, setStageId] = useState<StageId>(readSavedStage);
   const [theme, setTheme] = useState<Theme>(readTheme);
@@ -41,8 +43,8 @@ export function App() {
   const primaryAction = useCallback(() => {
     const current = runtime.getSummary();
     if (!current.loaded) return;
-    if (current.phase === "ready") runtime.start();
-    else if (current.phase === "finished") runtime.restart();
+    if (current.phase === "ready") runtime.startWithOpening();
+    else if (current.phase === "finished") runtime.restart(undefined, true, true);
     else runtime.togglePause();
   }, [runtime]);
 
@@ -51,7 +53,7 @@ export function App() {
     document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "light" ? "#f4f5f7" : "#11151c");
     try { localStorage.setItem("arena-lab-theme", theme); } catch { /* Keep the in-memory selection. */ }
   }, [theme]);
-  useEffect(() => { try { localStorage.setItem("arena-lab-stage", stageId); } catch { /* Keep the in-memory selection. */ } }, [stageId]);
+  useEffect(() => { runtime.setAudioStage(stageId); try { localStorage.setItem("arena-lab-stage", stageId); } catch { /* Keep the in-memory selection. */ } }, [runtime, stageId]);
   useEffect(() => {
     if (!notice) return;
     const timeout = window.setTimeout(() => setNotice(null), 4500);
@@ -83,7 +85,7 @@ export function App() {
         if (event.target instanceof HTMLElement && event.target.closest("button, a")) return;
         event.preventDefault(); primaryAction();
       } else if (event.code === "KeyR" && runtime.getSummary().loaded) {
-        event.preventDefault(); runtime.restart();
+        event.preventDefault(); runtime.restart(undefined, true, true);
       } else if (event.code === "KeyM") runtime.toggleSound();
     };
     const visibility = () => { if (document.hidden) runtime.pause(); };
@@ -97,7 +99,15 @@ export function App() {
       document.removeEventListener("fullscreenchange", fullscreenChange);
     };
   }, [runtime, primaryAction]);
-  useEffect(() => () => runtime.dispose(), [runtime]);
+  useEffect(() => {
+    runtimeOwner.current = runtime;
+    return () => {
+      runtimeOwner.current = null;
+      // StrictMode rehearses effect cleanup/setup without discarding state.
+      // Only dispose after an actual unmount or replacement of this runtime.
+      queueMicrotask(() => { if (runtimeOwner.current !== runtime) runtime.dispose(); });
+    };
+  }, [runtime]);
 
   async function fullscreen() {
     try {
@@ -116,7 +126,7 @@ export function App() {
     event.currentTarget.querySelector<HTMLButtonElement>(`#${next}-tab`)?.focus();
   }
   const primaryLabel = summary.phase === "ready" ? demonstrating ? "开始演练" : "开始对战"
-    : summary.phase === "running" ? "暂停" : summary.phase === "paused" ? "继续播放" : demonstrating ? "重播演练" : "再来一局";
+    : summary.phase === "running" || summary.phase === "opening" ? "暂停" : summary.phase === "paused" ? "继续播放" : demonstrating ? "重播演练" : "再来一局";
   const totalHits = summary.fighters.reduce((sum, fighter) => sum + fighter.hits, 0);
   const totalDamage = summary.fighters.reduce((sum, fighter) => sum + fighter.damageDealt, 0);
   const remaining = Math.max(0, runtime.battle.config.roundTimeSeconds - Math.floor(summary.roundElapsed));
@@ -144,16 +154,21 @@ export function App() {
           <section className="arena-panel" id="arena" aria-labelledby="arena-title">
             <div className="arena-topline"><div className="arena-name"><span className="arena-index">{stage.number}</span><div><h2 id="arena-title">{stage.name}</h2><span>{stage.englishName}</span></div></div><span className={`match-status ${summary.phase}`}><i />{phaseLabel}</span></div>
             <div className="arena-controls">
-              <div className="transport-controls"><button className="primary-button" onClick={primaryAction} disabled={loading} aria-keyshortcuts="Space"><Icon name={summary.phase === "running" ? "pause" : "play"} size={18} />{primaryLabel}<kbd>空格</kbd></button><button className="restart-button" onClick={() => runtime.restart()} disabled={loading} aria-label={demonstrating ? "重播演练" : "重开对局"} title="重开（R）"><Icon name="reset" size={17} /><span>重开</span></button></div>
+              <div className="transport-controls">
+                <button className="primary-button" onClick={primaryAction} disabled={loading} aria-keyshortcuts="Space"><Icon name={summary.phase === "running" || summary.phase === "opening" ? "pause" : "play"} size={18} />{primaryLabel}<kbd>空格</kbd></button>
+                {summary.opening && <button className="restart-button" onClick={() => runtime.skipOpening()}>跳过开场</button>}
+                <button className="restart-button" onClick={() => runtime.restart(undefined, true, true)} disabled={loading} aria-label={demonstrating ? "重播演练" : "重开对局"} title="重开（R）"><Icon name="reset" size={17} /><span>重开</span></button>
+              </div>
               <div className="playback-control" role="group" aria-label="播放速度"><span>速度</span>{[0.25, 0.5, 1, 2, 4].map(speed => <button key={speed} aria-label={`${speed} 倍速`} aria-pressed={summary.speed === speed} onClick={() => runtime.setSpeed(speed)}>{speed}×</button>)}</div>
-              <div className="utility-controls"><button className={`icon-button ${summary.sound ? "enabled" : ""}`} onClick={() => runtime.toggleSound()} aria-label={summary.sound ? "关闭音效" : "开启音效"} aria-pressed={summary.sound} title="音效（M）"><Icon name={summary.sound ? "sound" : "muted"} size={19} /></button><button className="icon-button" onClick={() => void fullscreen()} aria-label="全屏竞技场" title="全屏竞技场"><Icon name="expand" size={18} /></button></div>
+              <div className="utility-controls"><button className={`icon-button ${summary.sound ? "enabled" : ""}`} onClick={() => runtime.toggleSound()} aria-label={summary.sound ? "关闭声音" : "开启声音"} aria-pressed={summary.sound} title="声音（M）"><Icon name={summary.sound ? "sound" : "muted"} size={19} /></button><button className="icon-button" onClick={() => void fullscreen()} aria-label="全屏竞技场" title="全屏竞技场"><Icon name="expand" size={18} /></button></div>
             </div>
+            <AudioSettings runtime={runtime} summary={summary} />
             <div ref={viewport} className="arena-viewport">
               <BattleCanvas runtime={runtime} stageId={stageId} matchup={summary.fighters.map(fighter => fighter.label).join(" 与 ")} onError={setCanvasError} />
               {loading && !canvasError && <div className="loading-screen" role="status"><span className="loading-ring" /><strong>正在准备竞技场</strong><span>角色和舞台即将就绪…</span></div>}
               {isFullscreen && <button className="exit-fullscreen" onClick={() => void fullscreen()}><Icon name="expand" size={17} />退出全屏 <kbd>Esc</kbd></button>}
             </div>
-            <div className="arena-bottomline"><span><Icon name={summary.phase === "finished" ? "check" : "info"} size={15} />{demonstrating ? "演练自动准备所需酒级、资源与前置动作" : summary.phase === "ready" ? "双方已就位，点击「开始对战」自动交锋" : summary.phase === "finished" ? "本局已结束，可查看下方记录或再来一局" : "双方自主出招，可随时暂停观察"}</span><span className="arena-coordinate">{stage.style} / {stage.time}</span></div>
+            <div className="arena-bottomline"><span><Icon name={summary.phase === "finished" ? "check" : "info"} size={15} />{demonstrating ? "演练自动准备所需酒级、资源与前置动作" : summary.opening ? `${summary.opening.label} · 可暂停或跳过开场` : summary.phase === "ready" ? "双方已就位，点击「开始对战」自动交锋" : summary.phase === "finished" ? "本局已结束，可查看下方记录或再来一局" : "双方自主出招，可随时暂停观察"}</span><span className="arena-coordinate">{stage.style} / {stage.time}</span></div>
             {fullscreenError && <p className="fullscreen-error" role="status">{fullscreenError}</p>}
           </section>
           <div className="match-stats" aria-label="本局统计"><div><span><Icon name="clock" size={16} />回合剩余</span><strong>{formatTime(remaining)}<small> / {runtime.battle.config.roundTimeSeconds}s</small></strong></div><div><span><Icon name="activity" size={16} />累计伤害</span><strong>{totalDamage.toLocaleString()}<small> HP</small></strong></div><div><span><Icon name="swords" size={16} />累计命中</span><strong>{String(totalHits).padStart(2, "0")}<small> 次</small></strong></div></div>

@@ -3,8 +3,27 @@ import { createDemonstration } from "../game/training";
 import type { BattleFactory, CharacterStatus } from "../engine/characters";
 import { STEP, TICK_RATE, type BattleConfig, type BattleEvent, type BattleState, type CharacterId, type FighterId, type Fighter } from "../engine/types";
 import { BattleAudio } from "../view/audio/BattleAudio";
+import type { AudioSettings, AudioStatus } from "../view/audio/types";
+import { OpeningSequence, type OpeningSnapshot, type OpeningStage } from "./OpeningSequence";
 
-export type RuntimePhase = "ready" | "running" | "paused" | "finished";
+export type BattleAudioSettings = Omit<AudioSettings, "stageId">;
+const DEFAULT_AUDIO: BattleAudioSettings = { masterVolume: 0.8, musicVolume: 0.45, effectsVolume: 0.8, voiceVolume: 0.75, voiceEnabled: true, musicMode: "stage" };
+function audioSettings(input: Partial<BattleAudioSettings> = {}): BattleAudioSettings {
+  const settings = { ...DEFAULT_AUDIO };
+  for (const key of ["masterVolume", "musicVolume", "effectsVolume", "voiceVolume"] as const) {
+    const value = input[key];
+    if (typeof value === "number" && Number.isFinite(value)) settings[key] = Math.max(0, Math.min(1, value));
+  }
+  if (typeof input.voiceEnabled === "boolean") settings.voiceEnabled = input.voiceEnabled;
+  if (input.musicMode === "jamie" || input.musicMode === "stage") settings.musicMode = input.musicMode;
+  return settings;
+}
+function savedAudioSettings(): BattleAudioSettings {
+  try { return audioSettings(JSON.parse(localStorage.getItem("arena-lab-audio") ?? "{}")); }
+  catch { return { ...DEFAULT_AUDIO }; }
+}
+
+export type RuntimePhase = "ready" | "opening" | "running" | "paused" | "finished";
 export interface BattleLog {
   id: number;
   tick: number;
@@ -14,6 +33,7 @@ export interface BattleLog {
   event: BattleEvent;
 }
 export interface BattleSummary {
+  opening: OpeningSnapshot | null;
   mode: "battle" | "demonstration";
   demonstration: Battle["demonstration"] | null;
   superFreezeRemaining: number;
@@ -24,6 +44,7 @@ export interface BattleSummary {
   roundElapsed: number;
   speed: number;
   sound: boolean;
+  audio: BattleAudioSettings & { loading: boolean; state: AudioStatus["state"]; failedClips: number };
   seed: number;
   projectileCount: number;
   winner: FighterId | null;
@@ -46,7 +67,14 @@ export class BattleRuntime {
   private logs: BattleLog[] = [];
   private events: BattleEvent[] = [];
   private readonly listeners = new Set<() => void>();
-  private readonly audio = new BattleAudio((id) => this.characters.get(id).audio);
+  private readonly audio = new BattleAudio();
+  private audioSettings = savedAudioSettings();
+  private audioStage = "metro";
+  private audioTick = 0;
+  private audioPreparing = false;
+  private audioLoadGeneration = 0;
+  private disposed = false;
+  private opening: OpeningSequence | null = null;
   private summary: BattleSummary;
   private automaticConfig: BattleConfig;
   private readonly savedCharacterSettings = new Map<string, import("../engine/types").CharacterSettings>();
@@ -54,6 +82,8 @@ export class BattleRuntime {
   constructor(config: BattleConfig, private readonly factory: BattleFactory = (settings) => new Battle(settings)) {
     this.battle = this.factory(config);
     this.automaticConfig = this.battle.config;
+    this.audio.setVoiceSeed?.(this.battle.config.seed);
+    this.synchronizeAudio();
     this.summary = this.createSummary();
   }
 
@@ -69,8 +99,9 @@ export class BattleRuntime {
     return Math.min(1, this.accumulator / STEP);
   }
   get isPaused(): boolean {
-    return this.paused || this.battle.state.phase !== "running";
+    return this.paused || this.audioPreparing || this.audioBlocked || this.battle.state.phase !== "running";
   }
+  private get audioBlocked(): boolean { return this.sound && this.audio.getStatus().state === "blocked"; }
   get timeScale(): number {
     return this.isPaused ? 0 : this.speed;
   }
@@ -78,7 +109,7 @@ export class BattleRuntime {
   setLoaded(loaded: boolean): void {
     this.loaded = loaded;
     if (!loaded) {
-      if (this.battle.state.phase === "running") this.paused = true;
+      if (this.battle.state.phase === "running" || this.opening) this.paused = true;
       this.audio.pause();
     }
     this.publish();
@@ -92,8 +123,30 @@ export class BattleRuntime {
     this.publish();
   }
 
+  /** Normal UI entry; direct start() remains available for scripted simulation/training. */
+  startWithOpening(): void {
+    if (!this.loaded || this.battle.state.phase !== "ready" || this.opening) return;
+    if (this.battle.demonstration) { this.start(); return; }
+    const stages: OpeningStage[] = [];
+    const add = (fighter: Fighter, scene: string, label: string) => {
+      const duration = this.audio.voiceSceneDuration(fighter.characterId, scene);
+      if (duration > 0) stages.push({ fighterId: fighter.id, characterId: fighter.characterId, scene, label, duration });
+    };
+    this.battle.state.fighters.forEach(f => add(f, `prefight-${f.id}`, `${f.id === "p1" ? "1P 开场" : "2P 回应"}`));
+    if (!stages.length) { this.start(); return; }
+    this.opening = new OpeningSequence(stages); this.paused = false; this.audio.resume(); this.synchronizeAudio(); this.publish();
+  }
+
+  skipOpening(): void {
+    if (!this.opening) return;
+    this.audio.stopVoices();
+    this.opening = null; this.paused = false; this.accumulator = 0; this.start();
+  }
+
+  getOpening(): OpeningSnapshot | null { return this.opening?.snapshot() ?? null; }
+
   togglePause(): void {
-    if (this.battle.state.phase !== "running") return;
+    if (this.battle.state.phase !== "running" && !this.opening) return;
     this.paused = !this.paused;
     this.accumulator = 0;
     if (this.paused) this.audio.pause();
@@ -102,17 +155,19 @@ export class BattleRuntime {
   }
 
   pause(): void {
-    if (!this.paused && this.battle.state.phase === "running")
+    if (!this.paused && (this.battle.state.phase === "running" || this.opening))
       this.togglePause();
+    else this.audio.pause();
   }
 
-  restart(config: BattleConfig = this.battle.config, autoplay = true): void {
+  restart(config: BattleConfig = this.battle.config, autoplay = true, opening = false): void {
     const demonstration = this.battle.demonstration;
     if (demonstration) {
       this.replaceBattle(createDemonstration(demonstration.characterId, demonstration.variantId, config, demonstration.scenario, this.factory, autoplay), autoplay);
     } else {
       this.automaticConfig = config;
-      this.replaceBattle(this.factory(config), autoplay);
+      this.replaceBattle(this.factory(config), autoplay && !opening);
+      if (autoplay && opening) this.startWithOpening();
     }
   }
 
@@ -126,6 +181,12 @@ export class BattleRuntime {
   }
 
   private replaceBattle(battle: Battle, autoplay: boolean): void {
+    this.audioLoadGeneration += 1;
+    this.audioPreparing = false;
+    this.audio.reset();
+    this.audio.setVoiceSeed?.(battle.config.seed);
+    this.opening = null;
+    this.audioTick = 0;
     this.battle = battle;
     this.accumulator = 0;
     this.summaryClock = 0;
@@ -138,6 +199,8 @@ export class BattleRuntime {
       this.battle.start();
       this.audio.resume();
     } else this.audio.pause();
+    this.synchronizeAudio();
+    if (this.sound) this.prepareAudio();
     this.publish();
   }
 
@@ -184,14 +247,64 @@ export class BattleRuntime {
   toggleSound(): void {
     this.sound = !this.sound;
     this.audio.setEnabled(this.sound);
+    if (this.sound && !this.audio.getStatus().enabled) this.sound = false;
+    this.audioLoadGeneration += 1;
+    this.audioPreparing = false;
+    this.synchronizeAudio();
+    if (this.sound) this.prepareAudio();
     if (this.isPaused && this.battle.state.phase !== "ready")
       this.audio.pause();
     this.publish();
   }
 
+  setAudioSettings(settings: Partial<BattleAudioSettings>): void {
+    this.audioSettings = audioSettings({ ...this.audioSettings, ...settings });
+    try { localStorage.setItem("arena-lab-audio", JSON.stringify(this.audioSettings)); } catch { /* Preferences are optional. */ }
+    this.synchronizeAudio();
+    this.publish();
+  }
+
+  setAudioStage(stageId: string): void {
+    if (stageId === this.audioStage) return;
+    this.audioStage = stageId;
+    this.synchronizeAudio();
+  }
+
+  private synchronizeAudio(): void {
+    this.audio.configure({ ...this.audioSettings, stageId: this.battle.demonstration && this.audioSettings.musicMode === "stage" ? "training" : this.audioStage });
+    this.audio.updateMusic({ phase: this.paused || !this.loaded && this.battle.state.phase !== "ready" ? "paused" : this.opening ? "running" : this.battle.state.phase, fighters: this.battle.state.fighters });
+  }
+
+  private prepareAudio(): void {
+    const generation = ++this.audioLoadGeneration;
+    this.audioPreparing = true;
+    this.accumulator = 0;
+    void this.audio.warmup().finally(() => {
+      if (this.disposed || generation !== this.audioLoadGeneration || !this.sound) return;
+      this.audioPreparing = false;
+      this.accumulator = 0;
+      if (this.paused || !this.loaded && this.battle.state.phase !== "ready") this.audio.pause();
+      else this.audio.resume();
+      this.synchronizeAudio();
+      this.publish();
+    });
+  }
+
   advance(realDeltaSeconds: number): BattleEvent[] {
     const events: BattleEvent[] = [];
+    const audioEvents: BattleEvent[] = [];
     const realDelta = Number.isFinite(realDeltaSeconds) ? Math.max(0, realDeltaSeconds) : 0;
+    if (this.opening) {
+      if (this.loaded && !this.paused && !this.audioPreparing && !this.audioBlocked) {
+        const stage = this.opening.advance(realDelta);
+        if (stage) events.push({ type: "voice", tick: this.audioTick, fighterId: stage.fighterId, characterId: stage.characterId, scene: stage.scene, scope: 'opening', force: true });
+        this.recordEvents(events);
+        this.audio.consume(events, this.battle.state.fighters, { tick: this.audioTick, speed: 1 });
+        this.audioTick += realDelta * TICK_RATE;
+        if (this.opening.complete) { this.opening = null; this.battle.start(); this.accumulator = 0; }
+      }
+      this.synchronizeAudio(); this.publish(); return events;
+    }
     if (!this.isPaused && this.loaded) {
       this.accumulator += realDelta * this.speed;
       // Keep elapsed time after a slow render frame. Limit work per call, retaining
@@ -199,18 +312,35 @@ export class BattleRuntime {
       let steps = 0;
       while (this.accumulator + 1e-9 >= STEP && steps++ < TICK_RATE * 4) {
         this.battle.step();
+        this.audioTick += 1;
         this.accumulator = Math.max(0, this.accumulator - STEP);
-        events.push(...this.battle.takeEvents());
+        const stepEvents = this.battle.takeEvents();
+        events.push(...stepEvents);
+        for (const event of stepEvents) if (event.type === "audio" || event.type === "audio-stop" || event.type === "voice" || event.type === "voice-stop") audioEvents.push({ ...event, tick: this.audioTick });
         if (this.battle.state.phase === "finished") {
           this.accumulator = 0;
           break;
         }
       }
-    } else {
+    } else if (!this.audioPreparing && !this.audioBlocked) {
       events.push(...this.battle.takeEvents());
+      for (const event of events) if (event.type === "audio" || event.type === "audio-stop" || event.type === "voice" || event.type === "voice-stop") audioEvents.push({ ...event, tick: this.audioTick });
     }
     this.recordEvents(events);
-    this.audio.consume(this.battle.demonstration ? events.filter((event) => event.type !== "finished") : events, this.battle.state.fighters);
+    const finished = events.some(event => event.type === "finished");
+    for (const event of events) if (event.type === "death") {
+      const fighter = this.battle.state.fighters.find(f => f.id === event.fighterId)!;
+      const voiceId = this.audio.koVoiceRequest?.(fighter.characterId, finished, fighter.height > 10, fighter.knockdownUntilTick > this.battle.state.tick);
+      if (voiceId !== undefined) audioEvents.push({ type: "voice", tick: this.audioTick, fighterId: fighter.id, characterId: fighter.characterId, voiceId, force: true });
+    }
+    if (finished && !this.battle.demonstration && this.battle.state.winner) {
+      const winner = this.battle.state.fighters.find(f => f.id === this.battle.state.winner)!;
+      const scene = this.audio.victoryVoiceScene?.(winner.characterId, winner.hp, winner.maxHp);
+      if (scene) audioEvents.push({ type: "voice", tick: this.audioTick, fighterId: winner.id, characterId: winner.characterId, scene, force: true });
+    }
+    if (events.some(event => event.type === "finished")) audioEvents.push({ type: "audio-stop", tick: this.audioTick, loopsOnly: true });
+    this.audio.consume(audioEvents, this.battle.state.fighters, { tick: this.audioTick, speed: this.speed });
+    this.synchronizeAudio();
     this.summaryClock += realDelta;
     if (
       this.summaryClock >= 0.1 ||
@@ -225,6 +355,8 @@ export class BattleRuntime {
   }
 
   dispose(): void {
+    this.disposed = true;
+    this.audioLoadGeneration += 1;
     this.audio.dispose();
     this.listeners.clear();
   }
@@ -295,16 +427,18 @@ export class BattleRuntime {
   private createSummary(): BattleSummary {
     const state = this.battle.state;
     return {
+      opening: this.getOpening(),
       mode: this.battle.demonstration ? "demonstration" : "battle",
       demonstration: this.battle.demonstration ? { ...this.battle.demonstration } : null,
       superFreezeRemaining: state.superFreezeRemaining ?? 0,
       superFreezeSourceId: state.superFreezeSourceId ?? null,
-      phase: this.paused && state.phase === "running" ? "paused" : state.phase,
+      phase: this.paused && (state.phase === "running" || this.opening) ? "paused" : this.opening ? "opening" : state.phase,
       loaded: this.loaded,
       elapsed: state.tick / TICK_RATE,
       roundElapsed: (state.tick - (state.roundStopTicks ?? 0)) / TICK_RATE,
       speed: this.speed,
       sound: this.sound,
+      audio: { ...this.audioSettings, loading: this.audioPreparing || this.audio.getStatus().loading > 0, state: this.audio.getStatus().state, failedClips: this.audio.getStatus().failedClips },
       seed: this.battle.config.seed,
       projectileCount: state.projectiles.length,
       winner: state.winner,

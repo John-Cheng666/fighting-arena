@@ -14,6 +14,9 @@
     "inspect:jamie-spacing": "node scripts/inspect-jamie-spacing.mjs",
     "inspect:standard-ai": "node scripts/inspect-standard-ai.mjs",
     "sync:jamie-numerics": "node scripts/sync-jamie-numerics.mjs",
+    "sync:sf6-audio": "node scripts/sync-sf6-audio.mjs",
+    "sync:sf6-voices": "node scripts/sync-sf6-voices.mjs",
+    "verify:audio": "node scripts/sync-sf6-audio.mjs --verify",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

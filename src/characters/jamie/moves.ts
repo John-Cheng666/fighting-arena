@@ -197,6 +197,10 @@ function makeVariant(row: number): JamieVariant {
 
 function throwMoveFor(id: string): boolean { return id === "T01" || id === "T02"; }
 
+// Captured action720 branches at raw80 into action728. Its drink event is at
+// local50; local56 is the playable margin, before the animation's trailing frames.
+export const JAMIE_THROW_DRINK = { branchFrame: 80, drinkFrame: 50, recoveryFrame: 56 } as const;
+
 /** All official strength, OD, stage and timing rows remain individually addressable. */
 export const JAMIE_VARIANTS: JamieVariant[] = official.rows.map((_, row) => makeVariant(row));
 // Installed resources take precedence over the independently versioned website.
@@ -242,7 +246,7 @@ for (const variant of JAMIE_VARIANTS) {
   }
 }
 JAMIE_VARIANTS.push({ ...JAMIE_VARIANTS[87], id: "row-87-drink", name: "SA1 Breakin' (drink finish)", input: `${JAMIE_VARIANTS[87].input} > hold 2`, damage: 1850, recovery: 107, blockAdvantage: -93, duration: 133 + 107, drinkFrame: 0, drinkFrames: [], drinkOnCompletion: true, driveRestore: 0 });
-JAMIE_VARIANTS.push({ ...JAMIE_VARIANTS[91], id: "row-91-drink", name: "Back Shaver (drink finish)", input: `${JAMIE_VARIANTS[91].input} > hold LP+LK`, duration: JAMIE_VARIANTS[91].duration + 50, drinkFrame: 0, drinkFrames: [], drinkOnCompletion: true, driveRestore: 0, held: true, timelineSource: "Official throw and held-drink branch; drink completion follows the full 50-frame Devil Inside arena recovery after the throw." });
+JAMIE_VARIANTS.push({ ...JAMIE_VARIANTS[91], id: "row-91-drink", name: "Back Shaver (drink finish)", input: `${JAMIE_VARIANTS[91].input} > hold LP+LK`, duration: JAMIE_VARIANTS[91].duration + 50, drinkFrame: 0, drinkFrames: [], drinkOnCompletion: false, driveRestore: 0, held: true, timelineSource: "Confirmed forward throw branches at capture frame80 to action728; drink at local50 and recovery at local56. The arena automatically selects this branch below drink level4." });
 for (let drinks = 1; drinks <= 4; drinks += 1) JAMIE_VARIANTS.push({ ...JAMIE_VARIANTS[38], id: drinks === 1 ? "row-38-hold" : `row-38-hold-${drinks}`, name: `The Devil Inside (hold ${drinks} drink${drinks > 1 ? "s" : ""})`, duration: 97 + (drinks - 1) * 48, drinkFrames: Array.from({ length: drinks }, (_, index) => 49 + index * 48), held: true, timelineSource: "Official first drink at 49 and single held drink total 97; continuing hold repeats the drink cycle before the same release recovery." });
 JAMIE_VARIANTS.push({ ...JAMIE_VARIANTS[98], id: "parry-hold", name: "Drive Parry (hold)", input: "hold MP+MK", duration: 120 + 33, active: [[1, 120]], held: true });
 for (const [id, direction, travel] of [["jump", "forward", 105], ["jump-neutral", "neutral", 0], ["jump-back", "back", -105]] as const) JAMIE_VARIANTS.push({ ...JAMIE_VARIANTS[93], id, moveId: "jump", name: `${direction[0].toUpperCase() + direction.slice(1)} Jump`, input: direction === "forward" ? "9" : direction === "back" ? "7" : "8", pose: "jump", behavior: "movement", duration: 45, travel, active: [], airborne: false, jumpDirection: direction, hitWeights: [] });

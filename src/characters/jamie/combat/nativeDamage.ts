@@ -14,6 +14,7 @@ export function nativeContactValues(fighter: Fighter, action: JamieAction, varia
   const baseDamage = hit.damage + (hit.recoverableDamage ?? 0);
   const damage = Math.floor(Math.max(hit.minimumDamage, nativeScaledDamage(baseDamage, factors)) * multiplier);
   return {
+    nativeAttackId: hit.attackId,
     damage, unscaledDamage: baseDamage, damageFactors: factors, damageMultiplier: multiplier, minimumDamage: hit.minimumDamage,
     // Native behavior Time includes the contact frame; host UntilTick is exclusive.
     stun: Math.max(0, hit.hitStun - 1), blockStun: Math.max(0, hit.blockStun - 1),

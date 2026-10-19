@@ -8,6 +8,7 @@ import { resetStandardAIProgram } from "../../../engine/ai/StandardAI";
 import { applyDriveChange, applySuperChange, jamieResourceStyleId, nativeScaledDamage } from "./resources";
 
 import type { HitContext } from "../../../engine/characters";
+import { stopJamieAudio } from "../audio";
 
 export function resolveJamieIncomingHit(context: HitContext): void {
   const { state, hit, events } = context;
@@ -167,6 +168,7 @@ export function resolveJamieIncomingHit(context: HitContext): void {
     );
     target.hitUntilTick = state.tick + 7;
     const armor = !!targetJamie && variant?.row === 95 && frame <= 27 && action!.armorHits < 2 && !hit.throw;
+    context.details.armorBreak = Boolean(targetJamie && variant?.row === 95 && frame <= 27 && action!.armorHits >= 2 && !hit.throw);
     if (armor) action!.armorHits += 1;
     else {
       target.stunUntilTick = Math.max(target.stunUntilTick, state.tick + (hit.stun ?? 12));
@@ -174,6 +176,7 @@ export function resolveJamieIncomingHit(context: HitContext): void {
       if (action && targetJamie) {
         events.push({ type: "interrupt", tick: state.tick, fighterId: target.id, moveId: action.moveId, label: action.moveId === "S01" ? "饮酒被打断" : "动作被打断", x: target.x, y: target.y - target.height - 95 });
         releaseJamieCapture(state, target, false, events);
+        stopJamieAudio(state, target, events);
         targetJamie.action = null;
         target.attackUntilTick = state.tick;
         resetStandardAIProgram(targetJamie.standardAI);
@@ -201,14 +204,6 @@ export function resolveJamieIncomingHit(context: HitContext): void {
       if (sourceVariant?.row === 10) target.crouching = false;
       if (sourceVariant?.row === 5 && punish && target.height < 1) { target.stunUntilTick = Math.max(target.stunUntilTick, state.tick + 60); target.knockdownUntilTick = 0; }
       if (sourceVariant?.row === 11 && (punish || sourceAction?.punishApplied) && (hit.knockdown ?? 0) > 0) { target.knockdownUntilTick += 20; target.hardKnockdown = true; }
-      if (hit.moveId === "T02" && hit.finish) {
-        const oldX = target.x;
-        const oldY = target.y;
-        target.x = source.x;
-        target.y = source.y;
-        source.x = oldX;
-        source.y = oldY;
-      }
       const atWall = target.x <= ARENA.left + 57 || target.x >= ARENA.right - 57 || target.y <= ARENA.top + 128 || target.y >= ARENA.bottom - 35;
       const wallMove = hit.moveId === "D01" || sourceVariant?.row === 32 || sourceVariant?.row === 70 && punish;
       if (atWall && wallMove) {
@@ -285,6 +280,7 @@ export function registerJamieContact(context: HitContext): void {
       applyDriveChange(sourceJamie, normalThrowLatch ? 0 : hit.driveGain ?? 450, { cause: "other" });
       if (hit.finish && sourceVariant?.capture === "throw" && sourceAction && sourceAction.frame >= sourceAction.duration) {
         releaseJamieCapture(state, source, true, events);
+        stopJamieAudio(state, source, events);
         sourceJamie.action = null;
         source.attackUntilTick = state.tick;
       }

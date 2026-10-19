@@ -9,13 +9,13 @@ import { getJamieState } from "./state";
 import { JAMIE_SOURCES, JAMIE_VARIANT_BY_ID } from "./moves";
 import { createJamieDemonstration } from "./training/createDemonstration";
 import { JAMIE_RESOURCE_LIMITS } from "./combat/resources";
+import { emitJamieContactAudio } from "./audio";
 
 export const jamieModule: CharacterModule = {
   id: "jamie",
   metadata: { name: "杰米", tag: "醉拳 · 街舞 · 饮酒成长", description: "寻找饮酒机会，解锁拳脚与连段", color: "#ead17d",
     portrait: "/assets/jamie/official-jamie.png", links: { character: JAMIE_SOURCES.character, moves: JAMIE_SOURCES.moves } },
   settings: JAMIE_SETTINGS, normalizeSettings: normalizeJamieSettings,
-  audio: { hitFrequency: 190, hitWave: "triangle" },
   stats: (settings) => ({ maxHp: Number(settings.maxHp), speed: 145, radius: 25 }), ownsElevation: true,
   createState: (settings) => {
     const state = createJamieState(Number(settings.cpuLevel) - 1, Number(settings.aiStyle));
@@ -45,7 +45,7 @@ export const jamieModule: CharacterModule = {
   },
   requestMove: (state, fighter, moveId, variantId, events) => requestJamieMove(state, fighter.id, moveId, variantId, events),
   setHold: (state, fighter, held) => setJamieHold(state, fighter.id, held),
-  resolveIncomingHit: resolveJamieIncomingHit, onContact: registerJamieContact,
+  resolveIncomingHit: resolveJamieIncomingHit, onContact: (context) => { emitJamieContactAudio(context); registerJamieContact(context); },
   releaseCapture: releaseJamieCapture,
   finishBattle: (fighter) => { const state = getJamieState(fighter)!; state.action = null; state.standardAI.currentItemId = null; },
   hasPendingCinematic: (state, fighter, maxTicks) => {

@@ -247,13 +247,16 @@ export class BattleScene extends Phaser.Scene {
     const status=this.runtime.battle.describe(fighter);
     const alpha=this.runtime.isPaused ? 1 : this.runtime.alpha;
     const x=Phaser.Math.Linear(fighter.previousX,fighter.x,alpha), y=Phaser.Math.Linear(fighter.previousY,fighter.y,alpha);
+    const opening = this.runtime.getOpening(), entrance = opening?.entrances[fighter.id] ?? 1;
+    const enter = this.reducedMotion ? 1 : 1 - Math.pow(1 - entrance, 3);
+    const entranceOffset = (fighter.id === "p1" ? -340 : 340) * (1 - enter);
     const alive=fighter.hp>0;
-    view.root.setPosition(x,y).setDepth(y);
+    view.root.setPosition(x + entranceOffset,y).setDepth(y).setAlpha(entrance > 0 || !opening ? 1 : 0);
     if(status.foreground && status.cinematic?.targetId) {
       const target=state.fighters.find(other=>other.id===status.cinematic?.targetId);
       if(target)view.root.setDepth(Math.max(y,target.y)+2);
     }
-    view.visual.update(fighter,state,alpha);
+    view.visual.update(opening && enter < 1 ? { ...fighter, vx: fighter.id === "p1" ? 90 : -90 } : fighter,state,alpha);
     view.shadow.setScale(Math.max(0.45,1-fighter.height/240)).setAlpha(Math.max(0.08,0.27-fighter.height/800));
     const color=fighter.id === "p1" ? 0xffd275 : 0x84dfdf;
     view.ring.clear().lineStyle(1.5,color,alive?0.75:0.2).strokeEllipse(0,1,66,18).lineStyle(3,color,0.16).strokeEllipse(0,1,74,21);

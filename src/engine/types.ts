@@ -26,7 +26,11 @@ export interface Fighter extends Vector {
   knockdownUntilTick: number;
   settings: CharacterSettings;
   characterState: unknown;
-  capture?: { sourceId: FighterId; moveId: string; untilTick: number; phase: "combo" | "finish"; pendingKnockout?: boolean };
+  capture?: {
+    sourceId: FighterId; moveId: string; untilTick: number; phase: "combo" | "finish"; pendingKnockout?: boolean;
+    /** Confirmed normal throw only. Preserve the throw axis across capture motion and side changes. */
+    normalThrow?: { direction: "forward" | "back"; axis: Vector };
+  };
   lastHitBy?: FighterId;
   lastHitTick?: number;
   recoverableHp?: number;
@@ -89,6 +93,7 @@ export interface ContactDetails {
   punish?: boolean;
   parry?: boolean;
   perfect?: boolean;
+  armorBreak?: boolean;
   calculation?: {
     baseDamage: number;
     factors: number[];
@@ -123,6 +128,11 @@ export interface ContactEvent extends ContactDetails {
 
 export type BattleEvent =
   | ContactEvent
+  /** Media cues are emitted by character adapters on their real action/contact clocks. */
+  | { type: "audio"; tick: number; fighterId?: FighterId; clipId: string; channel: "sfx" | "voice"; scope?: string }
+  | { type: "audio-stop"; tick: number; fighterId?: FighterId; scope?: string; loopsOnly?: boolean; clipIds?: string[]; fadeMs?: number }
+  | { type: "voice"; tick: number; fighterId: FighterId; characterId: CharacterId; voiceId?: number; scene?: string; scope?: string; stopWithAction?: boolean; force?: boolean }
+  | { type: "voice-stop"; tick: number; fighterId?: FighterId; scope?: string; actionOnly?: boolean }
   | { type: "started"; tick: number }
   | { type: "cast"; tick: number; fighterId: FighterId; x: number; y: number }
   | { type: "dash"; tick: number; fighterId: FighterId; x: number; y: number }
@@ -206,6 +216,8 @@ export interface PendingHit {
   nativeThrowPunish?: boolean;
   targetSuperGain?: number;
   blockTargetSuperGain?: number;
+  /** Opaque character data key for the contact's sound profile; never resolved by the kernel. */
+  nativeAttackId?: number;
 }
 
 export interface MoveDemonstration {
