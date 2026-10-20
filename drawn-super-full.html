@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f3ef" />
+    <title>杰米 SA3 / CA · 二维完整演出审阅</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="full-review">
+    <a class="skip-link" href="#player">跳转到动画播放器</a>
+    <header class="site-header">
+      <a class="brand" href="./index.html">ARENA<span>/</span>LAB<small>自动格斗实验场</small></a>
+      <a class="back-link" href="./index.html#training">返回招式演练 <span aria-hidden="true">↗</span></a>
+    </header>
+    <main>
+      <div class="page-heading">
+        <div><p class="eyebrow">JAMIE / FULL ANIMATION REVIEW 02</p><h1>杰米 · 二维超必杀完整演出</h1>
+          <p class="lede">从启动到终结与恢复。保留画风，补齐动作，提高单帧清晰度。</p></div>
+        <span class="edition">审阅版 02<span>完整命中演出 · 原声</span></span>
+      </div>
+      <section class="player" id="player" aria-label="二维超必杀完整演出播放器">
+        <div class="player-top"><div class="move-switch" role="group" aria-label="选择演出">
+          <button id="sa3" type="button" aria-pressed="true">SA3 <span>双脚终结</span></button>
+          <button id="ca" type="button" aria-pressed="false">CA <span>抓喉终结</span></button>
+        </div><span class="clip-meta" id="clip-meta">1080p · 60 FPS 补帧</span></div>
+        <div class="viewport" id="viewport">
+          <video id="scene" playsinline preload="metadata" aria-label="杰米 SA3 二维完整演出"></video>
+          <div class="film-label" aria-hidden="true"><span id="move-label">SA3</span><i></i><span id="phase-label">超必杀启动</span></div>
+          <div class="loading" id="loading" role="status"><strong>正在准备完整演出</strong><span id="load-message">载入高清影片…</span><button id="retry" type="button" hidden>重新载入</button></div>
+        </div>
+        <div class="transport">
+          <div class="timeline-row"><label class="sr-only" for="timeline">播放位置</label><input id="timeline" type="range" min="0" max="617" step="1" value="0" disabled /><output id="time" for="timeline">0.00 / 10.28 s</output></div>
+          <div class="controls">
+            <div class="playback"><button id="play" class="primary" type="button" disabled>播放演出</button><button id="restart" type="button" disabled aria-label="回到开头">↶ <span>重播</span></button><button id="step-back" type="button" disabled aria-label="上一帧">−1F</button><button id="step-next" type="button" disabled aria-label="下一帧">+1F</button></div>
+            <div class="options"><label for="render-mode">画面 <select id="render-mode"><option value="smooth" selected>60 FPS 补帧版</option><option value="drawn">重绘原帧</option></select></label><label for="speed">速度 <select id="speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option></select></label><label class="check"><input id="sound" type="checkbox" checked />原声</label><label class="check"><input id="loop" type="checkbox" />循环</label><button id="fullscreen" type="button" aria-label="全屏观看动画">全屏</button></div>
+          </div>
+          <div class="chapter-controls" role="group" aria-label="跳转演出阶段"><span>跳转至</span><button id="chapter-intro" type="button" disabled>启动</button><button id="chapter-action" type="button" disabled>命中演出</button><button id="chapter-recovery" type="button" disabled>收尾恢复</button></div>
+          <div class="player-status"><span id="status" role="status" aria-live="polite">准备完整演出中</span><span id="cel-count">001 / 121 CEL</span></div>
+        </div>
+      </section>
+      <section class="notes" aria-label="完整演出内容">
+        <article><span class="note-number">01 / 完整动作</span><h2 id="shot-title">启动 → 连击 → 双脚终结</h2><p id="shot-description">保留启动、扫堂、邀战、拆招与双脚终结，接回宽景恢复动作。</p></article>
+        <article><span class="note-number">02 / 清晰度与补帧</span><h2>细节更清楚，动作更连贯</h2><p id="frame-description">逐镜重绘更清晰的关键帧，按机位分段补帧。可切换「重绘原帧」检查手部、受击与镜头衔接。</p></article>
+        <article><span class="note-number">03 / 审阅范围</span><h2>两段完整命中演出</h2><p>四酒杰米对零酒杰米，原版音效与日语原声。本页用于独立演出审阅，尚未接入正式对局。</p></article>
+      </section>
+      <div class="download-row"><div class="download-links"><a id="download" href="/assets/jamie/drawn-supers-v2/review-full.mp4" download>下载两段完整版 ↓</a><a href="/assets/jamie/drawn-supers-v2/sa3-smooth.mp4" download>SA3</a><a href="/assets/jamie/drawn-supers-v2/ca-smooth.mp4" download>CA</a><a href="./drawn-super-preview.html">初版对照 ↗</a></div><p>建议先看 1× 原声，再慢放审阅关键动作。<span class="keyboard-hint">空格：播放／暂停 · ← →：逐帧 · M：声音</span></p></div>
+      <footer>二维画面由高清关键帧重绘与镜头内补帧组成，影片输出 1080p。<a href="/assets/jamie/drawn-supers-v2/PROMPTS.json" target="_blank" rel="noreferrer">制作记录 ↗</a></footer>
+    </main>
+    <script type="module" src="/src/drawn-super-preview/full.ts"></script>
+  </body>
+</html>

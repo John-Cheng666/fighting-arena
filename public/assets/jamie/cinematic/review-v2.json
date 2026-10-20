@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "description": "Rendered from the local real-time 3D sample; reconstructed visual effects and approved original Japanese audio.",
+  "video": {
+    "framesPerSecond": 30,
+    "width": 960,
+    "height": 540
+  },
+  "audio": {
+    "language": "ja",
+    "codec": "aac",
+    "sampleRate": 48000,
+    "sourceManifest": "audio.json"
+  },
+  "bodyFrames": {
+    "SA3": 438,
+    "CA": 499
+  },
+  "tailFrames": 15,
+  "totalFrames": {
+    "SA3": 453,
+    "CA": 514
+  },
+  "excerpt": [
+    {
+      "start": 0,
+      "end": 3.3,
+      "mode": "SA3"
+    },
+    {
+      "start": 12.85,
+      "end": 16.1167,
+      "mode": "CA"
+    }
+  ],
+  "captureSha256": "d0fa0a4b637734f470bdbc54056802370bedd1b745323a3c2d7dd09a396fd466",
+  "encoderSha256": "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00",
+  "outputs": {
+    "review-v2.mp4": {
+      "bytes": 4334420,
+      "sha256": "9b356369d54bd75deb22a1448abbbc314e3f8587be97d34e29a3fa516237ad46"
+    },
+    "review-v2-preview.mp4": {
+      "bytes": 248918,
+      "sha256": "9ee494ab1c6db3fab7924a0333c0c2b563168146207810b1545dda8c5c2fb34e"
+    },
+    "poster-v2.jpg": {
+      "bytes": 32862,
+      "sha256": "2997c5daa73334bf59268e346fff87cd48d89fbef1d461cd9817a828f652c757"
+    }
+  }
+}

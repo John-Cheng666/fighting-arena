@@ -1,4 +1,7 @@
 /* Character UI uses the same semantic theme as the surrounding workbench. */
+.drawn-super-link { display:flex; justify-content:space-between; align-items:center; gap:12px; min-height:48px; margin-top:12px; padding:10px 12px; border:1px solid var(--line); border-radius:7px; color:var(--accent); text-decoration:none; font-size:12px; }
+.drawn-super-link small { display:block; margin-top:4px; color:var(--muted); font-size:10px; }
+.drawn-super-link:hover { background:var(--surface-muted); }
 .jamie-resources { margin-top: 16px; }
 .drink-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 12px; color: var(--muted); margin-bottom: 13px; }
 .drink-pips { display: flex; gap: 5px; }

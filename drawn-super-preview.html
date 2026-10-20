@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f3ef" />
+    <title>杰米 SA3 / CA · 二维演出样片</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <a class="skip-link" href="#player">跳转到动画播放器</a>
+    <header class="site-header">
+      <a class="brand" href="./index.html">ARENA<span>/</span>LAB<small>自动格斗实验场</small></a>
+      <a class="back-link" href="./index.html#training">返回招式演练 <span aria-hidden="true">↗</span></a>
+    </header>
+    <main>
+      <div class="page-heading">
+        <div><p class="eyebrow">JAMIE / ANIMATION STUDY 01</p><h1>杰米 · 二维超必杀演出</h1>
+          <p class="lede">SA3 与 CA 的二维关键镜头试映。先看动作、切镜与打击节奏。</p></div>
+        <span class="edition">方案 D<span>逐帧重绘 · 初版样片</span></span>
+      </div>
+      <section class="player" id="player" aria-label="二维超必杀动画播放器">
+        <div class="player-top"><div class="move-switch" role="group" aria-label="选择演出">
+          <button id="sa3" type="button" aria-pressed="true">SA3 <span>连续打击</span></button>
+          <button id="ca" type="button" aria-pressed="false">CA <span>抓喉终结</span></button>
+        </div><span class="clip-meta" id="clip-meta">24 张重绘关键帧</span></div>
+        <div class="viewport" id="viewport">
+          <canvas id="scene" width="960" height="540" role="img" aria-label="杰米 SA3 二维重绘关键镜头"></canvas>
+          <div class="film-label" aria-hidden="true"><span id="move-label">SA3</span><i></i><span id="phase-label">连续打击</span></div>
+          <div class="loading" id="loading" role="status"><strong>正在准备二维样片</strong><span id="load-message">载入两套重绘关键帧…</span><button id="retry" type="button" hidden>重新载入</button></div>
+        </div>
+        <div class="transport">
+          <div class="timeline-row"><label class="sr-only" for="timeline">播放位置</label><input id="timeline" type="range" min="0" max="174" step="1" value="0" disabled /><output id="time" for="timeline">0.00 / 2.90 s</output></div>
+          <div class="controls">
+            <div class="playback"><button id="play" class="primary" type="button" disabled>播放样片</button><button id="restart" type="button" disabled aria-label="回到开头">↶ <span>重播</span></button><button id="step-back" type="button" disabled aria-label="上一帧">−1F</button><button id="step-next" type="button" disabled aria-label="下一帧">+1F</button></div>
+            <div class="options"><label for="speed">速度 <select id="speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option></select></label><label class="check"><input id="sound" type="checkbox" checked />原声</label><label class="check"><input id="loop" type="checkbox" />循环</label><button id="fullscreen" type="button" aria-label="全屏观看动画">全屏</button></div>
+          </div>
+          <div class="player-status"><span id="status" role="status" aria-live="polite">准备样片中</span><span id="cel-count">01 / 24 CEL</span></div>
+        </div>
+      </section>
+      <section class="notes" aria-label="当前样片内容">
+        <article><span class="note-number">01 / 动作</span><h2 id="shot-title">连续打击 → 双脚终结</h2><p id="shot-description">跟随双人的原版动作采样重绘，保留出手与受击的对应关系，以及终结踢的镜头切换。</p></article>
+        <article><span class="note-number">02 / 观感</span><h2>保持人物，放大演出</h2><p>金色衣料、红绳与两种发型延续现有人物。近景、宽幅、短促击打光，让动作成为画面的重点。</p></article>
+        <article><span class="note-number">03 / 审阅</span><h2>先确认关键镜头</h2><p>每段含 24 张新重绘关键帧，动作节选 2.4 秒，末尾停格收声。当前为四酒杰米对零酒杰米的独立样片，尚未接入对战或覆盖整招。</p></article>
+      </section>
+      <div class="download-row"><a id="download" href="/assets/jamie/drawn-supers-v1/review.mp4" download>下载两段样片 <span aria-hidden="true">↓</span></a><p>建议先看 1× 原声，再用 0.25× 检查手部与受击姿势。<span class="keyboard-hint">空格：播放／暂停 · ← →：逐帧 · M：声音</span></p></div>
+      <footer>二维画面为新制作的重绘素材，依据项目已有的原版动作采样与官方参考。不是原游戏录屏。<a href="/assets/jamie/drawn-supers-v1/PROMPTS.json" target="_blank" rel="noreferrer">制作记录 ↗</a></footer>
+    </main>
+    <script type="module" src="/src/drawn-super-preview/main.ts"></script>
+  </body>
+</html>

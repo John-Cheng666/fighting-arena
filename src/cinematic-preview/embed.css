@@ -1,0 +1,3 @@
+body.embed .review { max-width: 1000px; padding: 0; }
+body.embed .page-header, body.embed .review-notes, body.embed footer { display: none; }
+body.embed .player { border: 0; border-radius: 0; }

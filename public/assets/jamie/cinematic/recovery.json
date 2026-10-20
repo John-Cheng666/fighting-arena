@@ -1,0 +1,494 @@
+{
+  "version": 3,
+  "purpose": "SA3/CA facial, chain dynamics and actual four-drink appearance review",
+  "evidence": {
+    "packageSha256": "40e2ce9b1590b380da3533c9e76561da34d75d6de9aa0a2228cce8780bdbc593",
+    "extractionEvidenceId": "ev_34c0491a2596444947cd804af0d282828956959abea692899e46da6eb0f4e85a",
+    "originalPackedBytesRead": 366790,
+    "archiveIndices": [
+      {
+        "archive": "re_chunk_000.pak",
+        "indexSha256": "c0333667383dea138e392e5558696ebe0b6a795b153734e5c3e3a4869deffaac"
+      }
+    ]
+  },
+  "originalMembers": [
+    {
+      "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_chain.chain.52",
+      "archive": "re_chunk_000.pak",
+      "index": 32550,
+      "offset": 63780807166,
+      "packedBytes": 5358,
+      "bytes": 41008,
+      "packedSha256": "1cc2a23ca42da833c04caa00b9a96c9dcbd099d78da58e4a07513d819faf28f3",
+      "sha256": "1ded200eccc394e73af6ca0e1c2826ac4eb26171421b1a3820493391ef746a12",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/v00/esf021v00_motionbank.motbank.3",
+      "archive": "re_chunk_000.pak",
+      "index": 43500,
+      "offset": 67883466229,
+      "packedBytes": 781,
+      "bytes": 9400,
+      "packedSha256": "b7ae80aa2b609ed4e8afd60722fe32bbd4eb1cc99684cd65d70ad9a54526ae63",
+      "sha256": "f20dffd055e0f80dbecd9b4c05cb0adac60d3477b3950e19e17f3aab72dbbaef",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/esf021_jointmap.jmap.19",
+      "archive": "re_chunk_000.pak",
+      "index": 57146,
+      "offset": 63762997764,
+      "packedBytes": 983,
+      "bytes": 1712,
+      "packedSha256": "799cdd40f9ba0aee11f7f46447c46990feb36bdd6678951473a29efd4051437e",
+      "sha256": "010ab400592e9b0298c3ab657d01bcde9497004c87fdb5be872c6a92a6fb4472",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/model/esf/esf021/000/02/esf021_000_02_chain.chain.52",
+      "archive": "re_chunk_000.pak",
+      "index": 64868,
+      "offset": 63765476828,
+      "packedBytes": 3105,
+      "bytes": 16808,
+      "packedSha256": "29a2c94aeeee6a856596fcb3572f00ab7528be14ffee23b357dbfeb1de51a021",
+      "sha256": "012994f2c2c129a24fef689ce40623a336ca4a89b20b168683e75547fd6b099e",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/model/esf/esf021/000/30/esf021_000_30_chain.chain.52",
+      "archive": "re_chunk_000.pak",
+      "index": 262796,
+      "offset": 63765475808,
+      "packedBytes": 396,
+      "bytes": 1744,
+      "packedSha256": "bffc76fbeadb60fe1dd418ed6d8b30dba630b73ba5433a3a4eb19db50ecb3eb0",
+      "sha256": "d916fe6e49445e7264452da8418352de9d2ab67bf1dbb1057784defd1cd611ab",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/v00/fbx/superarts/superarts_02/esf021_caa_getugasaihou_fourth1p_body_secondary.mot.603",
+      "archive": "re_chunk_000.pak",
+      "index": 120831,
+      "offset": 82593944713,
+      "packedBytes": 8565,
+      "bytes": 11042,
+      "packedSha256": "01531f6f4f0d0ea2d48f6308bf3f9e19ecedb6dc7a851ce9f2fa271600426f86",
+      "sha256": "e52a0755a87f31b28b18414732317900dca68115846df752f680f339a86f97b6",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/v00/fbx/superarts/superarts_02/esf021_saa3_getugasaihou_fourth1p_body_secondary.mot.603",
+      "archive": "re_chunk_000.pak",
+      "index": 156751,
+      "offset": 82593472574,
+      "packedBytes": 13295,
+      "bytes": 17024,
+      "packedSha256": "70caf5916c67c9f1113fbd151755f53d201a9c3ef81a206dee654100cc013255",
+      "sha256": "f0107d78260ca124267c4cd00deb153249645779bc44325a03e491d84b526d57",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/v00/fbx/superarts/superarts_02/esf021_saa_getugasaihou_start_fourth1p_body_secondary.mot.603",
+      "archive": "re_chunk_000.pak",
+      "index": 186290,
+      "offset": 82593460929,
+      "packedBytes": 4983,
+      "bytes": 6050,
+      "packedSha256": "78e2ed44771505bbfcf56753a705082d312d2b4fb9dca7954cf933f45e6b654c",
+      "sha256": "1d44f8cd6ab8bcaa12ae2623325307feaa724e4d21fc06286881d2063a3fe090",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/v00/fbx/superarts/superarts_02/esf021_saa_getugasaihou_start_fourth2p_body_secondary.mot.603",
+      "archive": "re_chunk_000.pak",
+      "index": 191220,
+      "offset": 82593465912,
+      "packedBytes": 6662,
+      "bytes": 8086,
+      "packedSha256": "760eb5cfc82c059bacdc26e563ae3aa55e1d8e93436046d44c49a3938163f984",
+      "sha256": "0e70a008b4f91070236a88c219ff4f6c981d4dcffce7c2d7783fc5c887d1b680",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/v00/fbx/superarts/superarts_02/esf021_caa_getugasaihou_fourth2p_body_secondary.mot.603",
+      "archive": "re_chunk_000.pak",
+      "index": 257085,
+      "offset": 82593953278,
+      "packedBytes": 7977,
+      "bytes": 10190,
+      "packedSha256": "44681a1b9ee5be1e861ad5aa51ba73d4bb2b19714153c7597223797307951759",
+      "sha256": "8e2d4614f56cf8f1c7c136dab1bbba8d3ce899e1e8ac2adab846e8fde099f3e9",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/v00/fbx/superarts/superarts_02/esf021_saa3_getugasaihou_fourth2p_body_secondary.mot.603",
+      "archive": "re_chunk_000.pak",
+      "index": 269160,
+      "offset": 82593485869,
+      "packedBytes": 12913,
+      "bytes": 16610,
+      "packedSha256": "c6ea57aed5fbf63800ed35f953a92567038af7022775d4b3e6894a9cc63af79d",
+      "sha256": "410d587575e439cafbd957f94d9f1e435992005d5a83ecf4cdfd092c0ec2560c",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/v00/motionlist/facial/esf021v00_superarts_02.motlist.653",
+      "archive": "re_chunk_000.pak",
+      "index": 136057,
+      "offset": 66887787966,
+      "packedBytes": 145674,
+      "bytes": 1505032,
+      "packedSha256": "2e8f07c6091afca11e991372bf15bb41e41e7f55db477226e73d9a4e4b2636e4",
+      "sha256": "ff92542951f2af3a35d2bcfe38375527a8a098357d8c23007022ac57640ae787",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/esf021.fbxskel.5",
+      "archive": "re_chunk_000.pak",
+      "index": 15227,
+      "offset": 63762993888,
+      "packedBytes": 3876,
+      "bytes": 14046,
+      "packedSha256": "21eea02f57c28fa5edf3fbb9d65d06a7301a1659eb950e4a475b45027940c524",
+      "sha256": "7017162467b567cc73518c365fb149bc910fdb973c6c36d45fbc78f60b29ff2e",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/v00/fce_init.motbank.3",
+      "archive": "re_chunk_000.pak",
+      "index": 23575,
+      "offset": 63763195176,
+      "packedBytes": 219,
+      "bytes": 724,
+      "packedSha256": "a14890931add7da6aac27a074864bbcc51d3c3c6d61d4adc3f36e2065aa43875",
+      "sha256": "e3f07082e098b1eae1aa9963137874b552a373c331a3b7af2b4806c381f7be88",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/cbfa.jmap.19",
+      "archive": "re_chunk_000.pak",
+      "index": 28097,
+      "offset": 62849848024,
+      "packedBytes": 5818,
+      "bytes": 36788,
+      "packedSha256": "cdfb3fab8b72c70eb0ac61ebee07a6d2c03f331486d4c18a320a5247af31046b",
+      "sha256": "7c3d2883f9c279977d984c06c0d94ae7998951febd6a1973d3c34314a8e649da",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/v00/motionlist/facial/esf021v00_dev_pose.motlist.653",
+      "archive": "re_chunk_000.pak",
+      "index": 93286,
+      "offset": 67883982769,
+      "packedBytes": 8074,
+      "bytes": 42464,
+      "packedSha256": "73f9cd0791f956f4d8f760334a3e2239ba2c43d513c965857996688dec6a6d8f",
+      "sha256": "43b29228038445a5ba39c9b37b0fb830b43a109e47f1e7dd32e4043a83279e88",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/esf021.user.2",
+      "archive": "re_chunk_000.pak",
+      "index": 136950,
+      "offset": 85733158986,
+      "packedBytes": 225,
+      "bytes": 814,
+      "packedSha256": "84280b17791f01605cc040ebeab57e2a4729ec53c712ad18b9427e81a74a8a69",
+      "sha256": "df7b1b36204307e44edd0c9ac1cd6bfc5cbc690bd57dc25eb93bff0c3aee2ec1",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf021/v00/motionlist/facial/esf021v00_rom.motlist.653",
+      "archive": "re_chunk_000.pak",
+      "index": 192480,
+      "offset": 63763120807,
+      "packedBytes": 67630,
+      "bytes": 475760,
+      "packedSha256": "f150a59c614ee9cffadbb09518d5e94831ed11d4320f1802d4b9748e0a0af5c3",
+      "sha256": "2e03d454d19c6083fde55a2b9125f6dee68498a5e76167345a0e7196721eaf9c",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/fce_common.uvar.3",
+      "archive": "re_chunk_000.pak",
+      "index": 208984,
+      "offset": 62849847423,
+      "packedBytes": 601,
+      "bytes": 1236,
+      "packedSha256": "3d216aa842749b504ec087c55d0b0c0f4a2220321f8123f6950a6070b1362ea8",
+      "sha256": "66c23c754115cfa2c9e7cd994d6061605ed9f152951cf72ee1436d5c87467912",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/animation/esf/esf000/v00/motionlist/facial/esf000v00_default3.motlist.653",
+      "archive": "re_chunk_000.pak",
+      "index": 274847,
+      "offset": 62792082795,
+      "packedBytes": 18421,
+      "bytes": 563936,
+      "packedSha256": "8f5da6631f7da3a3ddbb3773c9206ccd751afd8204a2077628e119a3dde84623",
+      "sha256": "2c14057a46572c44b294c3529a6872932a768958ea4d61172d9acbd09c2e0044",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/charparam/esf/esf021/esf021v00.scn.20",
+      "archive": "re_chunk_000.pak",
+      "index": 278015,
+      "offset": 67887510023,
+      "packedBytes": 1830,
+      "bytes": 16036,
+      "packedSha256": "f112f79354c399426c7b11ee4dd2f002d2ac8cfd04e5bf72e7da349840b946a3",
+      "sha256": "efc10ce45ef5446ad5980aa2d2ec7dfc6479c815efe6ca5a0ab6401f13008ea5",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/charparam/esf/esf021/timeline/btlc_esf021.user.2",
+      "archive": "re_chunk_000.pak",
+      "index": 6404,
+      "offset": 67887494815,
+      "packedBytes": 354,
+      "bytes": 2752,
+      "packedSha256": "e8608d911ad4165296cb9fed4c74e9c1f53870d353ee41cfb9af480501dd2d74",
+      "sha256": "e575141b0ef4a6749aabd4861d29f5c4b0b428dbbe6e279a8d60d552bbde0c6b",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/event/fgm/esf/esf021/clip/esf021_004_11.tml.53002",
+      "archive": "re_chunk_000.pak",
+      "index": 14281,
+      "offset": 67887463184,
+      "packedBytes": 13728,
+      "bytes": 71008,
+      "packedSha256": "dc160e845861ed67f8b37da67e4e5024a211cd02a42a452968cc41f95cf95a51",
+      "sha256": "c84c5fd5b237c819436aba110a7c2b08a4dba33e153b455dd435615dafef490d",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/model/esf/esf021/001/esf021_001_cmd_000.user.2",
+      "archive": "re_chunk_000.pak",
+      "index": 28263,
+      "offset": 63762998747,
+      "packedBytes": 5596,
+      "bytes": 41124,
+      "packedSha256": "29a3b74ebd2819bc56a1a7b13393323c4136a884e896c2132338cdb151141241",
+      "sha256": "d1b1b352e06b6d4c76ca63277f3a657739bcb41cfcbfe3a7c1dd0fd1eabf92ca",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/event/fgm/esf/esf021/clip/esf021_003_00.tml.53002",
+      "archive": "re_chunk_000.pak",
+      "index": 54416,
+      "offset": 67887446545,
+      "packedBytes": 4632,
+      "bytes": 24104,
+      "packedSha256": "4d9768ccca0c632d7a783f42c9215ac4eb08d57fa5c5398769ddd05999515052",
+      "sha256": "0eac160cd0f1b4a50baa85a866734e7c1f8fedaec0a513272225679a31b79d64",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/event/fgm/esf/esf021/clip/esf021_003_01.tml.53002",
+      "archive": "re_chunk_000.pak",
+      "index": 62593,
+      "offset": 67887451177,
+      "packedBytes": 12007,
+      "bytes": 63240,
+      "packedSha256": "e8155c1e4503c2e658fab0deb45d37b438514a70c4048d45da8d8a6ed6d8cff5",
+      "sha256": "0a808751ae533d641a460e0da64110022da5f99659a856355c38e93b58c95f72",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/charparam/esf/esf021/battle_ud/esf021v01_model_parts.user.2",
+      "archive": "re_chunk_000.pak",
+      "index": 71278,
+      "offset": 64791188452,
+      "packedBytes": 411,
+      "bytes": 1940,
+      "packedSha256": "c67ecb22965d253e94575b8694786ff5c2b1f9e56c4db3bb7f896a823fac1509",
+      "sha256": "a1dd672603069c7ffd4c49231dd7c7a0c4732b50d650c5391e987d3c13d72985",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/model/esf/esf021/001/esf021_001_cmd_001.user.2",
+      "archive": "re_chunk_000.pak",
+      "index": 72460,
+      "offset": 63763004343,
+      "packedBytes": 5684,
+      "bytes": 39936,
+      "packedSha256": "226a025674ad162964027dbf9d18792c25ad6004fd6ff4b865764600b8a2427f",
+      "sha256": "3979f492033082861223eb03a85bd30192518774289a4b72d3762de7b64fe81f",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/event/fgm/esf/esf021/clip/esf021_004_12.clip.53",
+      "archive": "re_chunk_000.pak",
+      "index": 97653,
+      "offset": 66893467444,
+      "packedBytes": 585,
+      "bytes": 1992,
+      "packedSha256": "a6eee8194d851367fa8769e1a4a3ee04fb82ff99707f9d1dce65ec25e72139a2",
+      "sha256": "85d12aee8a6ae200b58723de445c41382aa08eb450a48d17ab8e85111578a111",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/charparam/esf/esf021/battle_ud/esf021v03_model_parts.user.2",
+      "archive": "re_chunk_000.pak",
+      "index": 170390,
+      "offset": 82607017884,
+      "packedBytes": 408,
+      "bytes": 1940,
+      "packedSha256": "4bff145912608393d4ad9e5970ec1716146e3b115425fafcf89264d3d643f9c7",
+      "sha256": "f573f2110398b2a8084d9fe66d66040e89dfdee60ee482404fae21b0735b02d2",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/event/fgm/esf/esf021/clip/esf021_003_02.clip.53",
+      "archive": "re_chunk_000.pak",
+      "index": 191709,
+      "offset": 66893466868,
+      "packedBytes": 576,
+      "bytes": 1896,
+      "packedSha256": "15e4f1024b81af0a68a7c036694d1e873a9510a699e772d6d061879fb4051548",
+      "sha256": "1963a347a24f2a0f00df308c209570e4f5d04c4b84a464ff7518d70f94735aca",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/charparam/esf/esf021/timeline/esf021_mpm.user.2",
+      "archive": "re_chunk_000.pak",
+      "index": 203572,
+      "offset": 79803474668,
+      "packedBytes": 836,
+      "bytes": 6464,
+      "packedSha256": "5d0ba35c5ee8fdcaa8c12573b5dd3bb93e11ad40abef74e7d9bcf5ada0fc1d77",
+      "sha256": "8640bc494fd21855d3e671e27d5df3c59fe3c698ac2a77ab09b2b299abd348c8",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/charparam/esf/esf021/battle_ud/esf021v02_model_parts.user.2",
+      "archive": "re_chunk_000.pak",
+      "index": 261705,
+      "offset": 78715986868,
+      "packedBytes": 411,
+      "bytes": 1940,
+      "packedSha256": "3b8754d87e21058c20882451fc29af7f0446862cc2a6feada8762b7258ad459a",
+      "sha256": "759766b6630c0b359f811a597618988ff39675cd4ad0b87396b40291726a88eb",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/charparam/esf/esf021/battle_ud/esf021v00_model_parts.user.2",
+      "archive": "re_chunk_000.pak",
+      "index": 270481,
+      "offset": 63765476423,
+      "packedBytes": 405,
+      "bytes": 1940,
+      "packedSha256": "808a50549e9014b4ef687dd65571a2acd19bbf57015c4c855855b3b345da0e93",
+      "sha256": "128f8ffdc802f566b13b7e5e61d0519203ff08cab02cac9ddd3f5f821e293767",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/model/esf/esf021/001/esf021_001_shape.user.2",
+      "archive": "re_chunk_000.pak",
+      "index": 141813,
+      "offset": 63764554929,
+      "packedBytes": 1076,
+      "bytes": 6672,
+      "packedSha256": "0e51308c283600b8663e548496190dd08d2caaff2568f9453e863e8f7c4ea562",
+      "sha256": "29bcffc0b587d8cc31fbaf7c783ac5f0900d7a44cece0886e5afd03a6de7f4dc",
+      "reaExtractedVerified": true
+    },
+    {
+      "resource": "natives/stm/product/charparam/esf/esf021/prefab/esf021v00.pfb.17",
+      "archive": "re_chunk_000.pak",
+      "index": 233372,
+      "offset": 67864387044,
+      "packedBytes": 2695,
+      "bytes": 19028,
+      "packedSha256": "2ff1a568d5a004d4c15800d5c0b38a74289e440a54169c816017f2339b5ec942",
+      "sha256": "8709745a930c7f646462c2255b3084fc991e6ab0c68eb25130dc61cfb982f9c6",
+      "reaExtractedVerified": true
+    }
+  ],
+  "outputs": {
+    "jamie-native.glb": {
+      "bytes": 43547652,
+      "sha256": "36618d3f0640577864192985353e916413fcb94290fea10b493c0e3e6bce0b30"
+    },
+    "facial.json": {
+      "bytes": 369090,
+      "sha256": "554dd75393932301e7ac03accb2f9135c96270d56bbd2ca640fa6ec7c0376f7e"
+    },
+    "physics.json": {
+      "bytes": 579945,
+      "sha256": "003c1d6745206a6daa1924b1faaa20b3a722a00043259ad5109654225c86a940"
+    },
+    "appearance.json": {
+      "bytes": 6652,
+      "sha256": "53b549d9a544ac2e2985c28c9b39a7419f6c13849a5df5941a3ee5ce209dcd26"
+    }
+  },
+  "restored": {
+    "facial": {
+      "controls": 210,
+      "anatomicalBones": 148,
+      "method": "Original CBFA curves and FCE_ROM relative bone poses; original victim FCE_SCAD timing"
+    },
+    "physics": {
+      "groups": 93,
+      "nodes": 363,
+      "fixedFps": 60,
+      "method": "Native chain52 settings, membership and collision geometry with a portable fixed-step constrained solver"
+    },
+    "appearance": {
+      "source": "Native fchar Style.DefaultProps joined to PartsContainer.Info",
+      "actualFour": {
+        "nativeStyle": 4,
+        "partsIds": [
+          1,
+          3,
+          4,
+          7
+        ],
+        "groups1P": [
+          21,
+          23,
+          24,
+          26
+        ],
+        "groups2P": [
+          21,
+          23,
+          124,
+          126
+        ]
+      },
+      "actualZero": {
+        "nativeStyle": 0,
+        "partsIds": [
+          0,
+          2,
+          4,
+          7
+        ],
+        "groups1P": [
+          20,
+          22,
+          24,
+          26
+        ],
+        "groups2P": [
+          20,
+          22,
+          124,
+          126
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Original quaternion-blend order and facial transitions have not been compared frame-by-frame in the running original engine.",
+    "Physics uses recovered parameters and constraints; it is not the original RE Engine integrator. Native wind activation and all anisotropic/filter/attachment modes are not fully recovered.",
+    "Wrinkle shading, JCNS pose-corrective drivers and every conditional timeline part event remain incomplete."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "method": "built-in image_gen",
+  "corrections": [
+    {
+      "id": "intro-01",
+      "prompt": "Use case: precise-object-edit / identity-preserve. This is an EDIT of the provided six-frame animation atlas. Preserve EXACTLY its 2048x768 canvas, THREE columns and TWO rows, all six camera views, every pose, face, hand, body, gold brocade garment, red waist cord, blue gourd, gold ink effects, background, lights and cell boundaries. Change ONLY hair: the single main attacking Jamie in EVERY cell is actual drink-level-four Jamie. REMOVE EVERY braided ponytail, braided rope-like hair, braided loop, topknot braid or extra braid from him. He has completely UNBOUND LONG BLACK HAIR in separate loose natural flowing strands. Where a thick braid currently appears, replace it with long loose flowing black locks. Do not leave a braid mixed with the loose hair. All six cells show the SAME long loose-haired man. Keep his shaved sides, recognizable face, head position and existing overall hair motion. Do not alter any other detail, do not move/resize anything, no new objects, text or scene changes. Keep the full image opaque and exactly the same 3x2 grid.",
+      "source": "C:\\Users\\ASUS\\.codex\\generated_images\\01a156d5-959c-7770-adc5-5caa5c249e7c\\exec-c66a34f8-44a4-45f8-a5b2-70c28546bdd8.png",
+      "dest": "public/assets/jamie/drawn-supers-v2/intro-01-corrected.png"
+    },
+    {
+      "id": "intro-02",
+      "prompt": "Use case: precise-object-edit / identity-preserve. This is an EDIT of the provided six-frame animation atlas. Preserve EXACTLY its 2048x768 canvas, THREE columns and TWO rows, all six camera views, every pose, face, hand, body, gold brocade garment, red waist cord, blue gourd, gold ink effects, background, lights and cell boundaries. Change ONLY hair: the single main attacking Jamie in EVERY cell is actual drink-level-four Jamie. REMOVE EVERY braided ponytail, braided rope-like hair, braided loop, topknot braid or extra braid from him. He has completely UNBOUND LONG BLACK HAIR in separate loose natural flowing strands. Where a thick braid currently appears, replace it with long loose flowing black locks. Do not leave a braid mixed with the loose hair. All six cells show the SAME long loose-haired man. Keep his shaved sides, recognizable face, head position and existing overall hair motion. Do not alter any other detail, do not move/resize anything, no new objects, text or scene changes. Keep the full image opaque and exactly the same 3x2 grid.",
+      "source": "C:\\Users\\ASUS\\.codex\\generated_images\\01a156d5-959c-7770-adc5-5caa5c249e7c\\exec-ba8b6fcc-75d6-4555-bcc1-83e709c1c397.png",
+      "dest": "public/assets/jamie/drawn-supers-v2/intro-02-corrected.png"
+    }
+  ]
+}
