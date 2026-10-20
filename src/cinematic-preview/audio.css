@@ -1,0 +1,4 @@
+.audio-status { margin: 0; border-top: 1px solid var(--border); padding: 8px 18px; font-size: 11px; color: #a8afc2; background: #151821; }
+.view-options { gap: 14px; }
+.hint { max-width: 220px; }
+@media (max-width:700px) { .audio-status { padding: 8px 12px; } }

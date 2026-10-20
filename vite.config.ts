@@ -5,7 +5,10 @@ export default defineConfig({
   plugins: [react()],
   server: { port: 5173, strictPort: true, watch: { ignored: ["**/research/**", "**/.local/**"] } },
   preview: { port: 4173, strictPort: true },
-  build: { chunkSizeWarningLimit: 1600 },
+  build: {
+    chunkSizeWarningLimit: 1600,
+    rollupOptions: { input: { arena: "index.html", cinematic: "cinematic-preview.html", drawnSuper: "drawn-super-preview.html", drawnFull: "drawn-super-full.html" } },
+  },
   test: {
     environment: "node",
     include: ["src/**/*.test.ts"],

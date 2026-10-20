@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "method": "built-in imagegen redraw from pose guides; Canvas2D playback and Web Audio capture",
+  "kind": "24-cel-per-clip 2D key-shot study; not original game recording or a complete move",
+  "layout": {
+    "columns": 4,
+    "rows": 6,
+    "celsPerClip": 24,
+    "framesPerSecond": 60,
+    "ticksPerCel": 6
+  },
+  "appearance": {
+    "attacker": {
+      "character": "jamie",
+      "actualDrinkLevel": 4
+    },
+    "defender": {
+      "character": "jamie",
+      "actualDrinkLevel": 0
+    }
+  },
+  "clips": {
+    "SA3": {
+      "image": "sa3-atlas.webp",
+      "width": 1366,
+      "height": 1152,
+      "nativeStartFrame": 279,
+      "artFrames": 144,
+      "reviewFrames": 174,
+      "poseGuideStartSeconds": 4.65
+    },
+    "CA": {
+      "image": "ca-atlas.webp",
+      "width": 1366,
+      "height": 1151,
+      "nativeStartFrame": 318,
+      "artFrames": 144,
+      "reviewFrames": 196,
+      "poseGuideStartSeconds": 12.85
+    }
+  },
+  "video": {
+    "file": "review.mp4",
+    "width": 960,
+    "height": 540,
+    "framesPerSecond": 30,
+    "codec": "h264",
+    "audio": "aac stereo 48000 Hz, original Japanese excerpts",
+    "recording": "actual Canvas2D surface and shared original-audio mix bus, SA3 then CA"
+  },
+  "files": {
+    "sa3-atlas.png": {
+      "bytes": 2595032,
+      "sha256": "36cc5b2b14ffbfe91eaa4419102df7c6f36acb443b288a4b0df45684f21f1582",
+      "width": 1366,
+      "height": 1152
+    },
+    "ca-atlas.png": {
+      "bytes": 2939744,
+      "sha256": "dbe3fe41380158e08549dce85fb2abf0c1acfd05023e3fd6964dd02faf30e737",
+      "width": 1366,
+      "height": 1151
+    },
+    "sa3-atlas.webp": {
+      "bytes": 462552,
+      "sha256": "0db266b01a08c99fcea150c59f77edbf21a83b4f6df926101936f866d21fa352"
+    },
+    "ca-atlas.webp": {
+      "bytes": 560892,
+      "sha256": "3fc17433ffb7f8f941229e2ede438b5ae51ef0b0d582118d3343cd39747e47b3"
+    },
+    "review.mp4": {
+      "bytes": 1692858,
+      "sha256": "41220ecfc8681a422b589db9e5907670ee9f9ec3e088ed3747a1a5dbfed76f76"
+    },
+    "poster.jpg": {
+      "bytes": 92831,
+      "sha256": "ec0c5ad20f00918ca79bf18ea4eac111ebf49620307f055ad48cb8be803ddc36"
+    },
+    "PROMPTS.json": {
+      "bytes": 6590,
+      "sha256": "1b1ff1c4f0bc37b63502470228e20d93c8d9032456a4514a65c6ae203e4bc8e2"
+    }
+  },
+  "sources": [
+    {
+      "path": "public/assets/jamie/cinematic/review-v3.mp4",
+      "sha256": "8fea1e2d415b304b1ebcd6a55e5592c88a49a0ed388d5279e83cc32c1994b0f5"
+    },
+    {
+      "path": "public/assets/jamie/official-jamie.png",
+      "sha256": "126df99c53f1dee17fac932757efeb57c2967b06a79a6d64e767c460815fa945"
+    },
+    {
+      "path": "public/assets/jamie/sprites-v3/f-supers.png",
+      "sha256": "2e50dae0d0e7eaa9efc52024d5488df3b55dc7f7de357276225e2a089520b359"
+    },
+    {
+      "path": "public/assets/jamie/reference/603.mp4",
+      "sha256": "ef87428d12a30c1038024412f9b23a371d563f99228215478ebec95238b51d8b"
+    }
+  ],
+  "limitations": [
+    "10 drawn cels per second, with final cel held for original audio tail.",
+    "Generated face, hand, costume and hair details can vary between cels.",
+    "Each cel is approximately 340 by 190 pixels, so large display looks soft.",
+    "Fixed four-drink attacker and zero-drink defender; no battle integration or complete-move branches."
+  ]
+}

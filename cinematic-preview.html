@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111319" />
+    <title>杰米 SA3 / CA · 面部、物理与四酒审阅版</title>
+  </head>
+  <body>
+    <main class="review">
+      <header class="page-header">
+        <div><p class="eyebrow">FIGHTING ARENA / ANIMATION STUDY 03</p><h1>杰米 <span>SA3 / CA</span></h1><p class="subtitle">原版面部驱动、头发与布料动态 · 四酒造型审阅版</p></div>
+        <a class="back" href="/">返回竞技场 <span aria-hidden="true">↗</span></a>
+      </header>
+      <section class="player" aria-label="动画审阅播放器">
+        <div class="player-top"><div class="move-buttons" role="group" aria-label="选择演出"><button id="sa3" aria-pressed="true">SA3 <span>月牙叉炮</span></button><button id="ca" aria-pressed="false">CA <span>CRITICAL ART</span></button></div><span class="live"><i></i> 实时 3D</span></div>
+        <div class="viewport" id="viewport"><canvas id="scene" aria-label="杰米双人超必杀动画"></canvas><div class="letterbox top"></div><div class="letterbox bottom"></div><div class="scene-label"><span id="shot-label">SA3 · 命中演出</span><span id="camera-label">原版镜头</span></div><div class="loading" id="loading" role="status"><span class="loading-line"></span><strong>正在准备原版模型与动作</strong><span id="load-progress">载入双人骨骼和贴图…</span></div></div>
+        <div class="transport"><button id="play" class="primary" disabled>播放</button><button id="restart" disabled aria-label="从头播放">重播</button><button id="step-back" disabled aria-label="上一帧">−1 帧</button><button id="step-next" disabled aria-label="下一帧">+1 帧</button><output id="time">000 / 438 F</output><label class="speed">速度 <select id="speed" aria-label="播放速度"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option></select></label></div>
+        <div class="timeline-wrap"><input id="timeline" type="range" min="0" max="438" value="0" step="1" aria-label="演出帧" disabled /><div class="timeline-labels"><span>命中确认</span><span id="duration">7.30 秒 / 60 FPS</span><span>演出结束</span></div></div>
+        <div class="view-options"><label>镜头 <select id="camera-mode"><option value="native">原版镜头</option><option value="free">自由观察</option></select></label><label>1P 酒级 <select id="p1-drink"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4" selected>4 · 披发开襟</option></select></label><label>2P 酒级 <select id="p2-drink"><option value="0" selected>0 · 束发</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4 · 披发开襟</option></select></label><label class="loop"><input id="facial" type="checkbox" checked /> 面部表情</label><label class="loop"><input id="physics" type="checkbox" checked /> 头发／布料</label><label class="loop"><input id="effects" type="checkbox" checked /> 演出特效</label><label class="loop"><input id="sound" type="checkbox" checked /> 原声（日语）</label><label class="loop"><input id="loop" type="checkbox" checked /> 循环播放</label><span class="hint" id="view-hint">空格 播放／暂停 · ← → 逐帧</span></div>
+        <p class="audio-status" id="audio-status" role="status">点击播放启用原版音效与日语语音 · 1× 审阅</p>
+      </section>
+      <section class="review-notes" aria-label="样片说明"><div><p class="eyebrow">本次审阅重点</p><p>眉眼、嘴型与受击表情；发辫、披发、衣服及腰壶的动态；两席位各自的实际四酒造型。默认 1P 四酒、2P 零酒，可独立切换并关闭表情或物理对比。</p></div><div class="boundary"><p class="eyebrow">当前样片范围</p><p>面部使用原版控制曲线与姿势库；头发／布料使用原链条参数和碰撞体的浏览器模拟。原引擎的表情混合细节、完整布料求解及皱纹着色仍有差异。本页用于独立审阅，尚未接入正式对战。</p></div></section>
+      <footer><span>LOCAL ASSET STUDY · SF6 / JAMIE</span><a href="/assets/jamie/cinematic/manifest.json" target="_blank" rel="noreferrer">素材来源清单 ↗</a></footer>
+    </main>
+    <script type="module" src="/src/cinematic-preview/main.ts"></script>
+  </body>
+</html>

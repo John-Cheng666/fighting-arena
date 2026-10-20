@@ -1,0 +1,3191 @@
+{
+  "version": 1,
+  "character": "Jamie",
+  "characterCode": "esf021",
+  "purpose": "Local SA3 / CA cinematic review sample",
+  "sourceFrameRate": 60,
+  "frames": {
+    "SA3": 438,
+    "CA": 499
+  },
+  "clips": [
+    {
+      "name": "esf021_SAA_GETUGASAIHOU_START",
+      "frames": 200,
+      "durationSeconds": 3.3333332538604736,
+      "channels": 227,
+      "samplers": 227
+    },
+    {
+      "name": "esf021_SAA3_GETUGASAIHOU",
+      "frames": 438,
+      "durationSeconds": 7.300000190734863,
+      "channels": 227,
+      "samplers": 227
+    },
+    {
+      "name": "esf021_SAD3_GETUGASAIHOU",
+      "frames": 438,
+      "durationSeconds": 7.300000190734863,
+      "channels": 223,
+      "samplers": 223
+    },
+    {
+      "name": "esf021_CAA_GETUGASAIHOU",
+      "frames": 499,
+      "durationSeconds": 8.316666603088379,
+      "channels": 227,
+      "samplers": 227
+    },
+    {
+      "name": "esf021_CAD_GETUGASAIHOU",
+      "frames": 499,
+      "durationSeconds": 8.316666603088379,
+      "channels": 223,
+      "samplers": 223
+    },
+    {
+      "name": "esf021_SAA_GETUGASAIHOU_END",
+      "frames": 80,
+      "durationSeconds": 1.3333333730697632,
+      "channels": 227,
+      "samplers": 227
+    },
+    {
+      "name": "esf021_CAA_GETUGASAIHOU_END",
+      "frames": 114,
+      "durationSeconds": 1.899999976158142,
+      "channels": 227,
+      "samplers": 227
+    },
+    {
+      "name": "esf021_CAD_GETUGASAIHOU_END",
+      "frames": 33,
+      "durationSeconds": 0.550000011920929,
+      "channels": 219,
+      "samplers": 219
+    }
+  ],
+  "cameraClips": {
+    "SA3": "CAM_SAA3_GETUGASAIHOU",
+    "CA": "CAM_CAA_GETUGASAIHOU"
+  },
+  "nativeGlb": {
+    "source": ".local/sf6-cinematic/converted/esf021_001_01__20261019_040007__b4ff11/jamie-native.glb",
+    "sha256": "4bace375245ad3cf88b7d56c8c89c391d335813e70be10bc11e66260d9c7f69d",
+    "bytes": 26558788
+  },
+  "nativeBinary": {
+    "sha256": "38ac303922689d62b63d2fa49e22b83fc12ec5c708ccc2ebbcf43317e64cb450",
+    "bytes": 25340360
+  },
+  "nativeJsonSha256": {
+    "animations": "de894c2d45f671ed9d028b14b6f970c285854963079bac47dd7879231225f82b",
+    "skins": "cadb9adb25bbaf4a659f0868ccdeaa8355179ccb845954b3ee4837905268538b",
+    "accessors": "99f1868d48d10b1b5224bfa6c14cf8a85cd28b0beeb4b468b54e2ab1af447973",
+    "nodes": "84d15f8a6faf52e99600db36388dd9f8f901b970861cca5593923f845248692e"
+  },
+  "geometry": {
+    "meshes": 43,
+    "bones": 878,
+    "preservedMeshNames": [
+      "Group_0_sub0__esf_ClothUnder_PantsStrings",
+      "Group_0_sub1__esf_ClothUnder_PantsStringsFur",
+      "Group_0_sub2__esf_ClothUnder_Shoses",
+      "Group_0_sub3__esf_ClothUnder_Pants",
+      "Group_0_sub4__esf_Body01",
+      "Group_20_sub0__esf_ClothTop_Main",
+      "Group_20_sub1__esf_ClothTop_Strings",
+      "Group_20_sub2__esf_ClothTop_StringsFur",
+      "Group_20_sub3__esf_ClothTop_Main_BS",
+      "Group_20_sub4__esf_Body00",
+      "Group_21_sub0__esf_ClothTop_Main",
+      "Group_21_sub1__esf_ClothTop_Strings",
+      "Group_21_sub2__esf_ClothTop_StringsFur",
+      "Group_21_sub3__esf_ClothTop_JipLine",
+      "Group_21_sub4__esf_ClothTop_Main_BS02",
+      "Group_21_sub5__esf_Body00",
+      "Group_24_sub0__esf_ClothUnder_DrinkFur",
+      "Group_24_sub1__esf_ClothUnder_Drink",
+      "Group_25_sub0__esf_ClothUnder_Drink",
+      "Group_25_sub1__esf_ClothUnder_DrinkFur",
+      "Group_26_sub0__esf_ClothUnder_Drink",
+      "Group_124_sub0__esf_ClothUnder_Drink",
+      "Group_125_sub0__esf_ClothUnder_Drink",
+      "Group_125_sub1__esf_ClothUnder_DrinkFur",
+      "Group_126_sub0__esf_ClothUnder_Drink",
+      "Group_80_sub0__esf_Head00",
+      "Group_81_sub0__esf_Eye00",
+      "Group_82_sub0__esf_EyeShadow00",
+      "Group_83_sub0__esf_EyeTear00",
+      "Group_84_sub0__esf_EyeLash00",
+      "Group_85_sub0__esf_EyeBrow00",
+      "Group_85_sub1__esf_EyeBrow01",
+      "Group_86_sub0__esf_Teeth00",
+      "Group_87_sub0__esf_Head00",
+      "Group_22_sub0__esf_HairA_TailStrings",
+      "Group_22_sub1__esf_HairA_Knot",
+      "Group_22_sub2__esf_HairA_Tail",
+      "Group_22_sub3__esf_HairA_Head",
+      "Group_22_sub4__esf_HairA_Front",
+      "Group_23_sub0__esf_HairB_Head_NonPOD",
+      "Group_23_sub1__esf_HairB_Head",
+      "Group_30_sub0__esf_ClothUnder_Drink",
+      "Group_30_sub1__esf_ClothUnder_DrinkFur"
+    ]
+  },
+  "visconGroups": {
+    "standardBody": [
+      0,
+      20
+    ],
+    "alternateBody": [
+      21
+    ],
+    "tiedHair": [
+      22
+    ],
+    "looseHair": [
+      23
+    ],
+    "rightWaistGourd": [
+      24,
+      26
+    ],
+    "leftWaistGourd": [
+      124,
+      126
+    ],
+    "handGourds": [
+      25,
+      125
+    ],
+    "separateHandPropAtOriginInRestPose": [
+      30
+    ],
+    "face": [
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87
+    ]
+  },
+  "textures": {
+    "baseColorAlphaBakes": 43,
+    "tangentNormalBakes": 13,
+    "embeddedImages": 56,
+    "embeddedTextureBytes": 16986610,
+    "normalConvention": "+X,+Y,+Z tangent space; non-color data",
+    "inputs": [
+      {
+        "mesh": "Group_0_sub0__esf_ClothUnder_PantsStrings",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_0_Sub_0__esf_ClothUnder_PantsStrings-0.png",
+        "sha256": "9d251f03d6b41fe461283c3d171174ad1382c0dcf59945f6194153ee29b828e9",
+        "bytes": 322353,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_0_sub1__esf_ClothUnder_PantsStringsFur",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_0_Sub_1__esf_ClothUnder_PantsStringsFur-0.png",
+        "sha256": "94f75e3cdc85a3a6e8c08ce89f005c528b2a0aaf4a18cad74fc631af95ca75c0",
+        "bytes": 50271,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_0_sub2__esf_ClothUnder_Shoses",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_0_Sub_2__esf_ClothUnder_Shoses-0.png",
+        "sha256": "a77632271c4f4887dbd6a13478b2f7bc2e2e319c5b76d067e253d6f7d44b0f9e",
+        "bytes": 335069,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_0_sub2__esf_ClothUnder_Shoses",
+        "kind": "tangentNormal",
+        "source": ".local/sf6-cinematic/blender-normal-bakes/Group_0_Sub_2__esf_ClothUnder_Shoses-0-normal.png",
+        "sha256": "8a8e3ff80292e4ba66236080cb391bf9e425a67730e50992cefdec703ee7358f",
+        "bytes": 628239,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_0_sub3__esf_ClothUnder_Pants",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_0_Sub_3__esf_ClothUnder_Pants-0.png",
+        "sha256": "0ee7657bbf6c0d56b40af98c6a1cc88026fa8b932b78d0dc872f81041290bb29",
+        "bytes": 684554,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_0_sub3__esf_ClothUnder_Pants",
+        "kind": "tangentNormal",
+        "source": ".local/sf6-cinematic/blender-normal-bakes/Group_0_Sub_3__esf_ClothUnder_Pants-0-normal.png",
+        "sha256": "1929ac754eb83195224762df1794a478f01f923808f613caf7d1d5c4ba4e5bc6",
+        "bytes": 729266,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_0_sub4__esf_Body01",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_0_Sub_4__esf_Body01-0.png",
+        "sha256": "0a9d09ca9d622fec14106abe9ab31564cb7a6a34439457cade05c0d2c006ab60",
+        "bytes": 166325,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_0_sub4__esf_Body01",
+        "kind": "tangentNormal",
+        "source": ".local/sf6-cinematic/blender-normal-bakes/Group_0_Sub_4__esf_Body01-0-normal.png",
+        "sha256": "56943f163ddf1bfee59251613ebd379d684cbdd16f9ee219d4222dad432b9b57",
+        "bytes": 160703,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_20_sub0__esf_ClothTop_Main",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_20_Sub_0__esf_ClothTop_Main-0.png",
+        "sha256": "b78bfeca41e56d2f20a71f758c4f1b071926f75a90d757f69724911a54e9b5e5",
+        "bytes": 37035,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_20_sub0__esf_ClothTop_Main",
+        "kind": "tangentNormal",
+        "source": ".local/sf6-cinematic/blender-normal-bakes/Group_20_Sub_0__esf_ClothTop_Main-0-normal.png",
+        "sha256": "7d8a5b7985f283212e5f15b97737d3323e3d36c2e87aa4b66202e471f2546da1",
+        "bytes": 20800,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_20_sub1__esf_ClothTop_Strings",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_20_Sub_1__esf_ClothTop_Strings-0.png",
+        "sha256": "6272e4534d48afa7e7db05f84323d34d6af10760500e22b413b5384ed18739e5",
+        "bytes": 36181,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_20_sub2__esf_ClothTop_StringsFur",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_20_Sub_2__esf_ClothTop_StringsFur-0.png",
+        "sha256": "d0395aed9e7ba5f36f432854fd2b1240e91567b68216e645f49fe9302dd0048e",
+        "bytes": 31757,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_20_sub3__esf_ClothTop_Main_BS",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_20_Sub_3__esf_ClothTop_Main_BS-0.png",
+        "sha256": "ff00f1be947dbc51e1e7681f8267c63a67af070c2f05495b7390d27be9073f9f",
+        "bytes": 740779,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_20_sub3__esf_ClothTop_Main_BS",
+        "kind": "tangentNormal",
+        "source": ".local/sf6-cinematic/blender-normal-bakes/Group_20_Sub_3__esf_ClothTop_Main_BS-0-normal.png",
+        "sha256": "2bd8dcaaf4ef589d2bcefc42ac58efd7578ed0836ee76f59f741671f3f2614ca",
+        "bytes": 810440,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_20_sub4__esf_Body00",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_20_Sub_4__esf_Body00-0.png",
+        "sha256": "73ad0527ea6c0f8fa067b0d14577d4407b18b4e19a9014e23c8a6c5cad2d838e",
+        "bytes": 451686,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_20_sub4__esf_Body00",
+        "kind": "tangentNormal",
+        "source": ".local/sf6-cinematic/blender-normal-bakes/Group_20_Sub_4__esf_Body00-0-normal.png",
+        "sha256": "d4af2fc7b5931da3b2d48815c1adad3ad0fc064d97234a56d52fbce0f24effe5",
+        "bytes": 468335,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_21_sub0__esf_ClothTop_Main",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_21_Sub_0__esf_ClothTop_Main-0.png",
+        "sha256": "28dd80e45452a0a98742b0c554e25f0b2314844ea846fbaf4af4d0e011e053d8",
+        "bytes": 37047,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_21_sub1__esf_ClothTop_Strings",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_21_Sub_1__esf_ClothTop_Strings-0.png",
+        "sha256": "16866df195e2999f1f708c4d3c34e2452c862fe7c7977394f3cc12c8b8b6f60a",
+        "bytes": 34212,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_21_sub2__esf_ClothTop_StringsFur",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_21_Sub_2__esf_ClothTop_StringsFur-0.png",
+        "sha256": "31d314482a7f788a575b78ec9b1702f0e3bedac22bf977098bb672bc44ea52b7",
+        "bytes": 34668,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_21_sub3__esf_ClothTop_JipLine",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_21_Sub_3__esf_ClothTop_JipLine-0.png",
+        "sha256": "d1d7ece3c59329d26a18919c1c2f1d45c4f92b1d541d723d51bf5904cf04c28b",
+        "bytes": 29911,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_21_sub4__esf_ClothTop_Main_BS02",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_21_Sub_4__esf_ClothTop_Main_BS02-0.png",
+        "sha256": "b87aa80b22904672575779a19299aba40417f0cc37f57ace064f8eb51d004b7f",
+        "bytes": 753858,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_21_sub5__esf_Body00",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_21_Sub_5__esf_Body00-0.png",
+        "sha256": "43be842bcd7649a2776927a7a60214072868f09ae81607f1a83218d513087b39",
+        "bytes": 559611,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_24_sub0__esf_ClothUnder_DrinkFur",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_24_Sub_0__esf_ClothUnder_DrinkFur-0.png",
+        "sha256": "27ebc0166ee738150950615857104a1df5d8058a59666b2f0878847c441ca225",
+        "bytes": 34769,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_24_sub1__esf_ClothUnder_Drink",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_24_Sub_1__esf_ClothUnder_Drink-0.png",
+        "sha256": "c59961d723e52914232a487a42bae6a233c4b268e7d3093a6ba5c59869156a1c",
+        "bytes": 372720,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_25_sub0__esf_ClothUnder_Drink",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_25_Sub_0__esf_ClothUnder_Drink-0.png",
+        "sha256": "7039bcf25e49aeed05dbca3fd54c62f6d009ccb3d35564b15e32d5a736c98b38",
+        "bytes": 372589,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_25_sub1__esf_ClothUnder_DrinkFur",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_25_Sub_1__esf_ClothUnder_DrinkFur-0.png",
+        "sha256": "080efc3b25b1623ba30a1f6573d661ca1c5e772b675ce36cbce850d2b4f5be67",
+        "bytes": 34059,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_26_sub0__esf_ClothUnder_Drink",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_26_Sub_0__esf_ClothUnder_Drink-0.png",
+        "sha256": "083f81c582ee69b6ee220a0b2dc8897f6bc49fb3112265fe4af0b5ab23cd19be",
+        "bytes": 76751,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_124_sub0__esf_ClothUnder_Drink",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_124_Sub_0__esf_ClothUnder_Drink-0.png",
+        "sha256": "c0c40e08f27b9ccdf0d2ce12cc374cf84df293db67b4ab4785b5499380578139",
+        "bytes": 383262,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_125_sub0__esf_ClothUnder_Drink",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_125_Sub_0__esf_ClothUnder_Drink-0.png",
+        "sha256": "e1767ece53f877c0e6f22c9ac81f256c4c122d63a5932284df41dac00171e668",
+        "bytes": 373626,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_125_sub1__esf_ClothUnder_DrinkFur",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_125_Sub_1__esf_ClothUnder_DrinkFur-0.png",
+        "sha256": "377f512e22e6d8b3b1b206eae2bdeb9216c784a407d7827cab207271b4c22370",
+        "bytes": 34029,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_126_sub0__esf_ClothUnder_Drink",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_126_Sub_0__esf_ClothUnder_Drink-0.png",
+        "sha256": "b2b145cad2654b65fdf3ee6c87e4f5bf8aa20d706bbbbbd8b719c0d9bf833843",
+        "bytes": 76577,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_80_sub0__esf_Head00",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_80_Sub_0__esf_Head00-0.png",
+        "sha256": "35bd467e40b1c819622049bf90f66d487b8563f9cc3ad8c4ad38b9221acd4914",
+        "bytes": 1318737,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_80_sub0__esf_Head00",
+        "kind": "tangentNormal",
+        "source": ".local/sf6-cinematic/blender-normal-bakes/Group_80_Sub_0__esf_Head00-0-normal.png",
+        "sha256": "d1f789ef92018cf493d7dfe5cd6a0b266623eae5bd4f0e6208eb3cd3ac94ef8b",
+        "bytes": 1609363,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_81_sub0__esf_Eye00",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_81_Sub_0__esf_Eye00-0.png",
+        "sha256": "71b05e61cc05ce10dc386f236c68cbea06101574ad1158890d0bd3bbccbca821",
+        "bytes": 1228411,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_82_sub0__esf_EyeShadow00",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_82_Sub_0__esf_EyeShadow00-0.png",
+        "sha256": "609982e528c4a5b4e0c422b7d43f50ad46266b0bf44572fddcb234360fd51ca8",
+        "bytes": 138712,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_83_sub0__esf_EyeTear00",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_83_Sub_0__esf_EyeTear00-0.png",
+        "sha256": "a8cbedfcf46e0912615790d181d8e4588d0bb47e489e911b3774f4d76d18f51b",
+        "bytes": 19325,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_84_sub0__esf_EyeLash00",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_84_Sub_0__esf_EyeLash00-0.png",
+        "sha256": "56d73715544b641e677255751f21c0c698f6a2e27128cc820f2389e1c796352d",
+        "bytes": 19695,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_85_sub0__esf_EyeBrow00",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_85_Sub_0__esf_EyeBrow00-0.png",
+        "sha256": "42f5666b6da269c8e8dd5a1a7a0ea59c475c9222df335ca1e56f9e52d0e88c59",
+        "bytes": 24734,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_85_sub1__esf_EyeBrow01",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_85_Sub_1__esf_EyeBrow01-0.png",
+        "sha256": "9f2d374bdb0c11358a2c6de5315dca548d04dc6c9d7bd8ee874ceefae8bcad5e",
+        "bytes": 25682,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_86_sub0__esf_Teeth00",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_86_Sub_0__esf_Teeth00-0.png",
+        "sha256": "9b1a9426d48b037a7ea47d9ceed3837cfb48ce1be2f54370f3ff42b20556eeda",
+        "bytes": 289060,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_87_sub0__esf_Head00",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_87_Sub_0__esf_Head00-0.png",
+        "sha256": "94278aae559bc457bb34ea645b58dbaf10972b5c2b161b0bf308f513482cb82e",
+        "bytes": 29277,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_22_sub0__esf_HairA_TailStrings",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_22_Sub_0__esf_HairA_TailStrings-0.png",
+        "sha256": "8a5d847f7555eac2514f0ede74d9826ca2ec88040491cebb2cf4ee4b1279fd61",
+        "bytes": 27244,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_22_sub1__esf_HairA_Knot",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_22_Sub_1__esf_HairA_Knot-0.png",
+        "sha256": "fcc5a775727d74cd4b816542476d00dbbe860623246a6e336eac082d098b8257",
+        "bytes": 181584,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_22_sub2__esf_HairA_Tail",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_22_Sub_2__esf_HairA_Tail-0.png",
+        "sha256": "a133cca76fb4ccce08954db8aefba7ba4eb263f2fbc84bfc8c0cfb4a1f4dfd41",
+        "bytes": 138112,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_22_sub3__esf_HairA_Head",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_22_Sub_3__esf_HairA_Head-0.png",
+        "sha256": "86f19f5129bf9360e6856dbaf69b99d1c66958bd240add617451cae3381973a3",
+        "bytes": 305500,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_22_sub4__esf_HairA_Front",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_22_Sub_4__esf_HairA_Front-0.png",
+        "sha256": "9dcff5f6605d43a28842493f4b59ccd90652bcfdb89822c073a760da48260429",
+        "bytes": 140531,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_23_sub0__esf_HairB_Head_NonPOD",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_23_Sub_0__esf_HairB_Head_NonPOD-0.png",
+        "sha256": "14c2b08590419c36b760ac73f538527e2305a8bc4435b15c24a88009cf5579c6",
+        "bytes": 291717,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_23_sub1__esf_HairB_Head",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_23_Sub_1__esf_HairB_Head-0.png",
+        "sha256": "b2f9ac6232aa976d736a9f8b4a219e90b2ae0136469d05c5c9da6d01be23a09d",
+        "bytes": 38196,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_30_sub0__esf_ClothUnder_Drink",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_30_Sub_0__esf_ClothUnder_Drink-0.png",
+        "sha256": "a1e7287838847d33cbc31d5a57fe6d131c9da1a4f63ede94737f30263c79fcc4",
+        "bytes": 349092,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_30_sub1__esf_ClothUnder_DrinkFur",
+        "kind": "baseColorAlpha",
+        "source": ".local/sf6-cinematic/blender-baked/baked/Group_30_Sub_1__esf_ClothUnder_DrinkFur-0.png",
+        "sha256": "1867ce18ae9aae0143110c9d44c8d23a24e4110d34a73b19ebb7885ad2695a47",
+        "bytes": 35361,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_21_Sub_0__esf_ClothTop_Main",
+        "kind": "tangentNormal",
+        "cinematicV3": true,
+        "source": ".local/sf6-v3/normals/Group_21_Sub_0__esf_ClothTop_Main-normal.png",
+        "sha256": "d05efa0aa84a55c6082445a0de5ae5a4de5e37b293c64257e929c44f8f9dda7f",
+        "bytes": 21231,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_21_Sub_3__esf_ClothTop_JipLine",
+        "kind": "tangentNormal",
+        "cinematicV3": true,
+        "source": ".local/sf6-v3/normals/Group_21_Sub_3__esf_ClothTop_JipLine-normal.png",
+        "sha256": "a4252b895bc5250c6cf7246e94eb9b9b4a21919e74d1c153d6b367c95a80b575",
+        "bytes": 30520,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_21_Sub_4__esf_ClothTop_Main_BS02",
+        "kind": "tangentNormal",
+        "cinematicV3": true,
+        "source": ".local/sf6-v3/normals/Group_21_Sub_4__esf_ClothTop_Main_BS02-normal.png",
+        "sha256": "1d4580479bd20a569cf64d88992c140ddbe57baa9e95eedf6dcd0863074f4fc7",
+        "bytes": 789326,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_21_Sub_5__esf_Body00",
+        "kind": "tangentNormal",
+        "cinematicV3": true,
+        "source": ".local/sf6-v3/normals/Group_21_Sub_5__esf_Body00-normal.png",
+        "sha256": "cc9af3c1ef0a125f422e16e91f3edaad3e4a840cca5ab2695b7c244ba26be472",
+        "bytes": 585662,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_23_Sub_0__esf_HairB_Head_NonPOD",
+        "kind": "tangentNormal",
+        "cinematicV3": true,
+        "source": ".local/sf6-v3/normals/Group_23_Sub_0__esf_HairB_Head_NonPOD-normal.png",
+        "sha256": "69a115bfda4733477499fef44c2ab6ab7495f098fef9d3946be112697c7a4848",
+        "bytes": 427313,
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "mesh": "Group_23_Sub_1__esf_HairB_Head",
+        "kind": "tangentNormal",
+        "cinematicV3": true,
+        "source": ".local/sf6-v3/normals/Group_23_Sub_1__esf_HairB_Head-normal.png",
+        "sha256": "1ab26302b1457c3321fe438fba3d6689228c63294fff2525c44c7b572b919ea3",
+        "bytes": 40743,
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  "materialMapping": [
+    {
+      "mesh": "Group_0_sub0__esf_ClothUnder_PantsStrings",
+      "material": 0,
+      "sourceMaterial": "esf_ClothUnder_PantsStrings",
+      "alphaMode": "OPAQUE",
+      "baseColor": 0,
+      "normal": null
+    },
+    {
+      "mesh": "Group_0_sub1__esf_ClothUnder_PantsStringsFur",
+      "material": 1,
+      "sourceMaterial": "esf_ClothUnder_PantsStringsFur",
+      "alphaMode": "MASK",
+      "baseColor": 1,
+      "normal": null
+    },
+    {
+      "mesh": "Group_0_sub2__esf_ClothUnder_Shoses",
+      "material": 2,
+      "sourceMaterial": "esf_ClothUnder_Shoses",
+      "alphaMode": "OPAQUE",
+      "baseColor": 2,
+      "normal": 3
+    },
+    {
+      "mesh": "Group_0_sub3__esf_ClothUnder_Pants",
+      "material": 3,
+      "sourceMaterial": "esf_ClothUnder_Pants",
+      "alphaMode": "OPAQUE",
+      "baseColor": 4,
+      "normal": 5
+    },
+    {
+      "mesh": "Group_0_sub4__esf_Body01",
+      "material": 4,
+      "sourceMaterial": "esf_Body01",
+      "alphaMode": "OPAQUE",
+      "baseColor": 6,
+      "normal": 7
+    },
+    {
+      "mesh": "Group_20_sub0__esf_ClothTop_Main",
+      "material": 5,
+      "sourceMaterial": "esf_ClothTop_Main",
+      "alphaMode": "OPAQUE",
+      "baseColor": 8,
+      "normal": 9
+    },
+    {
+      "mesh": "Group_20_sub1__esf_ClothTop_Strings",
+      "material": 6,
+      "sourceMaterial": "esf_ClothTop_Strings",
+      "alphaMode": "OPAQUE",
+      "baseColor": 10,
+      "normal": null
+    },
+    {
+      "mesh": "Group_20_sub2__esf_ClothTop_StringsFur",
+      "material": 7,
+      "sourceMaterial": "esf_ClothTop_StringsFur",
+      "alphaMode": "MASK",
+      "baseColor": 11,
+      "normal": null
+    },
+    {
+      "mesh": "Group_20_sub3__esf_ClothTop_Main_BS",
+      "material": 8,
+      "sourceMaterial": "esf_ClothTop_Main_BS",
+      "alphaMode": "OPAQUE",
+      "baseColor": 12,
+      "normal": 13
+    },
+    {
+      "mesh": "Group_20_sub4__esf_Body00",
+      "material": 9,
+      "sourceMaterial": "esf_Body00",
+      "alphaMode": "OPAQUE",
+      "baseColor": 14,
+      "normal": 15
+    },
+    {
+      "mesh": "Group_21_sub0__esf_ClothTop_Main",
+      "material": 10,
+      "sourceMaterial": "esf_ClothTop_Main",
+      "alphaMode": "OPAQUE",
+      "baseColor": 16,
+      "normal": null
+    },
+    {
+      "mesh": "Group_21_sub1__esf_ClothTop_Strings",
+      "material": 11,
+      "sourceMaterial": "esf_ClothTop_Strings",
+      "alphaMode": "OPAQUE",
+      "baseColor": 17,
+      "normal": null
+    },
+    {
+      "mesh": "Group_21_sub2__esf_ClothTop_StringsFur",
+      "material": 12,
+      "sourceMaterial": "esf_ClothTop_StringsFur",
+      "alphaMode": "MASK",
+      "baseColor": 18,
+      "normal": null
+    },
+    {
+      "mesh": "Group_21_sub3__esf_ClothTop_JipLine",
+      "material": 13,
+      "sourceMaterial": "esf_ClothTop_JipLine",
+      "alphaMode": "MASK",
+      "baseColor": 19,
+      "normal": null
+    },
+    {
+      "mesh": "Group_21_sub4__esf_ClothTop_Main_BS02",
+      "material": 14,
+      "sourceMaterial": "esf_ClothTop_Main_BS02",
+      "alphaMode": "OPAQUE",
+      "baseColor": 20,
+      "normal": null
+    },
+    {
+      "mesh": "Group_21_sub5__esf_Body00",
+      "material": 15,
+      "sourceMaterial": "esf_Body00",
+      "alphaMode": "OPAQUE",
+      "baseColor": 21,
+      "normal": null
+    },
+    {
+      "mesh": "Group_24_sub0__esf_ClothUnder_DrinkFur",
+      "material": 16,
+      "sourceMaterial": "esf_ClothUnder_DrinkFur",
+      "alphaMode": "MASK",
+      "baseColor": 22,
+      "normal": null
+    },
+    {
+      "mesh": "Group_24_sub1__esf_ClothUnder_Drink",
+      "material": 17,
+      "sourceMaterial": "esf_ClothUnder_Drink",
+      "alphaMode": "OPAQUE",
+      "baseColor": 23,
+      "normal": null
+    },
+    {
+      "mesh": "Group_25_sub0__esf_ClothUnder_Drink",
+      "material": 18,
+      "sourceMaterial": "esf_ClothUnder_Drink",
+      "alphaMode": "OPAQUE",
+      "baseColor": 24,
+      "normal": null
+    },
+    {
+      "mesh": "Group_25_sub1__esf_ClothUnder_DrinkFur",
+      "material": 19,
+      "sourceMaterial": "esf_ClothUnder_DrinkFur",
+      "alphaMode": "MASK",
+      "baseColor": 25,
+      "normal": null
+    },
+    {
+      "mesh": "Group_26_sub0__esf_ClothUnder_Drink",
+      "material": 20,
+      "sourceMaterial": "esf_ClothUnder_Drink",
+      "alphaMode": "OPAQUE",
+      "baseColor": 26,
+      "normal": null
+    },
+    {
+      "mesh": "Group_124_sub0__esf_ClothUnder_Drink",
+      "material": 21,
+      "sourceMaterial": "esf_ClothUnder_Drink",
+      "alphaMode": "OPAQUE",
+      "baseColor": 27,
+      "normal": null
+    },
+    {
+      "mesh": "Group_125_sub0__esf_ClothUnder_Drink",
+      "material": 22,
+      "sourceMaterial": "esf_ClothUnder_Drink",
+      "alphaMode": "OPAQUE",
+      "baseColor": 28,
+      "normal": null
+    },
+    {
+      "mesh": "Group_125_sub1__esf_ClothUnder_DrinkFur",
+      "material": 23,
+      "sourceMaterial": "esf_ClothUnder_DrinkFur",
+      "alphaMode": "MASK",
+      "baseColor": 29,
+      "normal": null
+    },
+    {
+      "mesh": "Group_126_sub0__esf_ClothUnder_Drink",
+      "material": 24,
+      "sourceMaterial": "esf_ClothUnder_Drink",
+      "alphaMode": "OPAQUE",
+      "baseColor": 30,
+      "normal": null
+    },
+    {
+      "mesh": "Group_80_sub0__esf_Head00",
+      "material": 25,
+      "sourceMaterial": "esf_Head00",
+      "alphaMode": "OPAQUE",
+      "baseColor": 31,
+      "normal": 32
+    },
+    {
+      "mesh": "Group_81_sub0__esf_Eye00",
+      "material": 26,
+      "sourceMaterial": "esf_Eye00",
+      "alphaMode": "OPAQUE",
+      "baseColor": 33,
+      "normal": null
+    },
+    {
+      "mesh": "Group_82_sub0__esf_EyeShadow00",
+      "material": 27,
+      "sourceMaterial": "esf_EyeShadow00",
+      "alphaMode": "BLEND",
+      "baseColor": 34,
+      "normal": null
+    },
+    {
+      "mesh": "Group_83_sub0__esf_EyeTear00",
+      "material": 28,
+      "sourceMaterial": "esf_EyeTear00",
+      "alphaMode": "BLEND",
+      "baseColor": 35,
+      "normal": null
+    },
+    {
+      "mesh": "Group_84_sub0__esf_EyeLash00",
+      "material": 29,
+      "sourceMaterial": "esf_EyeLash00",
+      "alphaMode": "MASK",
+      "baseColor": 36,
+      "normal": null
+    },
+    {
+      "mesh": "Group_85_sub0__esf_EyeBrow00",
+      "material": 30,
+      "sourceMaterial": "esf_EyeBrow00",
+      "alphaMode": "MASK",
+      "baseColor": 37,
+      "normal": null
+    },
+    {
+      "mesh": "Group_85_sub1__esf_EyeBrow01",
+      "material": 31,
+      "sourceMaterial": "esf_EyeBrow01",
+      "alphaMode": "MASK",
+      "baseColor": 38,
+      "normal": null
+    },
+    {
+      "mesh": "Group_86_sub0__esf_Teeth00",
+      "material": 32,
+      "sourceMaterial": "esf_Teeth00",
+      "alphaMode": "OPAQUE",
+      "baseColor": 39,
+      "normal": null
+    },
+    {
+      "mesh": "Group_87_sub0__esf_Head00",
+      "material": 33,
+      "sourceMaterial": "esf_Head00",
+      "alphaMode": "OPAQUE",
+      "baseColor": 40,
+      "normal": null
+    },
+    {
+      "mesh": "Group_22_sub0__esf_HairA_TailStrings",
+      "material": 34,
+      "sourceMaterial": "esf_HairA_TailStrings",
+      "alphaMode": "OPAQUE",
+      "baseColor": 41,
+      "normal": null
+    },
+    {
+      "mesh": "Group_22_sub1__esf_HairA_Knot",
+      "material": 35,
+      "sourceMaterial": "esf_HairA_Knot",
+      "alphaMode": "MASK",
+      "baseColor": 42,
+      "normal": null
+    },
+    {
+      "mesh": "Group_22_sub2__esf_HairA_Tail",
+      "material": 36,
+      "sourceMaterial": "esf_HairA_Tail",
+      "alphaMode": "MASK",
+      "baseColor": 43,
+      "normal": null
+    },
+    {
+      "mesh": "Group_22_sub3__esf_HairA_Head",
+      "material": 37,
+      "sourceMaterial": "esf_HairA_Head",
+      "alphaMode": "MASK",
+      "baseColor": 44,
+      "normal": null
+    },
+    {
+      "mesh": "Group_22_sub4__esf_HairA_Front",
+      "material": 38,
+      "sourceMaterial": "esf_HairA_Front",
+      "alphaMode": "MASK",
+      "baseColor": 45,
+      "normal": null
+    },
+    {
+      "mesh": "Group_23_sub0__esf_HairB_Head_NonPOD",
+      "material": 39,
+      "sourceMaterial": "esf_HairB_Head_NonPOD",
+      "alphaMode": "MASK",
+      "baseColor": 46,
+      "normal": null
+    },
+    {
+      "mesh": "Group_23_sub1__esf_HairB_Head",
+      "material": 40,
+      "sourceMaterial": "esf_HairB_Head",
+      "alphaMode": "MASK",
+      "baseColor": 47,
+      "normal": null
+    },
+    {
+      "mesh": "Group_30_sub0__esf_ClothUnder_Drink",
+      "material": 41,
+      "sourceMaterial": "esf_ClothUnder_Drink",
+      "alphaMode": "OPAQUE",
+      "baseColor": 48,
+      "normal": null
+    },
+    {
+      "mesh": "Group_30_sub1__esf_ClothUnder_DrinkFur",
+      "material": 42,
+      "sourceMaterial": "esf_ClothUnder_DrinkFur",
+      "alphaMode": "MASK",
+      "baseColor": 49,
+      "normal": null
+    }
+  ],
+  "provenance": {
+    "installationVerification": "Complete PAK index and selected member offsets, packed hashes, decompression, and extracted hashes; no complete archive payload scan.",
+    "decoder": "Node v24.22.0 node:zlib inflateRawSync / zstdDecompressSync",
+    "packedBytesRead": 266096407,
+    "uniqueMembersVerified": 164,
+    "reaExtractedMembersVerified": 17,
+    "archives": [
+      {
+        "name": "re_chunk_000.pak",
+        "bytes": 89816525731,
+        "fileCount": 286816,
+        "indexSha256": "c0333667383dea138e392e5558696ebe0b6a795b153734e5c3e3a4869deffaac"
+      }
+    ],
+    "reports": [
+      {
+        "name": "extraction.json",
+        "sha256": "51c45888173bb54ac101ace18e956ecdb5ca84efd737bd7604666780ecc0c317"
+      },
+      {
+        "name": "texture-extraction.json",
+        "sha256": "d53d97a256eac815b1a3dc0afcab2732fd4352fbfe54a729a2b144c00f588107"
+      },
+      {
+        "name": "common-extraction.json",
+        "sha256": "dea4de692fe7684777c40520c028ce8816b9e0bee803e4553266f335c81b39ec"
+      },
+      {
+        "name": "conversion-provenance.json",
+        "sha256": "483cd8bb2df3c0d0d2efffd3c0cbb848ee8dddfe7fd9b204a344a7477b8996a5"
+      },
+      {
+        "name": "camera-audit.json",
+        "sha256": "2b10b1005f058ddeaded850cdf6737ec01c56c6254224843b746b1ee7d290351"
+      },
+      {
+        "name": "native-glb-validation.json",
+        "sha256": "6e83904e235dc48ce5ac4b473a51fd105059b626b47689405052e661387fe588"
+      }
+    ],
+    "tools": {
+      "blender": {
+        "version": "4.5.9 LTS",
+        "source": "https://download.blender.org/release/Blender4.5/blender-4.5.9-windows-x64.zip",
+        "archiveSha256": "41da973b9bf95bb312cbeff4d1982feb13259b43c821686b9bafea4dfe5477cf",
+        "workspacePath": ".local/sf6-cinematic-tools/blender-4.5.9-windows-x64/blender.exe"
+      },
+      "reme": {
+        "version": "0.73.1",
+        "repository": "https://github.com/TrueShadow01/REME-RE-Engine-Blender-Addon",
+        "commit": "5a9f2696ade139d35cdc4f332f6c275b6a557240",
+        "sourceArchiveSha256": "2ab4f61ebdbb4791316155df716bb617d376b53588b8a4e68a16fd1d068ef534",
+        "supportedSF6Formats": {
+          "mesh": "230110883",
+          "mdf2": "31",
+          "tex": "241101895",
+          "cmd": "user.2"
+        }
+      },
+      "contentExporter": {
+        "name": "REE-Content-Exporter",
+        "version": "v0.6.2",
+        "exporterCommit": "21bab5beb42e3c85a2611de0f3c2b137a0c40814",
+        "contentEditorCommit": "711c509affb0362c7af1e5343e8c57d32a1ad27d",
+        "reEngineLibCommit": "867daf1b0361a67e24bc82ef1391e01cc33d524a"
+      }
+    },
+    "sources": [
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00.mesh.230110883",
+        "archive": "re_chunk_000.pak",
+        "index": 3233,
+        "offset": 63773967699,
+        "packedBytes": 2218503,
+        "bytes": 4816848,
+        "packedSha256": "399edb2f31d20d4d23ff7fce5c1048dcd11b0fc9d7776f61dae83f67277c5126",
+        "sha256": "783e025d4b35e426c302fbc559d169af23193d718530e48f83c4e88e2b215897",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/esf021_001_cmd_000.user.2",
+        "archive": "re_chunk_000.pak",
+        "index": 28263,
+        "offset": 63762998747,
+        "packedBytes": 5596,
+        "bytes": 41124,
+        "packedSha256": "29a3b74ebd2819bc56a1a7b13393323c4136a884e896c2132338cdb151141241",
+        "sha256": "d1b1b352e06b6d4c76ca63277f3a657739bcb41cfcbfe3a7c1dd0fd1eabf92ca",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/30/esf021_000_30_v00.mdf2.31",
+        "archive": "re_chunk_000.pak",
+        "index": 28595,
+        "offset": 63765471426,
+        "packedBytes": 4382,
+        "bytes": 32264,
+        "packedSha256": "60180c0cdbc706e84b29c16e9a511e37a3ebba5391a4755313fcc75754604a76",
+        "sha256": "161bd245a1e4e82c660faf34f6e3aeae510878614dd2af52f1228ea491119961",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/animation/esf/esf021/v00/motionlist/superarts/esf021v00_superarts_02.motlist.653",
+        "archive": "re_chunk_000.pak",
+        "index": 45666,
+        "offset": 67880132968,
+        "packedBytes": 604108,
+        "bytes": 922064,
+        "packedSha256": "fa448c4f7fbd7932f7a1fb8dde25ca95ccb2dc87eadad3f396da3b53d68de38c",
+        "sha256": "5edb517bd7e042d182dfdc16b5a1ddce6bf659794dbecca3cd5c4b1f11388367",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/esf021_001_cmd_001.user.2",
+        "archive": "re_chunk_000.pak",
+        "index": 72460,
+        "offset": 63763004343,
+        "packedBytes": 5684,
+        "bytes": 39936,
+        "packedSha256": "226a025674ad162964027dbf9d18792c25ad6004fd6ff4b865764600b8a2427f",
+        "sha256": "3979f492033082861223eb03a85bd30192518774289a4b72d3762de7b64fe81f",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/10/esf021_000_10_v00.mdf2.31",
+        "archive": "re_chunk_000.pak",
+        "index": 80882,
+        "offset": 67869742712,
+        "packedBytes": 172,
+        "bytes": 348,
+        "packedSha256": "14317ce1ca3ac6eb411a4dc52542f27f6e9b603f57ac78c07ac4482f4740ba4f",
+        "sha256": "a68cb080f0042e6c1ac64c73da5959032bd59217ef94be9621cee1c978c15df8",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01.mesh.230110883",
+        "archive": "re_chunk_000.pak",
+        "index": 101196,
+        "offset": 63780830277,
+        "packedBytes": 13943638,
+        "bytes": 45827664,
+        "packedSha256": "20d788f14e095610ed45b470376a267168163eef039d6d79443dcce7717dd028",
+        "sha256": "1627e8eecedf93ab1cce40d233ba1b1af244a431eec9c0d7be1212916cdbab81",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_v00.mdf2.31",
+        "archive": "re_chunk_000.pak",
+        "index": 134026,
+        "offset": 63806311530,
+        "packedBytes": 8669,
+        "bytes": 255254,
+        "packedSha256": "7d7d87f6af3936eb86cd4b1aab3415095aa2a9387a42244bd7a505724b2f2c0d",
+        "sha256": "cce0e3745d375a9750358db66960bddc38cc73f3ae105847928a6d88f8b3320e",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/animation/esf/esf021/v00/motionlist/facial/esf021v00_superarts_02.motlist.653",
+        "archive": "re_chunk_000.pak",
+        "index": 136057,
+        "offset": 66887787966,
+        "packedBytes": 145674,
+        "bytes": 1505032,
+        "packedSha256": "2e8f07c6091afca11e991372bf15bb41e41e7f55db477226e73d9a4e4b2636e4",
+        "sha256": "ff92542951f2af3a35d2bcfe38375527a8a098357d8c23007022ac57640ae787",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/10/esf021_000_10.mesh.230110883",
+        "archive": "re_chunk_000.pak",
+        "index": 139397,
+        "offset": 67868455363,
+        "packedBytes": 1287349,
+        "bytes": 3483680,
+        "packedSha256": "6fb6e529f6d0dffad07eec44f4d3707db1abe4937aae0f73058d46b1abf22b48",
+        "sha256": "05f070dd16473945fc9ad1a49ed95948233abd774d93a0be931b99e0208fd591",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_v00.mdf2.31",
+        "archive": "re_chunk_000.pak",
+        "index": 139688,
+        "offset": 63780787009,
+        "packedBytes": 7728,
+        "bytes": 69334,
+        "packedSha256": "8d8f8f5bb0d515cf6674237bd60d5c5165d6343981c1908c9df263eb333e22cb",
+        "sha256": "40e3a79e1ff0069c9def8ee9127d13fbe9fbea3a69c6a783bc591f824fe6c18f",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/animation/esf/esf021/v00/motionlist/superarts/esf021v00_superarts_02.mcamlist.22",
+        "archive": "re_chunk_000.pak",
+        "index": 170167,
+        "offset": 67884616293,
+        "packedBytes": 22759,
+        "bytes": 38056,
+        "packedSha256": "6bc2ef5b1c685e62ce1d00ffafd06a765027f4370062d7c3225dae896ad671dd",
+        "sha256": "09fab89ae5c4d1e193d6924f732a1f3651c3bf65ff9d0f6b843bdfe4e1404bff",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/animation/esf/esf021/v00/motionlist/facial/esf021v00_superarts_02_en.motlist.653",
+        "archive": "re_chunk_000.pak",
+        "index": 177475,
+        "offset": 66887933640,
+        "packedBytes": 160241,
+        "bytes": 1570616,
+        "packedSha256": "f63e4bc9e09e66c428463c56954deace55ed9b845e974126f9fa665b89131246",
+        "sha256": "c21beb830dd48852034a16afc51a87367b9f7e90d66558f8082b78c16a00fe65",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/30/esf021_000_30.mesh.230110883",
+        "archive": "re_chunk_000.pak",
+        "index": 186576,
+        "offset": 63764556005,
+        "packedBytes": 110703,
+        "bytes": 282432,
+        "packedSha256": "6c8247b11c2e004483ead9103fe8f88602deffeb1fcbde02cf43f75a3fe30112",
+        "sha256": "d489261e195092d1c6865d3e344aa493a08392b9ebaf6fde2bde3ccad6c9479f",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/animation/esf/esf021/v00/esf021v00_motioncamerabank.mcambank.3",
+        "archive": "re_chunk_000.pak",
+        "index": 209654,
+        "offset": 67884639052,
+        "packedBytes": 214,
+        "bytes": 1164,
+        "packedSha256": "30c9f30c98d69e29ac5abd1add703c2a2f755bf05e7c742331ea5791f8e7227d",
+        "sha256": "89eaac8e3ae784d7ae51ab75e30eb9b5b291f80490c332a3f658d24e6e7703a4",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/02/esf021_000_02.mesh.230110883",
+        "archive": "re_chunk_000.pak",
+        "index": 212937,
+        "offset": 63765480155,
+        "packedBytes": 5944531,
+        "bytes": 15510864,
+        "packedSha256": "bad5eaf1f5fb8259037932ab1a1043e4f2564effe546f8f23020f83792b3fc87",
+        "sha256": "286aa868126c0496934cb4389b3499c87a00d8fb0052f8293ed7dcd83485963d",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/02/esf021_000_02_v00.mdf2.31",
+        "archive": "re_chunk_000.pak",
+        "index": 226030,
+        "offset": 63773960517,
+        "packedBytes": 7182,
+        "bytes": 73018,
+        "packedSha256": "2220f4a3ddf8b8c57c02fa7c8de97b9c61e6d2434a41f3b90eb17d7ece58afc9",
+        "sha256": "f08cd10dbc3075c89e8b0789edb5b60706d85d7a3819993088463e99ebba4a3e",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": true
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/00/esf021_000_00_eyeshadow_alba.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 1763,
+        "offset": 6606532680,
+        "packedBytes": 46503,
+        "bytes": 349832,
+        "packedSha256": "6382de6b3604952a28abf485c40588cf7ddd24c72abfe9c07e3e80fdbe775301",
+        "sha256": "10a0f5574ac92e08fffadcc5d71be6a17956c874e1fbf415e2040bccc71d1fd3",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/02/esf021_000_02_hairb_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 2070,
+        "offset": 6557967610,
+        "packedBytes": 1391325,
+        "bytes": 5594808,
+        "packedSha256": "06ce28aa6604be1bf5db4ec793388133d47fc6b2477a1025d2ca264d180662b2",
+        "sha256": "a550dece152bc7b2401c883d5d04bd19b5ded4f7a5a1b191c1ff18089db8aff6",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/02/esf021_000_02_haira_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 2135,
+        "offset": 6544108976,
+        "packedBytes": 1910797,
+        "bytes": 5594808,
+        "packedSha256": "fb5a045d86b1226550d86dd07f81c8ff8551bb4da1b600580cccb929ade0121f",
+        "sha256": "2287b42affc34ddd7f5058d43d85295759ada4e3516c74c539ce89b219b35760",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/01/esf021_000_01_body_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 7101,
+        "offset": 6709332708,
+        "packedBytes": 14886089,
+        "bytes": 22372040,
+        "packedSha256": "3bdf89c3b9b24aa20eb53b8e7b7b1706992f639ab460c09762f3cabb41d20d90",
+        "sha256": "44487af12cf9346efce4488906254025e3b4f658be85b496ff3bf30d903ba974",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clotha_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 8764,
+        "offset": 63797012817,
+        "packedBytes": 284208,
+        "bytes": 1400488,
+        "packedSha256": "2936c259fa9ee4d74243236c1709bd2795f325cd7cc207018b5ac5de98cc3f55",
+        "sha256": "2836e280eac0091fb232884bf615d1a1e2daeaaa4f689b4cc0971c341b18e424",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_head_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 9206,
+        "offset": 63777515718,
+        "packedBytes": 1138926,
+        "bytes": 1400488,
+        "packedSha256": "bbb68800df2700fc6607d369d68c2c5ec2e0ec7a38c976d196932a3a3ebba98a",
+        "sha256": "a48759bae5a2cf4930836cc7cc14fc17d7f49b7a7b0e002e8de8f2aca972e3ed",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clothb_dmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 10979,
+        "offset": 63801719953,
+        "packedBytes": 12387,
+        "bytes": 351896,
+        "packedSha256": "f53d1f632ec70798ccb472f01e7f92ef626a8cf647ec0591a78ac19585eff5f0",
+        "sha256": "305411f1e412b58ae3dbe9247edef34734fa985f7fb4b80565f415b97608088e",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/02/esf021_000_02_haira_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 12782,
+        "offset": 6546019773,
+        "packedBytes": 3139914,
+        "bytes": 5594808,
+        "packedSha256": "7049264b4c4e36f80395b2c26057fd699221e7fab18b2f8a8c7bf947327f21fb",
+        "sha256": "688ae48ed84b49cb53686de0b2ac850709b3135f90143eaae151940e33e39e0e",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clotha_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 18279,
+        "offset": 6633436113,
+        "packedBytes": 40920,
+        "bytes": 5594808,
+        "packedSha256": "f55ff63614e5ef050d372f6e1ef1bd242a012bb05b65825296485567a536ea2a",
+        "sha256": "ce363fa7b0c060496b09681e7a3143456aa665c552ebc573481d01429329b15f",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_pants_cwmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 26103,
+        "offset": 63803095048,
+        "packedBytes": 114,
+        "bytes": 89736,
+        "packedSha256": "c4a9767bc6596b9c60297f40984826b6143d5a26a022b2ec24a4a2fe400a6c2c",
+        "sha256": "a52c5d002291cad86ffb48ede1a9316f2f297749bec238db22abaaa9d53cc41a",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clotha_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 27290,
+        "offset": 6633477033,
+        "packedBytes": 1263844,
+        "bytes": 22372040,
+        "packedSha256": "7194ad6e44c19bd1bf19ba8a2dbe21b2a5b73e6e4b433f5520ff48e5d2a7eced",
+        "sha256": "814825d5520d8b4c65ce0489ea78f987f8d94cf2dc8310be5f15578b6a0783c7",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clotha_dmgmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 29798,
+        "offset": 6634740877,
+        "packedBytes": 10629516,
+        "bytes": 22372040,
+        "packedSha256": "7c3f1c3b3e4df5142042b8dbe721a352b10f65b9339ef5ed3348347bafc5083f",
+        "sha256": "e6079c224dcbe4c6ded371b7bb646c5e0d260e32c3a644a942096d59968d76f5",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/02/esf021_000_02_hairb_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 30123,
+        "offset": 63773003528,
+        "packedBytes": 217892,
+        "bytes": 351896,
+        "packedSha256": "2e33c989326216e06a2039e1aff9675646b0a24880088b01d94aac294f06c99e",
+        "sha256": "bd5949c81362d880be66d699d8b13417788ef3cbe3e324266bafe0ab9affea3d",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clothb_dmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 31103,
+        "offset": 6686456242,
+        "packedBytes": 40792,
+        "bytes": 5594808,
+        "packedSha256": "f467409f0682014ebb088f6dcb3aec4f36301ce19311d035e1e17a7226ea6585",
+        "sha256": "61e2b42390915c12018cfc6d2f10622db55f7e943581160a944de1eb51bdeb84",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/02/esf021_000_02_haira_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 33510,
+        "offset": 63771424686,
+        "packedBytes": 232619,
+        "bytes": 351896,
+        "packedSha256": "e7ba8d00caacc9ac6d4ad35ef0177ffdb9dd9eb880a5158de108292e85887e66",
+        "sha256": "c5908edc00b818265f552fc5e4c2fd12d56f00624679df23d15dffe5a2b3bdcb",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/30/esf021_000_30_hyotanset_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 34102,
+        "offset": 6541398391,
+        "packedBytes": 20566,
+        "bytes": 5594808,
+        "packedSha256": "034f15485316300628c5585be08beb8848c8390f3439e0a441d9f3efe9328754",
+        "sha256": "988d10d42d2fd93c0c07912b98edc87159761ec5fdef8e8239d4370b252d36cd",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_topb_cwmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 34870,
+        "offset": 6741936766,
+        "packedBytes": 32134,
+        "bytes": 1400488,
+        "packedSha256": "d2ce2856106b3c3f7ea1fec7b8e30e20b90d0c2314064062cf8598e2006c5ed4",
+        "sha256": "d8b1117e696b43462d8c437eef68970304e6bb9f4fbe4e4b108a172340a068dd",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/00/esf021_000_00_head_2_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 36738,
+        "offset": 6605284387,
+        "packedBytes": 737878,
+        "bytes": 5594808,
+        "packedSha256": "fe7ea77f0d67fed0513daf6b7d207caaf01d4faf860ddf91261ebc8e38a16920",
+        "sha256": "c0e7682c2d31c1da3a7325b34f59ffe37012796feb26fc3c528872df9937772b",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clothb_blendd_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 38149,
+        "offset": 6699339096,
+        "packedBytes": 4298816,
+        "bytes": 5594808,
+        "packedSha256": "8d9b70119b195992ab405492116a281fbd8631a5897b98bcd9be1dde215ee7a2",
+        "sha256": "ec45af06d18f95ebbb9bd88ed2a1fc7e3ead982fda942edadd920a90bae34e75",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clotha_blendc_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 39657,
+        "offset": 6734325781,
+        "packedBytes": 3792238,
+        "bytes": 5594808,
+        "packedSha256": "b6909e3cdd81bb75f0b35c490e97873951d2e50a263b049929cef9b8046edf19",
+        "sha256": "3b488d3a2ef31c5d0cbdc752113623cb8b363b5382e1d75d34ee588708bd21d4",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clothb_blendc_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 39814,
+        "offset": 63802484245,
+        "packedBytes": 304706,
+        "bytes": 351896,
+        "packedSha256": "3d47a7cdde2da3f1fd8b41cda15a941fa533b52004fb626e11ac39fcce651020",
+        "sha256": "96ad548d8cdc8bfa006b2ad79eaa7e44c34f64fa3bdc213e47a550cb82ce1671",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clotha_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 49170,
+        "offset": 6606579183,
+        "packedBytes": 10609233,
+        "bytes": 22372040,
+        "packedSha256": "718a7905d65a07769044214c206854c31dc706d17e8002eda97f80656a104b1e",
+        "sha256": "24d1c3c4cd8a277d0393e021f2441907fc4750c491640be99f118f658c685f46",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/00/esf021_000_00_head_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 57424,
+        "offset": 6603292827,
+        "packedBytes": 750128,
+        "bytes": 5594808,
+        "packedSha256": "01cb590e8e8420e4a52aa12b94c0e50f9c97756823d9c2687c0a565c480a8bd0",
+        "sha256": "f9ef89bb4f0426b53961ccee1ea6b9ca339823739f378a52ed11c200afe0abe3",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/01/esf021_000_01_body_sa_blendd_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 59743,
+        "offset": 63804989769,
+        "packedBytes": 247847,
+        "bytes": 351896,
+        "packedSha256": "c83e044b5f49d40fd6678d94bcbcf7278a42311d21dbd43b77945f68e9ac40fc",
+        "sha256": "8b08bd2917362ad80c4c2cb38048becd82484103f3ec8a88c25e9b470d767115",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/01/esf021_000_01_bodydetail_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 67196,
+        "offset": 6269060325,
+        "packedBytes": 4276583,
+        "bytes": 5594808,
+        "packedSha256": "aa4d9bd48364481b17d0e0a2ee951eccb8f62cd54753b8f6ee49df30865dfe30",
+        "sha256": "b9cef6af7f1d44193e7f45a15b4d63e9c45c39708ff4b292e5e1bf7cbe685e2b",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/01/esf021_000_01_body_2_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 67527,
+        "offset": 63804659096,
+        "packedBytes": 47109,
+        "bytes": 351896,
+        "packedSha256": "3aed9c1c2796a5d1e46482e6740902556f9d3d954df6de71e09b36c377f53648",
+        "sha256": "8acc2bce185da9ead377bfd66dc25b265a5057c228e678361937549ec7d70bce",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/02/esf021_000_02_haira_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 69360,
+        "offset": 6549159687,
+        "packedBytes": 3967522,
+        "bytes": 22020184,
+        "packedSha256": "a3cf022a41beef731c04db24c4183c7d82803695ca3bc8dfaa83670d1c3a74dc",
+        "sha256": "8c099829e969ed2f33b3ba005f0d43160f13bef56b2e31d8c3367708a2e6965a",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clothb_blend_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 75506,
+        "offset": 63801732340,
+        "packedBytes": 140152,
+        "bytes": 1400488,
+        "packedSha256": "f2aa1491051f1e9e9393edb784b1e2a086c7f41d04de881edd3495fa6ed0dec6",
+        "sha256": "68df0bca61c0cc4e0cf1ba1e8c5a28dc98f8f12645da0d968b2b992f0466f80e",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clothb_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 79043,
+        "offset": 6675686420,
+        "packedBytes": 743115,
+        "bytes": 22372040,
+        "packedSha256": "7964045170b9784741b9ad554b6da7a06015b734362cb6625a87b10770f80c7b",
+        "sha256": "2db7b0acae396f000d38922c0e150a8573680923744d4da3a74d58edbed1567b",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/00/esf021_000_00_eye_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 80411,
+        "offset": 6569140305,
+        "packedBytes": 904075,
+        "bytes": 1400488,
+        "packedSha256": "430cf18dc55f17e4ae417498b98ff871b29546e3908c8d574a540e4f4520948e",
+        "sha256": "f34e35302ec06461095ee4fbc6dcd1552aff420d631f609d5e263146be365838",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_facialblend.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 82654,
+        "offset": 63780735609,
+        "packedBytes": 47397,
+        "bytes": 175752,
+        "packedSha256": "dd031c0fcac8a5ecfeb4cd1d726ec557aeebed0adf1faafffac6c06563ee13de",
+        "sha256": "9d9ba44196e5246d913403b698bf57681c03cf4157b8099cb01702462693f461",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_head_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 90857,
+        "offset": 63776248155,
+        "packedBytes": 1267563,
+        "bytes": 1400488,
+        "packedSha256": "6caf8aa881550621881b95af411390e4f7046e2841bd8c2fb717149dc9389385",
+        "sha256": "53d6b423de14a070be02b2621082f6e139513b7d2c9d51115cfba065d2534336",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clotha_blendb_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 92796,
+        "offset": 63805453942,
+        "packedBytes": 282876,
+        "bytes": 351896,
+        "packedSha256": "29a806636df4ae911e82d2b2c8518a201cbd450257c6e1307e4db970ca401684",
+        "sha256": "d68a570061463f71018593ad90a426d61725a671de68215e01b41a28b7d4645e",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clothb_blendd_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 95452,
+        "offset": 63802788951,
+        "packedBytes": 306097,
+        "bytes": 351896,
+        "packedSha256": "fe9e1e77b395e813e738ce7b29e2fe48a96b87839fc378bd4b45192b82381fb8",
+        "sha256": "7b9dbf6ffaf7fc6e45d43c54a8c68bbc51ec397f7b9807edf5ce0da4e4421957",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_dm_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 95885,
+        "offset": 63779145097,
+        "packedBytes": 255329,
+        "bytes": 1400488,
+        "packedSha256": "4b892ac8dcc49151d0b78c6063725664118729f025ca3a75f89d087f2674ea1a",
+        "sha256": "035ca8f1613e6e47d444b9a095d60956b63e94d1f93cd34d6ffb0d50c8f6b2c9",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clothb_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 98982,
+        "offset": 63798569398,
+        "packedBytes": 830626,
+        "bytes": 1400488,
+        "packedSha256": "fca9bb6c6cc092e6fb9111c0a58e2d1a800da3ef690ff7194d6a4449b0906beb",
+        "sha256": "92c132371dc8ba405c4539b648488bf90701f86add97778db662dcb35113ad3b",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clotha_dmgmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 100017,
+        "offset": 63797297025,
+        "packedBytes": 980937,
+        "bytes": 1400488,
+        "packedSha256": "e619641aac1ea2855af4f19cbe39a7f1a7307d6be83c58fdf87f7c00bac03b83",
+        "sha256": "bbbdf773e1ca5e6ff3973acb6a934fb8dcf44e5c2e0d5cf040098fadeb29ddbd",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_eyeshadow_alba.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 100388,
+        "offset": 63780783006,
+        "packedBytes": 3887,
+        "bytes": 22120,
+        "packedSha256": "a2fad95b80063500158a2ae56c76186af774562fdaa6be2c8d0055718df615b5",
+        "sha256": "6bb67de2f8ffb71b0329f44d8b6273b1428caa3b77eaa697db4a3446fcb20821",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/02/esf021_000_02_haira_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 100566,
+        "offset": 63771909229,
+        "packedBytes": 309631,
+        "bytes": 1048632,
+        "packedSha256": "77f8ecf057820e330fd030f26a024ea82e4aa766843ebf328e68dc81ebd10edd",
+        "sha256": "dba1f2a99469200f8669ac373dfa56156fc4a0599c931f0b44c2c50eade09218",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_eye_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 101206,
+        "offset": 63776186202,
+        "packedBytes": 34258,
+        "bytes": 48776,
+        "packedSha256": "7a10e33f7b5e4e2736d3ab9e2e3ec6a7dc38b850b673f13fa3bbc85304c7c4c1",
+        "sha256": "4d49670bbf98f5a54861ee4f698dfd861e51bb7f784b210fa82aaa8ecb178a4e",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/02/esf021_000_02_haira_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 101859,
+        "offset": 6557966239,
+        "packedBytes": 1371,
+        "bytes": 5594808,
+        "packedSha256": "c1dc294435f8e68fe14af0ea367b4469046ede854af7df76059c84e06769f137",
+        "sha256": "9d7e505f0a8a19cd95fd87e598beb518beea843267046d995a1db0691abd6b9d",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/00/esf021_000_00_eye_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 106531,
+        "offset": 6568694149,
+        "packedBytes": 446156,
+        "bytes": 704168,
+        "packedSha256": "81bfdcd5e05a032793c86eb193acab1dab139dd4377474717a3e90f0051120e8",
+        "sha256": "36a10586c8f918ce0e3e0a5c1b58021b11116e189aed890b76ad4db9acfaf657",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_cube.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 109871,
+        "offset": 63778983841,
+        "packedBytes": 161256,
+        "bytes": 535048,
+        "packedSha256": "83d9931c04366c7255f878f6ba6f8dee4fa234f957c252203388ec483eaf1169",
+        "sha256": "384de31c179fe6a884c4790d7e0318196ef05985eebcf132ce8f4d686d394771",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/02/esf021_000_02_hairb_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 112445,
+        "offset": 6559358935,
+        "packedBytes": 2732757,
+        "bytes": 5594808,
+        "packedSha256": "c211ca49f228928f647d178c27e4bb7328e6ca416ce5876d2f7494c2dc6b0d2c",
+        "sha256": "8da8b90ff9022c727b6b5e57fa7ea7faa07484510b43b3d73cfdfc685b8c67c5",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clotha_blendb_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 120283,
+        "offset": 6730538967,
+        "packedBytes": 3786814,
+        "bytes": 5594808,
+        "packedSha256": "c8f5d48394ffbb2fa0adf55222543bdc244f6eebcded0e287383a1aad42dca2b",
+        "sha256": "141e7e04d37afcc4979ab74778b7e51e1713b5811b33f6064813e4e14bba75e9",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clotha_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 120716,
+        "offset": 6617188416,
+        "packedBytes": 16247697,
+        "bytes": 22372040,
+        "packedSha256": "54651eaee62e34e5b3e998703f860468d1bcd28e67671d49f09e3dfba90766af",
+        "sha256": "fe0a995a329271ea78bbca750f00c91c8e62eedf32b2522ea4ae88f98bc1987f",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clothb_dmgmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 123939,
+        "offset": 63800862635,
+        "packedBytes": 857318,
+        "bytes": 1400488,
+        "packedSha256": "fff4ea02952039a85910b8ed29917a01f20f5a8ca55f490dc84af01d50e8ed4a",
+        "sha256": "aa86100833753a709de99e7541b629daa94efd1ba6ed4317ff9f45f3f2fb407f",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/01/esf021_000_01_dm_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 125069,
+        "offset": 65560244163,
+        "packedBytes": 1989381,
+        "bytes": 5594808,
+        "packedSha256": "4ca12f36aa7d8095eac032c2d2359c6d42fbe94c3da2a92c2bad9197142f5f6b",
+        "sha256": "01485671decf64822cb10f9c73936effe22fe6ab6eb6b829d9b2e3065521038b",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/02/esf021_000_02_haira_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 128708,
+        "offset": 63772829839,
+        "packedBytes": 635,
+        "bytes": 351896,
+        "packedSha256": "f07235098eea063c55f273663a33b948536014ce9eb812363843c1ce6bd14227",
+        "sha256": "b7d2d031a60af1fa07fa690e96b38f55d243fa134bed588189e268abe45807a8",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/30/esf021_000_30_hyotanset_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 129345,
+        "offset": 6537328560,
+        "packedBytes": 3999724,
+        "bytes": 5594808,
+        "packedSha256": "a4836ef7337d48e8231e1bc35948fd6eeef68647f1d110e414287f2e5fde89a0",
+        "sha256": "36782102ccdb1ec0b6056475b6d88b2d7579e46d08c364c99418d1e404e162e5",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clotha_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 131269,
+        "offset": 63795786604,
+        "packedBytes": 1217513,
+        "bytes": 1400488,
+        "packedSha256": "86e669442235e344e092aa11d5b3f0d73f0c5d60c092b13fb068b4439cfeabdf",
+        "sha256": "c5dd17d483400a46e8cabd167cb4b8f874d1a63baaf3c02e9ad260da094da30a",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/01/esf021_000_01_body_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 135972,
+        "offset": 6724218797,
+        "packedBytes": 97616,
+        "bytes": 5594808,
+        "packedSha256": "054f051ad752313dca0db784f03341d7b607d61c33d7d7a9c891be751ac9432e",
+        "sha256": "0d4643bfe3cec1eb08891a13fd246935dd072aa380e16a8a7d3294a24cfd47f6",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/30/esf021_000_30_hyotanset_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 136093,
+        "offset": 6534449542,
+        "packedBytes": 2879018,
+        "bytes": 5594808,
+        "packedSha256": "b7ba2b88d5be05a38b30c0cf581c7bb86434a7af6747a330c8377d3e98447425",
+        "sha256": "19d549b6b97e31c159afe15075223410d80ae5de868b1a5c24083b9350899e15",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/01/esf021_000_01_body_sa_blendd_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 137201,
+        "offset": 6727554512,
+        "packedBytes": 2984455,
+        "bytes": 5594808,
+        "packedSha256": "5927b8bb348831f053aaaccce5f9d99437028752dae55368cd9e05402d915ebc",
+        "sha256": "d58fcb36f34090d58cdb836ff18542b3930beab5a22cd2469c0b254ce77e2f79",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_topa_cwmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 138368,
+        "offset": 6741904632,
+        "packedBytes": 32134,
+        "bytes": 1400488,
+        "packedSha256": "d2ce2856106b3c3f7ea1fec7b8e30e20b90d0c2314064062cf8598e2006c5ed4",
+        "sha256": "d8b1117e696b43462d8c437eef68970304e6bb9f4fbe4e4b108a172340a068dd",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/01/esf021_000_01_body_sa_blenda_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 139725,
+        "offset": 6724574948,
+        "packedBytes": 2979564,
+        "bytes": 5594808,
+        "packedSha256": "b5d20d798a6d2ce3c002219270c4670c2326bd44e24e9a3c69373c50af7cf7bf",
+        "sha256": "bd5b1c188b7c934078cb7ee5996158a34322486a1d9d3af4ddc6c34c007d7b8f",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/30/esf021_000_30_hyotanset_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 141141,
+        "offset": 63764920445,
+        "packedBytes": 292991,
+        "bytes": 351896,
+        "packedSha256": "6e1c0879a96b5f6148f0c49070a3b6747be2262f034bf009504ac5fc0624d058",
+        "sha256": "322634a4263c15f15236a5f35187947233e41d28a4ad2192f454e7db22572e5e",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_pants_cwmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 147691,
+        "offset": 6703637912,
+        "packedBytes": 234,
+        "bytes": 1400488,
+        "packedSha256": "cfb349e39877a859253660a022f5d7c5411c155191ba06d0586598f1dfffef3c",
+        "sha256": "96f2c7117847cc201f68aa43464513f1b09e12192336d15973415c31e514be5c",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/02/esf021_000_02_haira_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 149307,
+        "offset": 63771657305,
+        "packedBytes": 251924,
+        "bytes": 351896,
+        "packedSha256": "b8d2ed21dc201a15d6d83de0fdd12642bce618cef787528109bb86cf5691a3b3",
+        "sha256": "cecd76a424bbc462fca32813c66735210602540043ecdf4f42434b3e5e9b23ab",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/30/esf021_000_30_hyotanset_dmgmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 150372,
+        "offset": 63765229945,
+        "packedBytes": 236272,
+        "bytes": 351896,
+        "packedSha256": "fc7ffb73817f7e4439170cf617425ffbb2c64499e97e0d0ff0d886f8ced01c50",
+        "sha256": "89dffca804c2a252a0024127cd0bc4a62409af0d3eb708b5c687e129b831a01b",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_topb_cwmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 154383,
+        "offset": 63806307878,
+        "packedBytes": 3652,
+        "bytes": 89736,
+        "packedSha256": "4540622b8354100c4eded5322145950ae96e57e979932594b424393632c3d889",
+        "sha256": "a8d53d70e2da7c278bacd47f9f186902db39426b80e7400942248abe04f1ef6d",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/02/esf021_000_02_hairb_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 155428,
+        "offset": 63772830474,
+        "packedBytes": 173054,
+        "bytes": 351896,
+        "packedSha256": "2e04ff6665a27d0f55b7d6de5bffec7ffb869413326f338e3b1ffd64e5562819",
+        "sha256": "0a98f992ebfc90cf6dd9b5b1a5873e747891f32e405cb1202dc9c28325367727",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clothb_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 156039,
+        "offset": 63800674991,
+        "packedBytes": 8919,
+        "bytes": 351896,
+        "packedSha256": "21ffc2dd1f89575ffd870477ef34281ca668c2e2b3c5ed5cd9098b987b3256e7",
+        "sha256": "3e748813a9894e1d2acf2d7e7c0384b034dae6f818174013507e43856f0ff501",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clothb_blenda_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 160645,
+        "offset": 63801872492,
+        "packedBytes": 306232,
+        "bytes": 351896,
+        "packedSha256": "6115799b89e7b67905556c9327ff48dae71352fa5b6e91acaebed19b1a4af4da",
+        "sha256": "81c83d66da2de75995f423629414bbedef81485416bf6a5e505213279d37a5c2",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/02/esf021_000_02_hairb_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 163704,
+        "offset": 63773221420,
+        "packedBytes": 739097,
+        "bytes": 1400488,
+        "packedSha256": "dfc8410ae13cd7e457b31f9eccc810dba07e52e95b54816d9d9e553b1f36078e",
+        "sha256": "bdfeef47da4c79fb94815d7797c1c142231c221692b1490f608fb08f52d968c8",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/01/esf021_000_01_body_sa_blenda_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 165345,
+        "offset": 63804742853,
+        "packedBytes": 246916,
+        "bytes": 351896,
+        "packedSha256": "2ffe50461c5939ec44146244d6fef6eae5fd3eb1fd31b2c15582c8cd36696e50",
+        "sha256": "0ec09495680b6e17cb2a8ba2b950b18578408ba3d8ff11a8518b78c597b31b84",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/00/esf021_000_00_facialblend.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 175235,
+        "offset": 6606022265,
+        "packedBytes": 510415,
+        "bytes": 2797224,
+        "packedSha256": "66b1ec6fc84b997aaa8012bd19e46ff0fb4f3f7c469ee18b735ed35bdf24742f",
+        "sha256": "67f62496b9e2dfd34ba13b70eb3fdc374003fbd92792e604db9bd696d34505ce",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/02/esf021_000_02_hairaex_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 180078,
+        "offset": 6553127209,
+        "packedBytes": 4839030,
+        "bytes": 22372040,
+        "packedSha256": "d91dec318ee59ac483768a2118b83635618b3c5d0bc3ef46083181d6f9631c95",
+        "sha256": "7f1517c3946d5337432e01a761a3ebd04fc06140229368117239c53e1c5e7d7d",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_fm.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 181372,
+        "offset": 65078826130,
+        "packedBytes": 59809,
+        "bytes": 704168,
+        "packedSha256": "d7672400f68ea7f635b02f2f70d3f8f3e2c5a2c861e0e714479024501df46c32",
+        "sha256": "e1bcfb7ad8ba81d34a110a26be0d4db031bf29e8bb8f813140ffc7dcf845984a",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clothb_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 188301,
+        "offset": 6649203522,
+        "packedBytes": 9291997,
+        "bytes": 22372040,
+        "packedSha256": "d2328e53a48666e91adfa4dce09da3e89a793ee134a5f611c4ba871016285977",
+        "sha256": "b7b2f29a7eb803a8d0e92577e102dda719b1aec74a55cee0b03c69915d9e81d9",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_head_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 189289,
+        "offset": 63778748850,
+        "packedBytes": 115558,
+        "bytes": 351896,
+        "packedSha256": "96cb23ad96e3e95a751c0f85b776f92dde22b24b04c43cc84cfa2782c9c4a98c",
+        "sha256": "88663e78e30f13b7f482c69c29236a05df182dc51ebc102499c129d94819bedf",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/01/esf021_000_01_body_2_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 190411,
+        "offset": 6724316413,
+        "packedBytes": 258535,
+        "bytes": 5594808,
+        "packedSha256": "884854501ee64206af4d90a4d9268ef73c59b28d4a3ccb22e3a7e0b06f2b1e90",
+        "sha256": "f2dc1c5ad74e6e453568121fb54ffe2ba4a75b82261692ec8dd07f5f6fa51218",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/30/esf021_000_30_hyotanset_dmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 193100,
+        "offset": 6544091381,
+        "packedBytes": 17595,
+        "bytes": 5594808,
+        "packedSha256": "db2ef0621665b2c0ae1ab537eaca2b955daba8ffaeaa04c4df23a9e075ca6d4a",
+        "sha256": "825a1077bfeca0e2bdb0b49db6824c3ca92e020763d992cdd46febb663484870",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clotha_dmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 197635,
+        "offset": 6649174915,
+        "packedBytes": 28607,
+        "bytes": 5594808,
+        "packedSha256": "626625dd4d3ddc25d921947cdf68e162475f62c37fce73059ea8e0183c8652af",
+        "sha256": "4ad240dfd8f64d66e2d4a3576ac17343d3ead1d20dea59ec079e8c49bf29af8e",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clothb_blendc_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 205445,
+        "offset": 6695060986,
+        "packedBytes": 4278110,
+        "bytes": 5594808,
+        "packedSha256": "f3df064af7ed8499b5d07cb1d9470048bc2208844a8ee2f6859539cd43da8fc0",
+        "sha256": "cf813188f825c172bf7fe0d2f0eeeb4d62bba09c14953f69b88290259f6c93bb",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/01/esf021_000_01_body_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 208862,
+        "offset": 63804629237,
+        "packedBytes": 29859,
+        "bytes": 351896,
+        "packedSha256": "85cdf69683b194d9dc3a40f3053571acc74ee54aeb0b1885807334532b53d4b9",
+        "sha256": "1d6413bfd81c39cd8a8c3cb9e1db2992a77dbeb1df26f7f3e5a469cf3e8471f0",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/02/esf021_000_02_hairaex_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 209400,
+        "offset": 63772218860,
+        "packedBytes": 610979,
+        "bytes": 1400488,
+        "packedSha256": "a0af5664b1450b941832291d6f885dfa45f77709139df640ae4fc7631cb8740a",
+        "sha256": "e1921679b6872e80da163df35c70401141c003c2b17cdf771e13ca3a84c5b948",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clotha_blendd_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 210156,
+        "offset": 63806020908,
+        "packedBytes": 283318,
+        "bytes": 351896,
+        "packedSha256": "d8daf9940dc5e348bc4345f55b4c37d2990f3bbd36420ba039eb75f82d54be83",
+        "sha256": "16a3ac088b0c3278be230981142f6aab8ccd111aef310649ba2c1ad744cccf7a",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clotha_dmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 216461,
+        "offset": 63798560778,
+        "packedBytes": 8620,
+        "bytes": 351896,
+        "packedSha256": "fd0c4659dc61681c0bd696979dd6849ac02c7897c07051c9e3d0d3e846fe809e",
+        "sha256": "9ab92c21e4c3991b8fc5b3cdc3b5ba5f65cd4f8377fb0a8a7c578ffece2a3b58",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/30/esf021_000_30_hyotanset_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 219093,
+        "offset": 6541328284,
+        "packedBytes": 70107,
+        "bytes": 5594808,
+        "packedSha256": "7c6dfd8eb19654d7e11b310c84cffe0775efe8660cc60ad10419453a069fec59",
+        "sha256": "4e2ebe6c17eb3920ff7fd4a698f7805298d9b39c1d0d52dbb2d13faa003c1b9f",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/01/esf021_000_01_body_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 219816,
+        "offset": 6703638146,
+        "packedBytes": 5694562,
+        "bytes": 11189960,
+        "packedSha256": "7f9c62178fbf7d4b3aea06b171c3a78bdd6e57ab6cc3d778bbc55b20e68db145",
+        "sha256": "868388b8785c50cb45cd0ce743322e79b483f8498c79654032728c9dec32b695",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/01/esf021_000_01_bodydetail_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 222190,
+        "offset": 63711054933,
+        "packedBytes": 294167,
+        "bytes": 351896,
+        "packedSha256": "3065f97be492277ee88fa6cd5eb59b79e64c96bc0122fbdb55a52a9d38969476",
+        "sha256": "4fa943fd2d1fcf50069fbf2ec115a82d1c3766fb04fd4bd795db413788f7b008",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/30/esf021_000_30_hyotanset_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 224131,
+        "offset": 63765213436,
+        "packedBytes": 10267,
+        "bytes": 351896,
+        "packedSha256": "5a3ed1e4979598261114bbef78faca5201f542c486a7748de7f8a10852c2b7c3",
+        "sha256": "9ce1e047526dc3d0fa730ee1601d6018dc925d03ace65c33dbbcb5cfa5410b72",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clothb_2_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 224640,
+        "offset": 63800857371,
+        "packedBytes": 5264,
+        "bytes": 1400488,
+        "packedSha256": "06dbbb62dacc73c533368f0ee7c46057408c126586afba27bf47e058a47b63dc",
+        "sha256": "818159b0223a0c9c3123e705c00802537e1821c89c4a40237d7c0584028a14fd",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clothb_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 225218,
+        "offset": 6675637159,
+        "packedBytes": 49261,
+        "bytes": 5594808,
+        "packedSha256": "aed1a1bf0dff5c84af0d7e0550a256a875131a9a977f95b3b99a4faa31cddbdd",
+        "sha256": "d464cbfba4b84cc9f5d9c62e9c9c5859ba713d134b0605f59b396154a17ab220",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clotha_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 226016,
+        "offset": 63794773915,
+        "packedBytes": 1012689,
+        "bytes": 1400488,
+        "packedSha256": "66f0f1e0054a4920c28422bf1fd7b75ae21450005b318e2d74c38a3676b63af4",
+        "sha256": "61dded8824f3f1210f75d444db5e2c9e0077a5c36413ddc1f1cc983de84172a7",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clothb_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 230981,
+        "offset": 63799400024,
+        "packedBytes": 1274967,
+        "bytes": 1400488,
+        "packedSha256": "1431ce62904aaaba3b102f0698c5909dd5f22d4e50a6351dcd9b532f5c393041",
+        "sha256": "fd2567d27e3cb488e553416cd9998fed508574b9a78046ee24bd9571073e42ea",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_head_2_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 232898,
+        "offset": 63778864408,
+        "packedBytes": 119433,
+        "bytes": 351896,
+        "packedSha256": "4b290fbc350ff23963c9ad8f9203fb59829902866b6f059c967c66451878eefa",
+        "sha256": "28948c9c5295f00a92b29be5fd19b947125d1ca425e849b93ffa38b5dfa01d5a",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/30/esf021_000_30_hyotanset_dmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 235642,
+        "offset": 63765466217,
+        "packedBytes": 5209,
+        "bytes": 351896,
+        "packedSha256": "6ad755195bd64934676344401f832d7b99287934961a0c7c6afd79346afd9b62",
+        "sha256": "0fe821b966ef4b0c9d1041743515c29b8f2ddfc5bd1e2062910a2b14397456da",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_facialwrinkle_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 235734,
+        "offset": 63779400426,
+        "packedBytes": 1335183,
+        "bytes": 5594808,
+        "packedSha256": "aa8a8e4ca164d04d05816627c07fb71e40aa278a9d842542b186f6b60168c6d5",
+        "sha256": "950faefc74cb78771d723193dcd047d6e96a9ab8785c51e2bb5bc41354bbbcbe",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clotha_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 238896,
+        "offset": 63797004117,
+        "packedBytes": 8700,
+        "bytes": 351896,
+        "packedSha256": "d76fcbad16ddf850476752bbf8ac10977de51af2c1ab5b6a2b916d785103e8d8",
+        "sha256": "a2799107309aff8fa5410770ef8f6b6ad4a0b2aff32bb18781be9c263b506c2b",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/30/esf021_000_30_hyotanset_dmgmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 240176,
+        "offset": 6541418957,
+        "packedBytes": 2672424,
+        "bytes": 5594808,
+        "packedSha256": "af3557a1f0b9a320bfa347016680eaa1f1685f6113e9805e1d68a76d5a4c1ed4",
+        "sha256": "2331339f9b472ae78dc6a2e27bd7eaff7593cff7a754c9d27ccc95f40bda0df8",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/02/esf021_000_02_hairb_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 241557,
+        "offset": 6562091692,
+        "packedBytes": 6602457,
+        "bytes": 22372040,
+        "packedSha256": "6b6aec42db101cbfe869facf8ada99d59ea1cff84bfcd687f4b292ad3ef8b6a5",
+        "sha256": "e29b4cf517a8e4641c1b65554c849d2dc2652a38a126e4d8fd8cd3e4430a47ff",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clotha_blenda_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 244345,
+        "offset": 63798277962,
+        "packedBytes": 282816,
+        "bytes": 351896,
+        "packedSha256": "98ff2ebd0e8fc73b183df54410c3f348743132cbd1e74e6f8ae27fbb7e7da5a0",
+        "sha256": "b9cddd6e89bb36658670d751b44d059f520e59ee95f1d3ca676ebd79a6205798",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clotha_blendc_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 244858,
+        "offset": 63805736818,
+        "packedBytes": 284090,
+        "bytes": 351896,
+        "packedSha256": "bd17419f748360c9e4b46a9cffaf37440c68375ffd8be25b48d75855e2ecfd0b",
+        "sha256": "72ced9a8c6a31745feff17a642c071030a11a659c4caafd6c9f33fc6743f9100",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clothb_blenda_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 245785,
+        "offset": 6686497034,
+        "packedBytes": 4274660,
+        "bytes": 5594808,
+        "packedSha256": "799284a1da7c075e30338264bee221a820604ef3673e042cdb6bd01c819b153d",
+        "sha256": "c3d784b0618ff75b0a612a122c45fb46a6cba2171473cee601c53e389c2b0e3d",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/01/esf021_000_01_body_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 247152,
+        "offset": 63803519070,
+        "packedBytes": 1110167,
+        "bytes": 1400488,
+        "packedSha256": "0572231fd1f73be0ada6d4106c0fe3b764c990f4080a1127d9477d40c33bda80",
+        "sha256": "83a6d3dabe8898a6cf46e6e2f7b9b605d53c991e44e8d009ed0c58fc4a7a89d9",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/01/esf021_000_01_body_sa_blend_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 248636,
+        "offset": 63804706205,
+        "packedBytes": 36648,
+        "bytes": 351896,
+        "packedSha256": "27338119e97ab62c24a15cf8970ef31d650599ced7d2e66b1f70e560bbb817d8",
+        "sha256": "3d44cacd371d6f7fa21abf05a7a3a028f1accd98adbd71a737b7e36a23ce6d06",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clothb_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 253013,
+        "offset": 6658495519,
+        "packedBytes": 17141640,
+        "bytes": 22372040,
+        "packedSha256": "c118c44576366710336193a6df2c769445b73e135b9af5f5dc87e71f1dfb99c6",
+        "sha256": "27b3ef76a984664f69109b5d5a015535c2d1c0e89bc0a102e18d3c4317da64d9",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/30/esf021_000_30_hyotanset_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 253062,
+        "offset": 63764666708,
+        "packedBytes": 253737,
+        "bytes": 351896,
+        "packedSha256": "ac7f90fde07f696ea3df99cdd497ede74fc59a7a99a60c8eb7e851c0c352ca73",
+        "sha256": "e0480cdbbcb9851c0ab2002df6eaabae9aeffc05786a2d13f34cb928a1bd5f8e",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/00/esf021_000_00_head_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 260163,
+        "offset": 6570076994,
+        "packedBytes": 17638774,
+        "bytes": 22372040,
+        "packedSha256": "097ff626b505cc4832887f426937a49eda8a5cfcbb5a589c042721441b70a5af",
+        "sha256": "fb83cef984e53d7e30401ebcf1e11424f392cf28d30668ad9c3bb328f5d6dd0d",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_head_atos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 261216,
+        "offset": 63778654644,
+        "packedBytes": 94206,
+        "bytes": 351896,
+        "packedSha256": "9ab3a636db3e800029cbd5ce5cac4054c510468ee9491a6a9480eb75f8ba7ad3",
+        "sha256": "afff7b2d9809a11cd826495b7b8d3d13adf46b6456ff3da0cff6e18f68d2228c",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clotha_blenda_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 264058,
+        "offset": 6645370393,
+        "packedBytes": 3804522,
+        "bytes": 5594808,
+        "packedSha256": "66d961a59e75479c30687385f2bfb03a921c3e8e10be543655500cf9183ecd62",
+        "sha256": "24873451232992ca2f53d7038f860acaf413bf7ad9e06fd7886f339106411c11",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clothb_blendb_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 265413,
+        "offset": 6690771694,
+        "packedBytes": 4289292,
+        "bytes": 5594808,
+        "packedSha256": "b9a1f96369a8d7838cdc39ba2df788af4cd041c24a5abd6fde000f290a56ea86",
+        "sha256": "684194745f173d958e29ad156eecf5ec82b1b3e31d6e0198caceab1a619a11e6",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clothb_dmgmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 265603,
+        "offset": 6676444303,
+        "packedBytes": 10011939,
+        "bytes": 22372040,
+        "packedSha256": "8abb6464358665bc0ee38be436646f9e88761569764154763c2aa033d423b0ca",
+        "sha256": "ff5d6216acc9044418dba150e35d2ff2d9c1eafdf07cb1a0d449da7df77d5cea",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clotha_blend_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 266705,
+        "offset": 63805237616,
+        "packedBytes": 216326,
+        "bytes": 1400488,
+        "packedSha256": "515d94bc3c6e9c3eb5f2101fe98dca1f1929d6d33e7d2595f73aa3ae19838717",
+        "sha256": "0366cb9a548bd443c6f887a4531fe808619143776f6af7fececb1c5adeddf06f",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_eye_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 268663,
+        "offset": 63776220460,
+        "packedBytes": 21092,
+        "bytes": 89736,
+        "packedSha256": "8c4c87ee099726c5dd43944ed68af3bd7684c1cfbabdba8725b4d23c66341768",
+        "sha256": "dc66f790ed06c2808c6774ce6d1a89845e0bb8a73b22af4b5f57bd6eb22655d7",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/00/esf021_000_00_head_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 271020,
+        "offset": 6587715768,
+        "packedBytes": 15577059,
+        "bytes": 22372040,
+        "packedSha256": "c895ea455e24bdf4cb247ca91e90ca4f48d6c8f71dcdc40968e31a35472c5654",
+        "sha256": "da73480b1ef34f5df694a634ae72a55ad0f2f68e6688a6bd5fce8ff71fb1b6b7",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clothb_2_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 274252,
+        "offset": 6676429535,
+        "packedBytes": 14768,
+        "bytes": 22372040,
+        "packedSha256": "c654a7667d6ded0aa1728b86d1f1513d15ee8e2d2744348336ebb81527ec2a90",
+        "sha256": "2f1ef3b8c530ecb8af9f5a38e79f5be180e1867a13cda05df979d37cdb3e2d2c",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/30/esf021_000_30_hyotanset_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 276733,
+        "offset": 63765223703,
+        "packedBytes": 6242,
+        "bytes": 351896,
+        "packedSha256": "a6793523cf98e736d550a221773fb67cd4844926f5bb9800afc3fcc3bfc7ac93",
+        "sha256": "50dd8138162cd9f20438077e661aae1524747d875d8d3d6e01c000d3551d41b1",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clothb_blendb_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 277951,
+        "offset": 63802178724,
+        "packedBytes": 305521,
+        "bytes": 351896,
+        "packedSha256": "a6b5b8a6706029d45ba8e4331b057fc374cc650c9d88790a9fb759d0ab7ccbd7",
+        "sha256": "72eef4b809f288b2d46713390facb5563f150d3da4d775c9e456f3a8f1ecab1a",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/00/esf021_000_00_eye_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 278224,
+        "offset": 6570044380,
+        "packedBytes": 32614,
+        "bytes": 1400488,
+        "packedSha256": "b464c9ea1cc85f5ca38e0300d60059b1f07f45e90ace384073a5645852eb0132",
+        "sha256": "c4ad9b8aee9627c780a2ab19b21c40fd216854605e23cfdac8ff20747458a474",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/001/01/esf021_001_01_clotha_blendd_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 280436,
+        "offset": 6738118019,
+        "packedBytes": 3786613,
+        "bytes": 5594808,
+        "packedSha256": "966adf54e3c07df46bd678bcf9b2c137b645c6c0d5dfd12227fd612a133ae549",
+        "sha256": "f4649a1e8b4c337aed39cd18558ac9960fb3901550c849752c59df5b99d6da3b",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_topa_cwmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 281766,
+        "offset": 63806304226,
+        "packedBytes": 3652,
+        "bytes": 89736,
+        "packedSha256": "4540622b8354100c4eded5322145950ae96e57e979932594b424393632c3d889",
+        "sha256": "a8d53d70e2da7c278bacd47f9f186902db39426b80e7400942248abe04f1ef6d",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/001/01/esf021_001_01_clothb_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 284012,
+        "offset": 63800683910,
+        "packedBytes": 173461,
+        "bytes": 1400488,
+        "packedSha256": "5efc5df4a867510fdbc6e886c2d0b6b6bf6b117852901aa2e2ca373b4849314c",
+        "sha256": "cf91d5541526db8a8531f5bd0e021e220b98b16022e3aa8e23b1b3e764efab83",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/01/esf021_000_01_body_albd.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 285234,
+        "offset": 63803095162,
+        "packedBytes": 423908,
+        "bytes": 704168,
+        "packedSha256": "8cf06bf91a087c75b312d1ad470b63a8702df75884caba28dbc926aa8a462d0c",
+        "sha256": "40f20e036f305f072ab233ef9fe90fc06353b964d1212d8633f6ab21182f3188",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/esf/esf021/000/00/esf021_000_00_eye_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 285497,
+        "offset": 63776241552,
+        "packedBytes": 6603,
+        "bytes": 89736,
+        "packedSha256": "7679654ec224449fd5e643b79c38a2f4746082cd01023f710cbc33702d808cb6",
+        "sha256": "a5305596fe8cee780137106cc02882db6396589f0e53920d0de2d6a9fc6984a5",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/esf/esf021/000/00/esf021_000_00_head_1_cmask.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 285766,
+        "offset": 6604042955,
+        "packedBytes": 1241432,
+        "bytes": 5594808,
+        "packedSha256": "87e35f59947ca323b5438cd95d48b1cdb2bb8f2c52b6351be4e4f51f80d22300",
+        "sha256": "cbd72e317b233f774a078e4f575f7899c434f18891d74123021d3f7ff1585f29",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/mastermaterial/texture/null_rgba_0000.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 20122,
+        "offset": 62525216265,
+        "packedBytes": 58,
+        "bytes": 568,
+        "packedSha256": "7303df4f5973aaa888b45e2963f55cc48cd72c00e198331192ddfb334a0e5f63",
+        "sha256": "c4c1de20bb2a2e79dac5781d9c56e4b6077a42e2628c1b8a0281828076259d76",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/systems/rendering/nullnormalroughness.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 24256,
+        "offset": 60920343679,
+        "packedBytes": 59,
+        "bytes": 568,
+        "packedSha256": "e4ff4f055141259097f410ab8cc74949af060515a20697702973798008a4a29b",
+        "sha256": "8e2a5622849a55adfd2e0c1ca664935310d4cf284a977841425f233819bdedf8",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn001/bdm_chest001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 27900,
+        "offset": 62883148697,
+        "packedBytes": 81025,
+        "bytes": 89736,
+        "packedSha256": "df1d7175b13baec37d92eaadc1575ce6613c896a81beecc634a89d154f9de811",
+        "sha256": "f28dc8f791c15349d4a6dd8fb8cf8da310f810ef78266b99afa0777b8621deac",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn002/cdm_tights001_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 28487,
+        "offset": 63551809459,
+        "packedBytes": 29248,
+        "bytes": 351896,
+        "packedSha256": "9ead102c06cbf1b38538a574df13870b3687e80050c028f0d30201a9e266bd1d",
+        "sha256": "dacb6d01cb1a118098bd95baf8336eb87682054a872c78e3aa719c3a2a3ecc6c",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/mastermaterial/texture/nullnormalroughnesscavity.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 31203,
+        "offset": 62541766178,
+        "packedBytes": 65,
+        "bytes": 568,
+        "packedSha256": "96b5fcfd60f4333bf0253ee7d80fcf15e3af3f044fe711676b3f41206a2c8798",
+        "sha256": "02ab0612984b9907d6d7076a351f97824cbeedff40fb89ab1c1c47395770c8cf",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn004/ldm_leathera001_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 39352,
+        "offset": 62897030002,
+        "packedBytes": 351896,
+        "bytes": 351896,
+        "packedSha256": "37da23c2daf539d0677b807a01cfa896b9508deb112e96bb3118bd7a0c0f301c",
+        "sha256": "37da23c2daf539d0677b807a01cfa896b9508deb112e96bb3118bd7a0c0f301c",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn002/cdm_waxedcotton003_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 41275,
+        "offset": 66883737538,
+        "packedBytes": 168371,
+        "bytes": 351896,
+        "packedSha256": "d409a26a348fdaf665aa5468c49715e9ad08f6499058c0bc45e2cc236b653702",
+        "sha256": "5c54ff1985be1ea100d535e6672d65f30f13e673d8aa8c830a59254059bd95be",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/cmn/cmn001/bdm_arm001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 43960,
+        "offset": 3357600061,
+        "packedBytes": 1265930,
+        "bytes": 1400488,
+        "packedSha256": "e3f5b7741b829151d71e55f55451c18899d9f3d9d06efe6db01ff74934a624e4",
+        "sha256": "1c214daa09d095c69e2a111166b881cd2517f8bf3d6692d81a80cd9ce8ea5af9",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/cmn/cmn001/bdm_base001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 53146,
+        "offset": 3361271039,
+        "packedBytes": 1274788,
+        "bytes": 1400488,
+        "packedSha256": "b32b868da97bb7fe30b76078436fcefe23cb8baae39646c3aa80cd0d75f3a7f2",
+        "sha256": "9f3479a1b6e4af2589aa0a65032e29bedde24d3412f900fc3df93e5d4891ee7f",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/systems/rendering/nullwhite.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 55962,
+        "offset": 60888124420,
+        "packedBytes": 49,
+        "bytes": 568,
+        "packedSha256": "15141ae6db4d484605a853fbac7cef0202e6dd4b27b58f98656a95ad9d87a17b",
+        "sha256": "20383e437e4808146c266cd30083d56d48aeeeb48fd31748aed30b8f2a11152c",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn001/bdm_arm001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 64512,
+        "offset": 62883069366,
+        "packedBytes": 79331,
+        "bytes": 89736,
+        "packedSha256": "28445344c7191184b107b165e883ee7126685db98f1fa6baabb4f80c75c94fbc",
+        "sha256": "c6d0d2d95263c4e7b6c24275f7a65699f5a2df9b25c6a48faa9711cf26fa6f0d",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn002/cdm_linenweave001_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 72672,
+        "offset": 62262119376,
+        "packedBytes": 29716,
+        "bytes": 351896,
+        "packedSha256": "86d059059f0f7fd3475d0ac87cfe40d4efb9118485b83895655f77ffc8ecd91b",
+        "sha256": "53640044cafeaef477401f914da699b6cb61c1e5f8f5f9e67017d0181ec28213",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/cmn/cmn000/fdm_vertical001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 75056,
+        "offset": 2420692042,
+        "packedBytes": 321433,
+        "bytes": 351896,
+        "packedSha256": "5bb3362fb482a229f1a71793b0846a48d28103055bd8a8f80835882385d83735",
+        "sha256": "0811a9d4e24ffef956ccc0a6f51320659a0dd9df80cd98464de2952fd0b8a3e9",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn000/fdm_horizontal001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 79325,
+        "offset": 62313863179,
+        "packedBytes": 20428,
+        "bytes": 24184,
+        "packedSha256": "57048aaf04ed7bd9a0a8f644d9f8741a5251dd41b868cad8feea442ccb3bebd0",
+        "sha256": "d1e8df61076c539fad6e329ce68a067011338a36653d229cac3e419cd994dcff",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/mastermaterial/texture/null_rgba_128_128_255_0.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 79724,
+        "offset": 62535979512,
+        "packedBytes": 66,
+        "bytes": 568,
+        "packedSha256": "a7855f2ea2080256cf228412c93c3e0f193741db0e6fc020552d0d65ef5c35f3",
+        "sha256": "d9035336ca1484b5f56a0e2d61544e93267429271bb90c06cc1b02b9db44315f",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/cmn/cmn001/bdm_belly001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 85192,
+        "offset": 3360085849,
+        "packedBytes": 1185190,
+        "bytes": 1400488,
+        "packedSha256": "058a1f7babb234e440e245edcf7a734528ef8fb3ef006643ca63f43dcd9c326e",
+        "sha256": "2313f27ae64107af2629aadc4e7c1a310985a27fb2625ff08b75c5467ef30261",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn001/bdm_base001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 98718,
+        "offset": 62883308981,
+        "packedBytes": 82155,
+        "bytes": 89736,
+        "packedSha256": "6e9dd41a4fd8f6468eb6b16a95ea2b3d954cbb10c7c381525c9eec0bf096d840",
+        "sha256": "5d1bc7a892ba511e0148c8e3df52c8a650d94f71f5b1aa790c83a50f9bacfe50",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/cmn/cmn000/fdm_base001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 119456,
+        "offset": 1305512011,
+        "packedBytes": 326397,
+        "bytes": 351896,
+        "packedSha256": "85deb6007a7b0862d73028a086d9b69a028e32e381c037b41891db4a5c9f0082",
+        "sha256": "b42ac245cdf5931edac93e74e1bb1ef69ed7c800227a5c5b70e844f97fd9e05b",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn002/cdm_braid001_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 155981,
+        "offset": 62724826953,
+        "packedBytes": 351896,
+        "bytes": 351896,
+        "packedSha256": "9c578477e99db1e972ece40cf6b385989dc2567d6b56cbb54c6a3413296e171e",
+        "sha256": "9c578477e99db1e972ece40cf6b385989dc2567d6b56cbb54c6a3413296e171e",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn000/fdm_base001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 157466,
+        "offset": 61608634127,
+        "packedBytes": 20853,
+        "bytes": 24184,
+        "packedSha256": "e25449cdf891620ee601a00fb07a21490bf6113d82619899eee5afdb0a6f571d",
+        "sha256": "827f66f8969d33db82f17f39644ad3185c04212263514c052dd707617aa2f01c",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/cmn/cmn000/fdm_horizontal001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 160140,
+        "offset": 2421013475,
+        "packedBytes": 310965,
+        "bytes": 351896,
+        "packedSha256": "56bbf3738f677f6f1a3ca561a679eae29474e82f6518fc819d2923b32467b632",
+        "sha256": "b05e83c30a02fb613a920454df67a50b06bbbb995b92a9d2a9c99874b8b38a1c",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn000/fdm_vertical001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 162222,
+        "offset": 62313841997,
+        "packedBytes": 21182,
+        "bytes": 24184,
+        "packedSha256": "0fa980675188074e4beaff9a17aeb92375128f95dced972d487477be9f27fd35",
+        "sha256": "cbf757993d3c7851c23d6ee51969bc0948ab83f0551371abe312011b273b8006",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/systems/rendering/nullatos.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 190074,
+        "offset": 60920343738,
+        "packedBytes": 53,
+        "bytes": 568,
+        "packedSha256": "1a1e4c725ea320c847d8c54fb53e71c6d87b21305ca5bb4812a4632005207058",
+        "sha256": "b3187f1a16b1b5cda8333045f7c8d2746952af21ea4059ec26a35ba25ed167c0",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/cmn/cmn001/bdm_chest001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 234187,
+        "offset": 3358865991,
+        "packedBytes": 1219858,
+        "bytes": 1400488,
+        "packedSha256": "61149532308913a9ef97e80c0454b4618cbdfc82aefe0cf6174e002c9067bfe2",
+        "sha256": "38dfe0076c361d9a7cbb487e69f7b0e894ec4b8658fa2f2c749433d742974158",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn000/fdm_cheek001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 234773,
+        "offset": 61604569196,
+        "packedBytes": 20629,
+        "bytes": 24184,
+        "packedSha256": "3975289e317538c3e0882e2379e471a7e5c1f88c9c558b8ae8776a803453ef4b",
+        "sha256": "deabe31977886a97cc6b2ebd74068e6e8a5b1e6c7b7cd1099f4dbb365c96eb8a",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/streaming/product/model/cmn/cmn000/fdm_cheek001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 252121,
+        "offset": 1249827170,
+        "packedBytes": 317287,
+        "bytes": 351896,
+        "packedSha256": "f016d038adb0fefc21d341709c92d15d143011c9867d701dc7aed35911fb7f27",
+        "sha256": "ddfa88f00f8ed9637dc42adf33e03a3425894b79950064369622aa87bff4372a",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn004/ldm_leatherd001_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 266968,
+        "offset": 63238953232,
+        "packedBytes": 321174,
+        "bytes": 351896,
+        "packedSha256": "a1d7d80ceeaef7f4736cf9834678b4a2474425ef32ca4607f8b8ab86f48b951e",
+        "sha256": "363ca32170214c36c635f4e17c766ddc56e5baf04fc19d548bcf91179834f8ac",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn002/cdm_waxedcotton001_msk4.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 267390,
+        "offset": 63105257959,
+        "packedBytes": 121760,
+        "bytes": 351896,
+        "packedSha256": "a2382c092bcb90ce4482b3888ad408f187291c61bcac9f6edd650c103b460424",
+        "sha256": "c24e519300d26bcea7bce50b791c230bd98425d4ca7c4992ebafce0a581c76be",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      },
+      {
+        "resource": "natives/stm/product/model/cmn/cmn001/bdm_belly001_nrrc.tex.241101895",
+        "archive": "re_chunk_000.pak",
+        "index": 278774,
+        "offset": 62883229722,
+        "packedBytes": 79259,
+        "bytes": 89736,
+        "packedSha256": "a3190a070a4d3dbd034fbd5accf77a0f0a6215501c034909b5dc5ab2113418cf",
+        "sha256": "f3cfb965d5942dec635f2e9cc6c0c66abd5f82429ced1a9120d80d85d2284eae",
+        "installationPayloadVerified": true,
+        "reaExtractedVerified": false
+      }
+    ]
+  },
+  "limitations": [
+    "Base color and alpha were baked from the REME material graph; standard glTF PBR, alpha cutoff 0.4, and roughness approximate original engine shading.",
+    "Original ClothWrinkle_MSK4 texture dependency remains unresolved in the source conversion.",
+    "Original game VFX, original renderer lighting, and the original opponent model are not included in this asset bundle.",
+    "The source exporter skipped 336 channels targeting missing skeleton bones, as recorded in jamie-native.skipped-animation-bones.md beside the source GLB. The eight exported clips are retained; this does not establish lossless preservation of every original animation channel.",
+    "Exported body motion curves and skeleton are preserved from the audited conversion; exporter accuracy beyond these retained bytes is not independently established here.",
+    "Original quaternion-blend order and facial transitions have not been compared frame-by-frame in the running original engine.",
+    "Physics uses recovered parameters and constraints; it is not the original RE Engine integrator. Native wind activation and all anisotropic/filter/attachment modes are not fully recovered.",
+    "Wrinkle shading, JCNS pose-corrective drivers and every conditional timeline part event remain incomplete."
+  ],
+  "outputs": {
+    "jamie-native.glb": {
+      "bytes": 43547652,
+      "sha256": "36618d3f0640577864192985353e916413fcb94290fea10b493c0e3e6bce0b30"
+    },
+    "camera.json": {
+      "bytes": 377858,
+      "sha256": "33306f706d518675d1c7fcc0c62e4a4435892f0de80ffe10fe66492c928931dc"
+    },
+    "secondary.json": {
+      "bytes": 1390,
+      "sha256": "6be60caca648a61dcab9eab894ea8d22d8762df0769cf702931e720b1dc2e2bf"
+    },
+    "facial.json": {
+      "bytes": 369090,
+      "sha256": "554dd75393932301e7ac03accb2f9135c96270d56bbd2ca640fa6ec7c0376f7e"
+    },
+    "physics.json": {
+      "bytes": 579945,
+      "sha256": "003c1d6745206a6daa1924b1faaa20b3a722a00043259ad5109654225c86a940"
+    },
+    "appearance.json": {
+      "bytes": 6652,
+      "sha256": "53b549d9a544ac2e2985c28c9b39a7419f6c13849a5df5941a3ee5ce209dcd26"
+    },
+    "recovery.json": {
+      "bytes": 19332,
+      "sha256": "bc8533ce1ebc15b6db9ec38f58dcb6ace3522dd2e5388779607501335e26d8fa"
+    }
+  },
+  "fourDrinkNormals": {
+    "source": "Evaluated original REME shader graphs for existing native open-jacket and loose-hair meshes",
+    "reportSha256": "2bb59da4842af93098969f21b363254d6f954feff42decb6a45bde25ee926402",
+    "mappings": [
+      {
+        "mesh": "Group_21_sub0__esf_ClothTop_Main",
+        "texture": 50,
+        "sha256": "d05efa0aa84a55c6082445a0de5ae5a4de5e37b293c64257e929c44f8f9dda7f",
+        "sourceMaterial": "esf_ClothTop_Main",
+        "normalSpace": "TANGENT",
+        "channelConvention": "+X,+Y,+Z",
+        "source": "Evaluated original REME shader normal graph"
+      },
+      {
+        "mesh": "Group_21_sub3__esf_ClothTop_JipLine",
+        "texture": 51,
+        "sha256": "a4252b895bc5250c6cf7246e94eb9b9b4a21919e74d1c153d6b367c95a80b575",
+        "sourceMaterial": "esf_ClothTop_JipLine",
+        "normalSpace": "TANGENT",
+        "channelConvention": "+X,+Y,+Z",
+        "source": "Evaluated original REME shader normal graph"
+      },
+      {
+        "mesh": "Group_21_sub4__esf_ClothTop_Main_BS02",
+        "texture": 52,
+        "sha256": "1d4580479bd20a569cf64d88992c140ddbe57baa9e95eedf6dcd0863074f4fc7",
+        "sourceMaterial": "esf_ClothTop_Main_BS02",
+        "normalSpace": "TANGENT",
+        "channelConvention": "+X,+Y,+Z",
+        "source": "Evaluated original REME shader normal graph"
+      },
+      {
+        "mesh": "Group_21_sub5__esf_Body00",
+        "texture": 53,
+        "sha256": "cc9af3c1ef0a125f422e16e91f3edaad3e4a840cca5ab2695b7c244ba26be472",
+        "sourceMaterial": "esf_Body00",
+        "normalSpace": "TANGENT",
+        "channelConvention": "+X,+Y,+Z",
+        "source": "Evaluated original REME shader normal graph"
+      },
+      {
+        "mesh": "Group_23_sub0__esf_HairB_Head_NonPOD",
+        "texture": 54,
+        "sha256": "69a115bfda4733477499fef44c2ab6ab7495f098fef9d3946be112697c7a4848",
+        "sourceMaterial": "esf_HairB_Head_NonPOD",
+        "normalSpace": "TANGENT",
+        "channelConvention": "+X,+Y,+Z",
+        "source": "Evaluated original REME shader normal graph"
+      },
+      {
+        "mesh": "Group_23_sub1__esf_HairB_Head",
+        "texture": 55,
+        "sha256": "1ab26302b1457c3321fe438fba3d6689228c63294fff2525c44c7b572b919ea3",
+        "sourceMaterial": "esf_HairB_Head",
+        "normalSpace": "TANGENT",
+        "channelConvention": "+X,+Y,+Z",
+        "source": "Evaluated original REME shader normal graph"
+      }
+    ]
+  },
+  "v3Recovery": {
+    "manifest": "recovery.json",
+    "facialBones": 148,
+    "facialControls": 210,
+    "chainGroups": 93,
+    "chainNodes": 363,
+    "fixedFps": 60,
+    "actualDrinkLevelAppearance": true,
+    "reaMaterializedMembers": 36
+  },
+  "legacySecondary": "secondary.json is retained as the first review artifact; v3 uses physics.json and no static hair-sag override."
+}

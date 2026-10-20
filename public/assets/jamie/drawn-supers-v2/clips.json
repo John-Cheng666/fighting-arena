@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "framesPerSecond": 60,
+  "ticksPerDrawnCel": 5,
+  "sourceCelSize": {
+    "width": 682,
+    "height": 384
+  },
+  "appearance": {
+    "attackerDrinkLevel": 4,
+    "defenderDrinkLevel": 0
+  },
+  "clips": {
+    "SA3": {
+      "frameCount": 617,
+      "celCount": 121,
+      "width": 1920,
+      "height": 1080,
+      "framesPerSecond": 60,
+      "variants": {
+        "drawn": "sa3-drawn.mp4",
+        "smooth": "sa3-smooth.mp4"
+      },
+      "poster": "sa3-poster.jpg",
+      "phases": [
+        {
+          "name": "intro",
+          "from": 0,
+          "length": 84
+        },
+        {
+          "name": "sa3-body",
+          "from": 84,
+          "length": 438
+        },
+        {
+          "name": "sa3-end",
+          "from": 522,
+          "length": 80
+        }
+      ]
+    },
+    "CA": {
+      "frameCount": 712,
+      "celCount": 140,
+      "width": 1920,
+      "height": 1080,
+      "framesPerSecond": 60,
+      "variants": {
+        "drawn": "ca-drawn.mp4",
+        "smooth": "ca-smooth.mp4"
+      },
+      "poster": "ca-poster.jpg",
+      "phases": [
+        {
+          "name": "intro",
+          "from": 0,
+          "length": 84
+        },
+        {
+          "name": "ca-body",
+          "from": 84,
+          "length": 499
+        },
+        {
+          "name": "ca-end",
+          "from": 583,
+          "length": 114
+        }
+      ]
+    }
+  },
+  "interpolation": "Motion-compensated interpolation within camera shots; no interpolation across source camera cuts. Original cels available as a separate review mode.",
+  "limitations": [
+    "Generated face, hands, hair and fabric can retain small temporal differences.",
+    "Output is 1080p; original redrawn cels are approximately 680x380, upscaled with Lanczos.",
+    "Independent complete hit-sequence review, without battle-engine integration or block/whiff/KO branches."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "version": 3,
+  "description": "Recovered original facial driver, native-parameter secondary motion and actual four-drink appearance; original Japanese audio.",
+  "video": {
+    "framesPerSecond": 30,
+    "width": 960,
+    "height": 540
+  },
+  "audio": {
+    "language": "ja",
+    "codec": "aac",
+    "sampleRate": 48000,
+    "sourceManifest": "audio.json"
+  },
+  "bodyFrames": {
+    "SA3": 438,
+    "CA": 499
+  },
+  "tailFrames": 15,
+  "totalFrames": {
+    "SA3": 453,
+    "CA": 514
+  },
+  "excerpt": [
+    {
+      "start": 0,
+      "end": 3.3,
+      "mode": "SA3"
+    },
+    {
+      "start": 12.85,
+      "end": 16.1167,
+      "mode": "CA"
+    }
+  ],
+  "captureSha256": "58c4f6f220c2e194796a77d2bc88e60e64eba9b332093da4f7407a2337358ab2",
+  "encoderSha256": "04e1307997530f9cf2fe35cba2ca7e8875ca91da02f89d6c7243df819c94ad00",
+  "outputs": {
+    "review-v3.mp4": {
+      "bytes": 5690139,
+      "sha256": "8fea1e2d415b304b1ebcd6a55e5592c88a49a0ed388d5279e83cc32c1994b0f5"
+    },
+    "review-v3-preview.mp4": {
+      "bytes": 252952,
+      "sha256": "32af6ee554172f1ef3670d1ce377f09879d2c1a0236b442e761c3cc363696dad"
+    },
+    "poster-v3.jpg": {
+      "bytes": 32372,
+      "sha256": "3ee4e24099f68cfd5c6893e03957678180d61a4b3347b0788fa29b4da43a53ac"
+    }
+  },
+  "appearance": {
+    "attackerDrinkLevel": 4,
+    "defenderDrinkLevel": 0,
+    "recoveryManifest": "recovery.json"
+  }
+}

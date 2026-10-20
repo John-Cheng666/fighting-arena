@@ -119,7 +119,13 @@ CPU 输入支持本地原版超必杀的 `23626`／`21424` 简化指令。Parry 
 
 个人语音的审阅覆盖、独立随机数、优先级、动作中断、开场时钟和后续角色接入步骤，见 [角色个人语音接入经验](docs/character-voice.md)。`pnpm.cmd run sync:sf6-voices` 只同步已确认的个人语音，不重新编码或重新提取原版资源。
 
+方案 D 的二维关键镜头样片在 `/drawn-super-preview.html`，招式演练选择 SA3／CA 后也可进入。两段各 24 张新重绘关键帧，支持原声、暂停、慢放与逐帧；当前是四酒杰米对零酒杰米的独立节选，尚未覆盖整招或接入战斗。可下载实际二维画布录像；来源、提示词与审阅边界见[二维样片说明](docs/drawn-super-preview.md)，运行 `node scripts/verify-drawn-supers.mjs` 可核验成品素材。
+
+二维完整版审阅在 `/drawn-super-full.html`，保留上述初版供对照。SA3／CA 分别包含启动、完整命中主体和恢复收尾，约 10.28／11.87 秒；共有 244 张独立高清重绘帧，输出 1080p／60 FPS，并提供重绘原帧版本。原声包含开场及恢复段，播放器支持原帧对照、逐帧、慢放、章节跳转和独立下载。当前仍为独立命中演出审阅，尚未接入正式对局；来源、生成提示词、构建与媒体核验见[完整版说明](docs/drawn-super-full.md)。
+
 ## 验证
+
+杰米 SA3／CA 的独立实时 3D 样片在 `/cinematic-preview.html`，支持暂停、慢放、逐帧和自由观察。第三版恢复原版面部控制／姿势库、原链条参数驱动的头发与布料动态，以及两席位独立的真实四酒造型；保留第二版特效与日语原声，可关闭各层对比。样片从命中后的捕获动作开始，尚未接入正式对战；来源、重生成与还原边界见[样片说明](docs/sf6-cinematic-preview.md)。运行 `node scripts/prepare-sf6-cinematic.mjs --verify`、`node scripts/finalize-cinematic-v3.mjs --verify` 和 `node scripts/prepare-cinematic-audio.mjs --check` 可校验已生成素材。
 
 ```powershell
 pnpm.cmd run typecheck

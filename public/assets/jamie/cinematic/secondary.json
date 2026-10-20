@@ -1,0 +1,67 @@
+{
+  "status": "review-only approximation, not recovered RE Engine chain simulation",
+  "evidence": "All 8 native body clips contain no Hair bone channels; original hair is separate chain-driven secondary motion.",
+  "hair": [
+    {
+      "bone": "C_HairRong_01",
+      "localXDegrees": -10,
+      "gltfQuaternionXYZW": [
+        -0.08715572208166122,
+        -0.0,
+        -0.0,
+        0.9961947202682495
+      ]
+    },
+    {
+      "bone": "C_HairRong_02",
+      "localXDegrees": -20,
+      "gltfQuaternionXYZW": [
+        -0.1736481487751007,
+        -0.0,
+        -0.0,
+        0.9848077297210693
+      ]
+    },
+    {
+      "bone": "C_HairRong_03",
+      "localXDegrees": -25,
+      "gltfQuaternionXYZW": [
+        -0.21643957495689392,
+        -0.0,
+        -0.0,
+        0.9762960076332092
+      ]
+    },
+    {
+      "bone": "C_HairRong_04",
+      "localXDegrees": -20,
+      "gltfQuaternionXYZW": [
+        -0.1736481487751007,
+        -0.0,
+        -0.0,
+        0.9848077297210693
+      ]
+    },
+    {
+      "bone": "C_HairRong_05",
+      "localXDegrees": -10,
+      "gltfQuaternionXYZW": [
+        -0.08715572208166122,
+        -0.0,
+        -0.0,
+        0.9961947202682495
+      ]
+    }
+  ],
+  "visibleWaistGroups": [
+    24,
+    26,
+    124,
+    126
+  ],
+  "hiddenHandPropGroups": [
+    25,
+    125,
+    30
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "method": "built-in image_gen",
+  "intent": "New 2D redraws from pose guides; not native game frames",
+  "prompts": {
+    "SA3": "Use case: style-transfer / stylized-concept.\nAsset type: production 2D animation flipbook atlas, 24 sequential widescreen animation frames, NOT a poster, NOT a comic.\nInput 1 (sa3-keyframes.png): EXACT pose, double-character blocking and camera composition guide. This is a grid of 4 equal columns and 6 equal rows, 24 ordered 16:9 frames, reading left to right then top to bottom. Keep precisely this grid, this frame count, all 24 distinct poses and camera cuts. Every input cell must map to exactly one output cell. Preserve the cropped edges of the original camera view. Redraw the SAME chronological sequence; do not rearrange frames.\nInput 2 official-jamie.png: Jamie's identity, athletic Chinese face, yellow gold brocade costume, white cuffs, red waist cord, blue double gourd, black hair and shoes reference.\nInput 3 f-supers.png: reference for existing project character colors, proportions and costume only.\nPrimary request: REDRAW the entire 24-frame SA3 sequence as premium, crisp, realistically proportioned 2D fighting game animation cels, faithful to Street Fighter 6 Jamie's super art. Strong controlled ink contours, nuanced hand-painted shading, muscular anatomy, detailed faces and fabric, polished high-end fighting game sprite aesthetic. Clearly hand-drawn and two-dimensional, NOT a filtered 3D screenshot, NOT chibi, NOT simplistic anime. Very high consistency from cel to cel.\nBoth fighters are Jamie. Attacker has actual drink level 4: unbound LONG flowing BLACK hair, yellow cropped jacket open widely across chest. Defender has shaved sides and a long thick braided black ponytail/topknot, and a slightly paler gold jacket so the two remain readable. Preserve character identities, costume pieces and facial proportions in every frame. The source guide looks gray due to cinematic desaturation: restore muted golden yellow garments, warm natural skin, black hair, red rope and dark blue gourd consistently.\nScene: minimal deep charcoal background and soft subtle warm ground only; maintain exact original camera perspective and character placement. No new scenery. Keep original kung-fu movie letterbox bars consistently within each widescreen cel, subtle warm desaturated cinematic light.\nPreserve the source's hand deflections, close-range flurry, backward lean, acrobatic double-foot finishing strike and kick close-up, exact opponent reactions and shot cuts. Improve clarity without inventing punches or anatomy. A hand or leg never becomes another body part.\nOutput: one seamless rectangular atlas, exactly FOUR columns x SIX rows, 24 widescreen 16:9 cels, all the same size, intended 2304x1944 or equivalent ratio 32:27. No inter-panel gutters, no outer margins, no decorative frames. Precisely aligned cell edges. Black bars INSIDE each cel are acceptable. No letters, numbers, captions, logos, watermarks, UI, motion comic text or panel numbering. Fully opaque background.",
+    "CA": "Use case: style-transfer / stylized-concept.\nAsset type: production 2D animation flipbook atlas, 24 sequential widescreen animation cels, not a poster or comic.\nInput 1 ca-keyframes.png is the EXACT pose, double-character blocking and camera composition guide. Preserve its FOUR equal columns and SIX equal rows, 24 ordered 16:9 shots, read left to right then top to bottom. Every guide cell must map to exactly one output cel. Keep all 24 separate temporal poses and their original shot cuts, hand contact and cropped framing. Do not rearrange, merge, skip or duplicate the guide cells.\nInput 2 sa3-atlas is the exact desired drawing style, palette, costume, quality and character identity reference. Create the matching CA sequence.\nInput 3 official-jamie.png is official Jamie identity and costume reference.\nPrimary request: REDRAW all 24 CA guide frames as premium, crisp, realistically proportioned 2D fighting game animation cels matching the SA3 reference. Controlled dark ink contours, nuanced hand-painted shading, muscular anatomy, recognizable detailed faces, gold brocade fabric, polished high-end sprite illustration. Clearly drawn two-dimensional cels, not a photo filter, chibi, or simplified anime.\nBoth men are JAMIE. Attacker is the man behind the opponent at first: actual drink level 4, very LONG UNBOUND flowing black hair, golden yellow widely open cropped jacket with white cuffs and bare muscular chest, red rope belt, blue double gourd. Defender has shaved sides and a topknot with long thick BLACK BRAID, slightly paler yellow gold jacket. Same athletic Chinese faces and physiques throughout. Do not merge the two faces/hair/bodies. Match identities and relative positions from guide in every cell. Never change whose arm or hand is whose.\nRestore the gray guide to muted golden yellow garments, warm skin, black hair, red waist rope and dark blue gourd as in the matching SA3 atlas. Keep the background deep charcoal with subtle warm ground only, no new scenery. Subtle desaturated kung-fu movie light, consistent letterbox inside every widescreen cel.\nThe key action is Jamie's Street Fighter 6 Critical Art: behind-the-opponent throat/neck grip and pull with tightly framed two faces, the opponent's head arched back and strained face, then release and rapid close-range terminal blows, camera cuts to wider and overhead views. Keep each guide pose exactly; no stabbing, blood, wounds or weapons. No invented physical contact or new moves.\nOutput exactly FOUR columns x SIX rows, 24 equal widescreen cels, matching guide aspect ratio 32:27 (for example 1368x1152 or 2304x1944). Aligned grid boundaries, no outer margins or gutters. Original black letterboxing within a cell is acceptable. Entire atlas opaque. No lettering, numbering, logos, UI, captions, watermarks, speech balloons, comic text or decorative borders."
+  },
+  "guide": {
+    "SA3": {
+      "source": "../cinematic/review-v3.mp4",
+      "startSeconds": 4.65,
+      "seconds": 2.4,
+      "framesPerSecond": 10,
+      "columns": 4,
+      "rows": 6
+    },
+    "CA": {
+      "source": "../cinematic/review-v3.mp4",
+      "startSeconds": 12.85,
+      "seconds": 2.4,
+      "framesPerSecond": 10,
+      "columns": 4,
+      "rows": 6
+    }
+  },
+  "references": [
+    "../official-jamie.png",
+    "../sprites-v3/f-supers.png"
+  ],
+  "limitations": [
+    "Generated 24-cel redraws, not original CAPCOM motion frames.",
+    "Character anatomy, contact and cloth consistency need further refinement before full production."
+  ]
+}

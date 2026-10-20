@@ -138,6 +138,7 @@ export function JamieTrainingPanel({ runtime, summary }: { runtime: BattleRuntim
         {([['hit', '命中'], ['block', '防御'], ['whiff', '落空']] as const).map(([value, label]) => <button key={value} type="button" aria-pressed={scenario === value} onClick={() => { setScenario(value); runtime.demonstrate(selected.id, value, false); }}>{label}</button>)}
       </div>
       <button className="training-play" onClick={demonstrate} disabled={!summary.loaded}><Icon name="play" size={15} />演练所选招式<Icon name="arrow" size={15} /></button>
+      {selected.moveId === "A03" && <a className="drawn-super-link" href={`./drawn-super-full.html?move=${selected.row === 90 ? "CA" : "SA3"}`}><span>查看{selected.row === 90 ? "CA" : "SA3"}二维演出完整版<small>完整审阅 · 原帧／补帧对照</small></span><Icon name="arrow" size={16} /></a>}
       {error && <p className="form-error" role="alert">{error}</p>}
       <div className={`training-result ${demonstration?.outcome ?? "pending"}`} role="status">
         <span>{playingSelected ? phase : "已选择新招式 · 点击演练"}</span>
